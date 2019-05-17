@@ -1,0 +1,139 @@
+[Thursday 16 May 2019] [8:24:07 PM IST] Join	You (~Polaris00@124.123.75.129) have joined the channel #grimoirelab.
+[Thursday 16 May 2019] [8:25:56 PM IST] <Polaris000>	Hey @valcos! The scheduled meeting starts in about 5 minutes. We can wait till aswanipranjal, jgbarah and inischith join
+[Thursday 16 May 2019] [8:26:21 PM IST] <valcos>	Hi @Polaris000, sure
+[Thursday 16 May 2019] [8:26:27 PM IST] <valcos>	let's wait some minutes, thanks!
+[Thursday 16 May 2019] [8:26:40 PM IST] <Polaris000>	Of course!
+[Thursday 16 May 2019] [8:36:20 PM IST] Join	jgbarah (~jgb@187.red-88-1-22.dynamicip.rima-tde.net) has joined this channel.
+[Thursday 16 May 2019] [8:36:28 PM IST] <Polaris000>	Hi @jgbarah!
+[Thursday 16 May 2019] [8:36:33 PM IST] <jgbarah>	Hi all, sorry for being late!
+[Thursday 16 May 2019] [8:36:38 PM IST] <valcos>	Hi @jgbarah
+[Thursday 16 May 2019] [8:36:41 PM IST] <valcos>	no worries
+[Thursday 16 May 2019] [8:37:58 PM IST] <valcos>	 @Polaris000 @jgbarah shall we start ?
+[Thursday 16 May 2019] [8:38:12 PM IST] <valcos>	(maybe Pranjal and Inishchith will join later)
+[Thursday 16 May 2019] [8:38:18 PM IST] <jgbarah>	Yes, please
+[Thursday 16 May 2019] [8:38:21 PM IST] <Polaris000>	Yes
+[Thursday 16 May 2019] [8:39:03 PM IST] <valcos>	The idea of this meeting is to check a bit the coordination means, answer your questions, and (if needed) schedule activities during the community bounding period
+[Thursday 16 May 2019] [8:39:21 PM IST] <Polaris000>	ok
+[Thursday 16 May 2019] [8:39:55 PM IST] <valcos>	WRT coordination, you should have received the draft of the guidelines
+[Thursday 16 May 2019] [8:40:07 PM IST] <Polaris000>	yes, i went through that
+[Thursday 16 May 2019] [8:40:22 PM IST] <valcos>	what do you think about it ?
+[Thursday 16 May 2019] [8:41:22 PM IST] <Polaris000>	I think its a great idea, which would ensure good coordination and management: the tuesday -friday series seems ok
+[Thursday 16 May 2019] [8:41:54 PM IST] <Polaris000>	I already have a blog and I recently added tagging feature to it
+[Thursday 16 May 2019] [8:42:16 PM IST] <Polaris000>	I also wrote a blog post regarding my experience upto the community bonding period
+[Thursday 16 May 2019] [8:42:27 PM IST] <valcos>	great!
+[Thursday 16 May 2019] [8:42:35 PM IST] <Polaris000>	Thanks @valcos
+[Thursday 16 May 2019] [8:43:10 PM IST] <Polaris000>	I had a doubt regaring the sub task issue creation
+[Thursday 16 May 2019] [8:43:30 PM IST] <Polaris000>	But we can address that at the end
+[Thursday 16 May 2019] [8:44:14 PM IST] <Polaris000>	I also created the repository for experimentation and although it is empty, I will populate it soon
+[Thursday 16 May 2019] [8:44:43 PM IST] <valcos>	which is your doubt about the sub task ?
+[Thursday 16 May 2019] [8:45:48 PM IST] <Polaris000>	Do we discuss the creation of sub tasks or is that completely my choice, based on what I have mentioned in the timeline of my proposal?
+[Thursday 16 May 2019] [8:46:09 PM IST] <jgbarah>	Good progress, Polaris000! We will tell you where to create links to all of this...
+[Thursday 16 May 2019] [8:46:20 PM IST] <Polaris000>	Thanks @jgbarah!
+[Thursday 16 May 2019] [8:46:36 PM IST] <jgbarah>	i think we can start to discuss details and subtasks when we're closer to the working period...
+[Thursday 16 May 2019] [8:46:54 PM IST] <Polaris000>	of course!
+[Thursday 16 May 2019] [8:47:00 PM IST] <jgbarah>	Or do you think it is important for you to start with that already for any reason?
+[Thursday 16 May 2019] [8:47:39 PM IST] <Polaris000>	Though I don't have any specific reason, I just thought the earlier the better. 
+[Thursday 16 May 2019] [8:47:44 PM IST] <Polaris000>	I am ok either way
+[Thursday 16 May 2019] [8:48:02 PM IST] <Polaris000>	We could start it later if thats ok with everyone
+[Thursday 16 May 2019] [8:49:51 PM IST] <valcos>	maybe we can discuss about it in the next meeting, however feel free to start thinking about how to organize the subtasks
+[Thursday 16 May 2019] [8:50:00 PM IST] <valcos>	wrt the blog you mentioned before
+[Thursday 16 May 2019] [8:50:14 PM IST] <valcos>	it could be linked to an issue in the chaoss/governance repo
+[Thursday 16 May 2019] [8:50:29 PM IST] <valcos>	so there is a way to access it from chaoss
+[Thursday 16 May 2019] [8:50:56 PM IST] <Polaris000>	So I post the links to my posts there? 
+[Thursday 16 May 2019] [8:51:48 PM IST] <Polaris000>	That sounds ok. Georg mentioned on inischith's issue that putting the link on the mailing list would be a good idea
+[Thursday 16 May 2019] [8:51:56 PM IST] <Polaris000>	I am ok with either, or both
+[Thursday 16 May 2019] [8:52:12 PM IST] <valcos>	Yes, maybe the issue body could mention the comunication channels and a link to your blog. Then, you could link the blogposts as issue comment
+[Thursday 16 May 2019] [8:52:27 PM IST] <valcos>	*comments
+[Thursday 16 May 2019] [8:52:28 PM IST] <Polaris000>	ok @valcos
+[Thursday 16 May 2019] [8:53:12 PM IST] <valcos>	-> Georg mentioned on inischith's issue that putting the link on the mailing list would be a good idea, that's perfect
+[Thursday 16 May 2019] [8:53:44 PM IST] <valcos>	As a general rule, after all meetings, please get a copy of the log of the meeting, and add it to the corresponding blog post.
+[Thursday 16 May 2019] [8:54:20 PM IST] <valcos>	In this way we can have everything linked together
+[Thursday 16 May 2019] [8:54:33 PM IST] <valcos>	what do you think ?
+[Thursday 16 May 2019] [8:54:36 PM IST] <Polaris000>	Wouldn't it be better to add the logs to my experiment repo?
+[Thursday 16 May 2019] [8:55:12 PM IST] <Polaris000>	Since there will be bi-weekly meets
+[Thursday 16 May 2019] [8:55:17 PM IST] <Polaris000>	and only weekly posts
+[Thursday 16 May 2019] [8:55:50 PM IST] <valcos>	it sounds ok to me
+[Thursday 16 May 2019] [8:56:32 PM IST] <valcos>	what do you think @jgbarah ?
+[Thursday 16 May 2019] [8:56:56 PM IST] <Polaris000>	If its ok, i'll link the log (present in my repo) of the first meeting of the week with a post
+[Thursday 16 May 2019] [8:57:03 PM IST] <jgbarah>	yes, that's ok with me
+[Thursday 16 May 2019] [8:57:05 PM IST] <Polaris000>	And not link the second meet
+[Thursday 16 May 2019] [8:57:19 PM IST] <jgbarah>	we can adjust as time passes and we see how it works, anyway
+[Thursday 16 May 2019] [8:57:23 PM IST] <Polaris000>	Or I could update the post later with both links
+[Thursday 16 May 2019] [8:57:31 PM IST] <Polaris000>	Fine @jgbarah
+[Thursday 16 May 2019] [8:57:48 PM IST] <valcos>	perfect, yes let's start and see
+[Thursday 16 May 2019] [8:57:48 PM IST] <Polaris000>	I'll do that
+[Thursday 16 May 2019] [8:58:05 PM IST] <jgbarah>	Great. Anything else you want to discuss?
+[Thursday 16 May 2019] [8:58:14 PM IST] <Polaris000>	Yes
+[Thursday 16 May 2019] [8:58:51 PM IST] <Polaris000>	Regarding the structure of reference implementations
+[Thursday 16 May 2019] [8:59:44 PM IST] <Polaris000>	Should the structure be completely enclosed inside classes? Or can it be more open (like the code changes implementation present in wg-evolution repo)>
+[Thursday 16 May 2019] [9:00:19 PM IST] <Polaris000>	I mean, the cleaning takes place inside a class and the analysis occurs outside it
+[Thursday 16 May 2019] [9:00:26 PM IST] <Polaris000>	What do you think?
+[Thursday 16 May 2019] [9:00:59 PM IST] <valcos>	It makes sense to have the analysis outside
+[Thursday 16 May 2019] [9:01:05 PM IST] <jgbarah>	We should explore about that, I think
+[Thursday 16 May 2019] [9:01:19 PM IST] <jgbarah>	for clarity, it is better if everything is in the notebook
+[Thursday 16 May 2019] [9:01:43 PM IST] <jgbarah>	for testatility, and reuse, it makes sense to have classes and all that, and then notebooks
+[Thursday 16 May 2019] [9:02:13 PM IST] <jgbarah>	the main idea of notebooks is to explain the implementation, and to have it in a way easy to consult and run at the same time
+[Thursday 16 May 2019] [9:02:36 PM IST] <jgbarah>	But scripts can serve also for all that, and are more easily runnable...
+[Thursday 16 May 2019] [9:02:44 PM IST] <jgbarah>	So, my heart is split... ;-)
+[Thursday 16 May 2019] [9:03:01 PM IST] <Polaris000>	According to that, it would make sense to have the analysis outside, with the main cleaning done inside classes :)
+[Thursday 16 May 2019] [9:03:09 PM IST] <Polaris000>	Same here, @jgbarah :)
+[Thursday 16 May 2019] [9:03:50 PM IST] <jgbarah>	Let's work with some of the implementations, and let's find out choices and effects...
+[Thursday 16 May 2019] [9:04:12 PM IST] <Polaris000>	Good idea @jgbarah!
+[Thursday 16 May 2019] [9:04:30 PM IST] <valcos>	@Polaris000 as an example can we refer to the notebook in microtask6: https://github.com/Polaris000/Chaoss_19_Microtasks/blob/master/microtask6/microtask6.ipynb ?
+[Thursday 16 May 2019] [9:04:44 PM IST] <Polaris000>	Of course @valcos
+[Thursday 16 May 2019] [9:05:09 PM IST] <Polaris000>	So here, there are three main parts
+[Thursday 16 May 2019] [9:05:27 PM IST] <Polaris000>	the first is collecting the data (not in classes and using bash commands)
+[Thursday 16 May 2019] [9:05:39 PM IST] <Polaris000>	the second is cleaning and inside the class
+[Thursday 16 May 2019] [9:05:49 PM IST] <Polaris000>	The analysis is for the most part, outside classes
+[Thursday 16 May 2019] [9:06:02 PM IST] <valcos>	perfect! this notebook looks really clear
+[Thursday 16 May 2019] [9:06:15 PM IST] <Polaris000>	Thanks @valcos. What do you think @jgbarah
+[Thursday 16 May 2019] [9:06:16 PM IST] <Polaris000>	?
+[Thursday 16 May 2019] [9:06:40 PM IST] <jgbarah>	For the scripts to be easily runnable, likely we will start with a JSON file produced by Perceval
+[Thursday 16 May 2019] [9:06:52 PM IST] <jgbarah>	that also make them more reproducible.
+[Thursday 16 May 2019] [9:07:01 PM IST] <jgbarah>	But we can consider other options...
+[Thursday 16 May 2019] [9:07:43 PM IST] <Polaris000>	ok @jgbarah.
+[Thursday 16 May 2019] [9:07:48 PM IST] <jgbarah>	In fact, the list of Perceval dictionaries (one per item) could be the entry to the function doing the analysis,
+[Thursday 16 May 2019] [9:08:03 PM IST] <jgbarah>	and then this is produced either by reading a JSON file, or live from a repo
+[Thursday 16 May 2019] [9:08:24 PM IST] <jgbarah>	I will think about this, now that the start is close!
+[Thursday 16 May 2019] [9:08:42 PM IST] <Polaris000>	Of course, whenever it is convenient for you
+[Thursday 16 May 2019] [9:10:09 PM IST] <jgbarah>	Good!
+[Thursday 16 May 2019] [9:10:17 PM IST] <jgbarah>	Any other topic, Polaris000, valcos?
+[Thursday 16 May 2019] [9:10:32 PM IST] <Polaris000>	If we have finished discussing this, I have another query: when writing documentation for the metrics (like this https://github.com/chaoss/wg-evolution/blob/master/metrics/Code_Changes.md), what exactly does known implementations mean?
+[Thursday 16 May 2019] [9:11:14 PM IST] <Polaris000>	I mean, how can I know if a project has this imlementation?
+[Thursday 16 May 2019] [9:12:14 PM IST] <jgbarah>	Usually that's written by people who knows the projects.
+[Thursday 16 May 2019] [9:12:32 PM IST] <jgbarah>	The mimimum is to note if GrimoireLab and Augur support it
+[Thursday 16 May 2019] [9:12:42 PM IST] <jgbarah>	If there are others, we take note if we know.
+[Thursday 16 May 2019] [9:13:12 PM IST] <jgbarah>	But don't worry about that, that's something that can always be done later, when we learn that a given metric is supported by a given product
+[Thursday 16 May 2019] [9:13:41 PM IST] <Polaris000>	Great, thanks jgbarah!
+[Thursday 16 May 2019] [9:13:59 PM IST] <Polaris000>	Is there anything else left to discuss @valcos jgbarah?
+[Thursday 16 May 2019] [9:14:35 PM IST] <jgbarah>	Not from my side!
+[Thursday 16 May 2019] [9:14:43 PM IST] <Polaris000>	By the way, the experiments repo is created here: https://github.com/Polaris000/GSoC_19_Perceval_Implementations
+[Thursday 16 May 2019] [9:15:18 PM IST] <valcos>	perfect, it can be a good idea to link to the issue in the governance/repo
+[Thursday 16 May 2019] [9:15:22 PM IST] <jgbarah>	ok
+[Thursday 16 May 2019] [9:15:28 PM IST] <Polaris000>	ok, valcos
+[Thursday 16 May 2019] [9:15:46 PM IST] <Polaris000>	ALso, when is the next meeting?
+[Thursday 16 May 2019] [9:16:43 PM IST] <jgbarah>	When were you finishing exams and all that?
+[Thursday 16 May 2019] [9:17:04 PM IST] <Polaris000>	As I mentioned in the email, my exams got over on the 14th of May
+[Thursday 16 May 2019] [9:18:06 PM IST] <valcos>	we can send an email to schedule the next meeting
+[Thursday 16 May 2019] [9:18:20 PM IST] <Polaris000>	Great @valcos. 
+[Thursday 16 May 2019] [9:18:22 PM IST] <jgbarah>	Thenk we could schedule the kick-off meeting for around 23-24. You are supposed to start on 27, if I'm not wrong
+[Thursday 16 May 2019] [9:18:33 PM IST] <Polaris000>	Yes jgbarah
+[Thursday 16 May 2019] [9:18:41 PM IST] <jgbarah>	and I'm going to be traveling during 27-29
+[Thursday 16 May 2019] [9:18:53 PM IST] <Polaris000>	23-24 sounds great!
+[Thursday 16 May 2019] [9:19:00 PM IST] <jgbarah>	But as valcos says, we will discuss, and send you a proposal via email, if that's ok
+[Thursday 16 May 2019] [9:19:07 PM IST] <Polaris000>	thats fine too
+[Thursday 16 May 2019] [9:19:12 PM IST] <jgbarah>	ok
+[Thursday 16 May 2019] [9:19:16 PM IST] <valcos>	perfect!
+[Thursday 16 May 2019] [9:19:39 PM IST] <jgbarah>	Good. You're all good?
+[Thursday 16 May 2019] [9:19:48 PM IST] <Polaris000>	Yes 
+[Thursday 16 May 2019] [9:19:49 PM IST] <valcos>	yes!
+[Thursday 16 May 2019] [9:20:08 PM IST] <jgbarah>	Great. Talk to you next week, then!
+[Thursday 16 May 2019] [9:20:10 PM IST] <jgbarah>	Bye!
+[Thursday 16 May 2019] [9:20:15 PM IST] <valcos>	thank you @Polaris000 @jgbarah
+[Thursday 16 May 2019] [9:20:15 PM IST] <Polaris000>	If you have any feedback, please email me or comment in the issues of my microtasks if required
+[Thursday 16 May 2019] [9:20:17 PM IST] <Polaris000>	https://github.com/Polaris000/Chaoss_19_Microtasks/issues
+[Thursday 16 May 2019] [9:20:24 PM IST] <jgbarah>	ok
+[Thursday 16 May 2019] [9:20:25 PM IST] <Polaris000>	Thanks @valcos @jgbarah
+[Thursday 16 May 2019] [9:20:30 PM IST] <Polaris000>	See you!
+[Thursday 16 May 2019] [9:20:35 PM IST] <valcos>	sure! bye
+[Thursday 16 May 2019] [9:20:41 PM IST] Part	You (~Polaris00@124.123.75.129) have left channel #grimoirelab ("Konversation terminated!").
