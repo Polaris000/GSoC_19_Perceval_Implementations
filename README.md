@@ -8,16 +8,15 @@ This repository tracks the progress of the project Implementing CHAOSS metrics w
 
 ### Structure
 
-.  
-├── blog_links.md  
+.   
 ├── contributions.md  
 ├── IRC_chats  
 │   └── README.md  
 └── README.md  
 
 
-### Blog posts
-Please have a look at blog_links.md for links to related blog posts.
+### Blog posts  
+All GSoC posts can be found [here](https://polaris000.github.io/tags/GSoC).  
 
 
 ### IRC Chats
