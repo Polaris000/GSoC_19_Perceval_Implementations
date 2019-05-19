@@ -28,7 +28,8 @@ The journey began with the microtask submissions. Problem statements can be foun
 
 
 ### Contributions (Post - selection)
-My tangible contributions (in the form of pull requests and issues I have created) will be updated here. For my pre-community bonding period contributions, please have a look at this file. 
+My tangible contributions (in the form of pull requests and issues I have created) will be updated here. For my pre-community bonding period contributions, please have a look at this file.   
 
-
+### Proposal
+My proposal for this project can be found [here](https://docs.google.com/document/d/1i5XCEY_28qE1w8Lsj4ZSqkvZQnElU7vq1F0chBtUxwY/edit#).  
 
