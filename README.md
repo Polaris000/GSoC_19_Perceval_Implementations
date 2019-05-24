@@ -11,12 +11,12 @@ This repository tracks the progress of the project Implementing CHAOSS metrics w
 .   
 ├── contributions.md  
 ├── IRC_chats  
-│   └── README.md  
-└── README.md  
+├── README.md  
+└── Weekly_Work  
 
 
 ### Blog posts  
-All GSoC posts can be found [here](https://polaris000.github.io/tags/GSoC).  
+All GSoC-related posts can be found [here](https://polaris000.github.io/tags/GSoC). I will post on a weekly basis. 
 
 
 ### IRC Chats
@@ -24,11 +24,11 @@ There are frequent and regular interactions with mentors, held via freenode IRC 
 
 
 ### Microtasks
-The journey began with the microtask submissions. Problem statements can be found in the GSoC project issue here while my submissions can be found in [this](https://github.com/Polaris000/Chaoss_19_Microtasks) repository. 
+My journey began with the microtask submissions. Problem statements can be found in the GSoC project issue here while my submissions can be found in [this](https://github.com/Polaris000/Chaoss_19_Microtasks) repository. 
 
 
 ### Contributions (Post - selection)
-My tangible contributions (in the form of pull requests and issues I have created) will be updated here. For my pre-community bonding period contributions, please have a look at this file.   
+My tangible contributions (in the form of pull requests and issues I have created) will be updated [here](./contributions.md). For my pre-community bonding period contributions, please have a look at [this](https://github.com/Polaris000/Chaoss_19_Microtasks/blob/master/contributions.md) file.   
 
 ### Proposal
 My proposal for this project can be found [here](https://docs.google.com/document/d/1i5XCEY_28qE1w8Lsj4ZSqkvZQnElU7vq1F0chBtUxwY/edit#).  
