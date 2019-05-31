@@ -1,0 +1,159 @@
+[4:37:25 PM IST] Join	You (~Polaris00@124.123.75.129) have joined the channel #grimoirelab.
+[4:37:26 PM IST] Mode	Channel modes: no colors allowed, no messages from outside, topic protection
+[4:37:26 PM IST] Created	This channel was created on 28/08/17 10:32 PM.
+[4:37:36 PM IST] <jgbarah>	Thans a lot, inishchith !
+[4:37:50 PM IST] <valcos>	thanks @inishchith!
+[4:37:59 PM IST] <Polaris000>	Hi all!
+[4:38:00 PM IST] <jgbarah>	Polaris000: it seems we're done with inishchith's meeting, so from my side, we could start yours right now
+[4:38:06 PM IST] <inishchith>	You're welcome valcos jgbarah
+[4:38:10 PM IST] <Polaris000>	Great @jgbarah
+[4:38:12 PM IST] <valcos>	Hi Polaris000
+[4:38:14 PM IST] <inishchith>	Hi Aniruddha :) How are you doing
+[4:38:18 PM IST] <aswanipranjal>	I agree with @valcos, good work till now inishchith!
+[4:38:18 PM IST] <Polaris000>	I am great!
+[4:38:23 PM IST] <jgbarah>	(Hi, Polaris000, btw ;-) )
+[4:38:28 PM IST] <aswanipranjal>	Hey Polaris000!
+[4:38:41 PM IST] <Polaris000>	:)
+[4:38:41 PM IST] <inishchith>	aswanipranjal valcos jgbarah : I'll mail the meeting logs to you now
+[4:38:52 PM IST] <jgbarah>	Yes, please, inishchith, thanks!
+[4:38:58 PM IST] <aswanipranjal>	sure, thanks
+[4:39:59 PM IST] <valcos>	yes, please!
+[4:40:20 PM IST] <jgbarah>	inishchith: please CC the grimoirelab mailing list when you send the link to the blog post, and include a link to the logs in that blog post, please
+[4:41:00 PM IST] <jgbarah>	Polaris000: can we start then? ( valcos aswanipranjal: is it good for you to start now? )
+[4:41:10 PM IST] <valcos>	sure @jgbarah
+[4:41:12 PM IST] <inishchith>	sure jgbarah. :)
+[4:41:13 PM IST] <Polaris000>	sure
+[4:41:15 PM IST] <aswanipranjal>	Yes please jgbarah
+[4:41:20 PM IST] <jgbarah>	Great!
+[4:41:47 PM IST] <jgbarah>	Then, fist comment: it would be great, Polaris000, if you can prepare the weekly blog post before the meeting
+[4:42:01 PM IST] <jgbarah>	(or a draft of it), that way we can start up quickly over it
+[4:42:30 PM IST] <Polaris000>	oh.. ok I generally summarize the meeting in a post as well so I put it up after the meeting. Will do it from next time
+[4:43:07 PM IST] <jgbarah>	It is good to have also a summary of the meeting... i see two options: one is that you prepare a post, or a draft, and complete it after the meeeting
+[4:43:28 PM IST] <jgbarah>	The other one is that you prepare two posts, one for before, another one for after the meeting
+[4:43:37 PM IST] <jgbarah>	Whatever you may prefer would fit me ;-)
+[4:43:51 PM IST] <Polaris000>	fine: will do!
+[4:44:05 PM IST] <jgbarah>	But the idea is that we can start with the summary in the post, so that we can go quickly after it ;-)
+[4:44:13 PM IST] <jgbarah>	Thanks!
+[4:44:15 PM IST] <Polaris000>	Yes, got it
+[4:44:52 PM IST] <jgbarah>	Now, could you summarize your work during the week? I saw your notebook, and have some comments, but a short summary would be great
+[4:44:57 PM IST] <Polaris000>	Of course
+[4:45:37 PM IST] <Polaris000>	So my main task for this week was to first create the notebook in my project tracker repo and once it got approved create a pull request in evolution repo
+[4:45:50 PM IST] <Polaris000>	Also , i had to create an issue in evolution regarding this
+[4:46:37 PM IST] <Polaris000>	I had everything above, except for the pull reqeust since the review of the ntoebook was nt complete
+[4:46:48 PM IST] <Polaris000>	I personally also finished most of two other metrics
+[4:46:58 PM IST] <Polaris000>	issue response time and open issue age
+[4:46:59 PM IST] <jgbarah>	Great!
+[4:47:21 PM IST] <Polaris000>	And I also had to create a document in grimoirelab tutorial
+[4:47:27 PM IST] <jgbarah>	First of all, I'm sorry for not being responsive this week. i had some travel, and a broken laptop :-(
+[4:47:37 PM IST] <jgbarah>	I hope to be more responsive from now on.
+[4:47:45 PM IST] <Polaris000>	Thats alright:) It happens to everyone
+[4:47:54 PM IST] <jgbarah>	Let's focus on the notebook
+[4:47:58 PM IST] <Polaris000>	OK
+[4:48:05 PM IST] <Polaris000>	https://github.com/Polaris000/GSoC_19_Perceval_Implementations/blob/master/Weekly_Work/Week0/Code_changes-git/Code_Changes_Git.ipynb
+[4:48:11 PM IST] <Polaris000>	The link ^^^
+[4:48:13 PM IST] <jgbarah>	I find the general structure exactly as what I was envisioning, so thank you very much
+[4:48:21 PM IST] <jgbarah>	Some comments:
+[4:49:08 PM IST] <jgbarah>	* Some parts of the code are potentially reusable, mainly the reading of the JSON file, and the conversion to a pandas df
+[4:49:36 PM IST] <jgbarah>	I suggest to implement that in a root class, and then inherit the metrics classes from it
+[4:50:17 PM IST] <jgbarah>	* Now the implementation is based on Pandas. That's nice, but in some cases it is also overly complex, and simpler data sources could be good enough
+[4:50:45 PM IST] <jgbarah>	So i thought that we can have a reference implementation with Pandas, and another one without it
+[4:52:12 PM IST] <jgbarah>	In the second case, the base data structure instead of a df could be a list of dictionaries, being each dictionary one of the JSON documents produced by Perceval
+[4:52:26 PM IST] <jgbarah>	I think this is most of the comments...
+[4:52:52 PM IST] <jgbarah>	The other ones are related to testing, but for now I'm good with the current approach, we can discuss that later on
+[4:53:11 PM IST] <jgbarah>	What do you think about this, Polaris000 ?
+[4:53:42 PM IST] <Polaris000>	Regarding your comments: I like the idea of inheriting from a root class.
+[4:54:11 PM IST] <Polaris000>	But I don't think I completely agree with the non-pandas approach
+[4:54:37 PM IST] <Polaris000>	Since very small parts of pandas code are very complex, most of the notebook will be redundant
+[4:54:55 PM IST] <Polaris000>	Instead I could focus on better documenting the difficult parts of the pandas code
+[4:55:08 PM IST] <Polaris000>	with a note saying that other data structures are also good alternatives
+[4:55:26 PM IST] <Polaris000>	What do you think?
+[4:56:16 PM IST] <inishchith>	Sorry guys, I got to leave now. Bye Polaris000 valcos jgbarah aswanipranjal :)
+[4:56:25 PM IST] <Polaris000>	Bye inishchith!
+[4:56:41 PM IST] Quit	inishchith (7aaaacf7@gateway/web/freenode/ip.122.170.172.247) has left this server (Quit: Page closed).
+[4:56:42 PM IST] <valcos>	Bye inishchith!
+[4:58:40 PM IST] <aswanipranjal>	@Polaris000, as jgbarah mentioned, you can create 1 implementation with Pandas and 1 without. Since our motive is to easily make the user understand how to use calculate the metrics and not necessarily use pandas as a strong requirement
+[4:58:59 PM IST] Quit	jgbarah (~jgb@163.117.64.8) has left this server (Ping timeout: 268 seconds).
+[4:59:32 PM IST] <valcos>	probably @jgbarah lost the connection
+[5:00:34 PM IST] <Polaris000>	I completely agree aswanipranjal, but not with the idea of creating two notebooks for each metric. THe two notebooks will probably also require different tests
+[5:01:05 PM IST] <valcos>	we can improve the documentation as @Polaris000 was mentioning
+[5:01:11 PM IST] <Polaris000>	If we want two reference implementations, we can go with one approach now and later add the other (after GSoC)
+[5:01:24 PM IST] <valcos>	and we move the discussion of having more implementation on an issue
+[5:01:35 PM IST] <valcos>	implementations
+[5:01:39 PM IST] <Polaris000>	Good idea valcos
+[5:02:03 PM IST] <aswanipranjal>	okay, fair
+[5:02:18 PM IST] <valcos>	cool!
+[5:02:27 PM IST] <Polaris000>	Will jgbarah return?
+[5:03:01 PM IST] <valcos>	I hope so :)
+[5:03:04 PM IST] <aswanipranjal>	Sorry about not completing the review Polaris000, I'll try to finish it tonight
+[5:03:18 PM IST] <Polaris000>	Thats alright aswanipranjal!
+[5:03:30 PM IST] <Polaris000>	Do it whenver convenient
+[5:03:37 PM IST] <aswanipranjal>	thanks
+[5:04:17 PM IST] <valcos>	should we move to the work for next week ?
+[5:04:28 PM IST] <Polaris000>	Yes!
+[5:04:37 PM IST] <aswanipranjal>	yes please
+[5:04:59 PM IST] Join	jgbarah (~jgb@pct-empresas-185.uc3m.es) has joined this channel.
+[5:05:20 PM IST] <jgbarah>	I'm not sure if I'm partitioned away from you
+[5:05:24 PM IST] <jgbarah>	Can you read me?
+[5:05:27 PM IST] <valcos>	hi @jgbarah we were just about to discuss the work for next week
+[5:05:27 PM IST] <Polaris000>	yes
+[5:05:35 PM IST] <valcos>	yes
+[5:05:48 PM IST] <jgbarah>	I'm resending my messages, because it seems you couldn't see them...
+[5:06:00 PM IST] <jgbarah>	So, for this one about having a root class, i suggest that you write a notebook with it, export it as a Python script, and then import it as a module from the other notebooks
+[5:06:10 PM IST] <jgbarah>	That could be task 1 for the next week
+[5:06:19 PM IST] <jgbarah>	That class could have its own tests, based on checking if it reads well the json file and all that
+[5:06:27 PM IST] <jgbarah>	Are you ok with this?
+[5:06:31 PM IST] <Polaris000>	Yes
+[5:06:36 PM IST] <jgbarah>	You could work with this in your own repo, and pr on the wg-evolution when we agree on the notebook for the root class
+[5:06:49 PM IST] <Polaris000>	OK
+[5:06:50 PM IST] <jgbarah>	If you agree, please open an issue for this in the wg-evo repo (please, for all your tickets, in the headline use as a prefix
+[5:07:04 PM IST] <jgbarah>	OK, Polaris000 ?
+[5:07:07 PM IST] <Polaris000>	ok
+[5:07:13 PM IST] <jgbarah>	(btw, thanks aswanipranjal for working with Polaris000 on his notebook)
+[5:07:27 PM IST] <aswanipranjal>	no worries jgbarah :)
+[5:07:29 PM IST] <jgbarah>	That's all I had written ;-)
+[5:07:58 PM IST] <Polaris000>	Once the Code_CHanges notebook is approved, I;ll send the next few implementations as pull reqeusts to evolution too
+[5:08:25 PM IST] <jgbarah>	So, if we agree on task 1, task 2 would be about rewriting Code_Changes notebook
+[5:08:25 PM IST] <Polaris000>	I am working on the others along with the Code_changes metric
+[5:08:35 PM IST] <jgbarah>	using that root class
+[5:08:40 PM IST] <jgbarah>	OK?
+[5:08:41 PM IST] <Polaris000>	ok
+[5:08:57 PM IST] <jgbarah>	And then, we would have writing a version of Code_Chages without using Pandas
+[5:09:17 PM IST] <jgbarah>	(did you see my previous comments about Pandas, or that was also while we were partitioned?)
+[5:09:43 PM IST] <Polaris000>	I saw the previous comments: me and the other mentors agreed to discuss this in an issue later
+[5:12:42 PM IST] <jgbarah>	Good!
+[5:12:52 PM IST] <jgbarah>	Then, we could define task 3 as
+[5:13:01 PM IST] <jgbarah>	producing an implementation without Pandas.
+[5:13:08 PM IST] Quit	_ilias_opensuse (~athanrous@188.117.226.219) has left this server (Quit: Konversation terminated!).
+[5:13:13 PM IST] <jgbarah>	We can later decide if that's a different clasee, or not, or what
+[5:13:25 PM IST] <jgbarah>	ok?
+[5:13:30 PM IST] <Polaris000>	Fair enough
+[5:13:35 PM IST] <jgbarah>	Good!
+[5:13:55 PM IST] <jgbarah>	And then, about testing, I think we could exploit that a bit more. It was  great idea, so let's leverage on it ;-)
+[5:14:02 PM IST] <jgbarah>	But we can talk about that later.
+[5:14:07 PM IST] <Polaris000>	ok
+[5:14:33 PM IST] <jgbarah>	It is also a good thing that you started to work with other metrics, so that it could be task 4 to adapt those to the modifications done in task 1-3
+[5:14:48 PM IST] <Polaris000>	ok
+[5:15:05 PM IST] <jgbarah>	Great!
+[5:15:53 PM IST] <jgbarah>	For each of these tasks, please open one issue in wg-evo...
+[5:16:20 PM IST] <jgbarah>	And for now, work in your own repo, we will move the results later to the wg-evo repo
+[5:16:27 PM IST] <Polaris000>	Great, will do
+[5:16:30 PM IST] <jgbarah>	And I think this is all from my side ,-)
+[5:16:41 PM IST] <jgbarah>	Anything else, by any of you?
+[5:17:15 PM IST] <aswanipranjal>	nothing else from my side jgbarah
+[5:17:23 PM IST] <valcos>	nothing from my side @jgbarah
+[5:17:36 PM IST] <Polaris000>	Nothing from me as of now jgbarah
+[5:18:16 PM IST] <aswanipranjal>	Please produce a log of this meeting Polaris000 and you can send it to the mailing list
+[5:18:33 PM IST] <Polaris000>	Yes, just as usual
+[5:18:47 PM IST] <Polaris000>	Will write a post and share it with you too
+[5:18:54 PM IST] <aswanipranjal>	great!
+[5:19:11 PM IST] <jgbarah>	Great! Thanks a lot!
+[5:19:17 PM IST] <Polaris000>	Thanks all!
+[5:19:22 PM IST] <jgbarah>	Please, link the logs also from the post,
+[5:19:39 PM IST] <jgbarah>	and send the post to the chaoss and grimoirelab mailing lists
+[5:19:47 PM IST] <Polaris000>	Yes, ofcourse
+[5:20:11 PM IST] <valcos>	thanks Polaris000 @jgbarah @aswanipranjal
+[5:20:16 PM IST] <aswanipranjal>	thanks for your time Polaris000
+[5:20:16 PM IST] <aswanipranjal>	thanks jgbarah valcos!
+[5:20:24 PM IST] <Polaris000>	THanks aswanipranjal
+[5:20:52 PM IST] <Polaris000>	See you all next week, same time!
+[5:21:16 PM IST] Part	You (~Polaris00@124.123.75.129) have left channel #grimoirelab ("Konversation terminated!").
