@@ -1,71 +1,11 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/chaoss/wg-gmd/master?filepath=implementations/Code_Changes-Git.ipynb)
-# # Code_Changes-Git
-# 
-# This is the reference implementation for Code_Changes,
-# a metric specified by the
-# [GMD Working Group](https://github.com/chaoss/wg-gmd) of the
-# [CHAOSS project](https://chaoss.community).
-# This implementation is specific to Git repositories.
-# 
-# See [README.md](README.md) to find out how to run this notebook (and others in this directory).
-# 
-# The implementation is described in two parts (see below):
-# 
-# * Retrieving data from the data source
-# * Class for computing Code_Changes
-# 
-# Some more auxiliary information in this notebook:
-# 
-# * Examples of the use of the implementation
-# * Examples of how to check for specific peculiarities of git commits
-
-# ## Retrieving data from the data source
-# 
-# From the command line run Perceval on the git repositories to analyze,
-# to produce a file with JSON documents for all its commits,
-# one per line (`git-commits.json`).
-# 
-# As an example we will use the Perceval, SortingHat, and a fork of SortingHat
-# git repositories:
-# change it to get data from your preferred repositories
-# (for example, you can use `https://github.com/elastic/elasticsearch-docker`
-# or `https://github.com/git/git`):
-# 
-# ```
-# $ perceval git --json-line http://github.com/chaoss/grimoirelab-perceval > git-commits.json
-# [2019-01-28 21:05:45,461] - Sir Perceval is on his quest.
-# [2019-01-28 21:05:48,229] - Fetching commits: 'http://github.com/chaoss/grimoirelab-perceval' git repository from 1970-01-01 00:00:00+00:00 to 2100-01-01 00:00:00+00:00; all branches
-# [2019-01-28 21:05:49,727] - Fetch process completed: 1320 commits fetched
-# [2019-01-28 21:05:49,728] - Sir Perceval completed his quest.
-# $ perceval git --json-line http://github.com/chaoss/grimoirelab-sortinghat >> git-commits.json
-# ...
-# [2019-01-28 21:07:27,169] - Fetch process completed: 635 commits fetched
-# [2019-01-28 21:07:27,169] - Sir Perceval completed his quest.
-# $ perceval git --json-line http://github.com/jgbarah-chaoss/grimoirelab-sortinghat >> git-commits.json
-# ...
-# [2019-01-28 23:58:47,068] - Fetch process completed: 567 commits fetched
-# [2019-01-28 23:58:47,068] - Sir Perceval completed his quest.
-# ```
-
-# ## Class for computing Code_Changes-Git
-# 
-# This implementation uses data retrieved as described above.
-# The implementation is encapsulated in the `Code_Changes` class,
-# which gets all commits for a set of repositories.
-
-# In[328]:
-
-
 import json
 import datetime
-from Commit_class import Commit
+from Commit import Commit
 import pandas as pd
 import matplotlib.pyplot as plt
+import utils
 
-class Code_Changes(Commit):
+class Code_Changes_Git(Commit):
     """Class for Code_Changes for Git repositories.
     
     Objects are instantiated by specifying a file with the
@@ -216,5 +156,5 @@ class Code_Changes(Commit):
 
 
 if __name__ == "__main__":
-    changes = Code_Changes('../Week0/Code_changes-git/git-commits.json')
+    changes = Code_Changes_Git('../Week0/Code_changes-git/git-commits.json')
     print(changes.compute_timeseries("month", True))
