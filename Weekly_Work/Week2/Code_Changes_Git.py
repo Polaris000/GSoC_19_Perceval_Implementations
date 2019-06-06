@@ -22,8 +22,8 @@ class Code_Changes_Git(Commit):
         For files without a standard ".xyz" extension, like LICENCE or AUTHORS, the "others" 
         extension is used. 
         
-        :param since: Period start
-        :param until: Period end
+        :param path: Path to file with one Perceval JSON document per line
+        :param date_range: A tuple which represents the start and end date of interest
         :param source_code_exclude_list: Files extensions to exclude. For example, 
             source_code_exclude_list = ["py", "other", "gitignore"]
         """
@@ -47,7 +47,6 @@ class Code_Changes_Git(Commit):
         :param master_only: Include only commits made on master branch
         """
         count_per_repo = dict()
-        
         for repo_url in self.repo_urls:
             df = self.df[self.df['repo'] == repo_url]
             

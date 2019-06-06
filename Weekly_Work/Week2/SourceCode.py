@@ -3,32 +3,73 @@ import utils
 
 class SourceCode:
 
-	def __init__(self):
-		pass
-
-	# The methods below will pertain to other methods of determining the condition
-	# for source code: like excluding the tests/ directory for example.
-
-	def x():
-		pass
-
-	def y():
+	def __init__(self, df):
 		pass
 
 	@staticmethod
-	def _is_source_code(commit, source_code_exclude_list):
+	def is_source_code(commit, source_code_exclude_list=None, method="naive"):
 		"""
 		Given a commit structure, which is a dictionary returned by the _summary function, 
 		and given a list of files to exclude using source_code_exclude_list while instantiating 
 		an object, decide whether all the files in a commit are to be excluded or not
 		
 		:param commit: a commit structure, returned by the _summary method.
+		:param source_code_exclude_list: a list of either file extensions or directories to exclude
+		:param method: a string which can be "naive", "folder_exclude" or "extension_exclude"
+		"""
+		options_dict = {
+			"naive": SourceCode._naive_implementation,
+			"folder_exclude": SourceCode._folder_exclude_implementation,
+			"extension_exclude": SourceCode._extension_exclude_implementation
+		}
+
+		return options_dict[method](commit, source_code_exclude_list)
+
+	@staticmethod
+	def _naive_implementation(commit, source_code_exclude_list):
+		"""
+		This implementation is naive, meaning that is assumes that 
+		all the files a commit deal with are part of the source code, 
+		irrespective of how the source code is defined.
+
+		:param commit: a commit structure, returned by the _summary method.
+		:param source_code_exclude_list: a list of either file extensions or directories to exclude
+		"""
+		return True	
+
+	@staticmethod
+	def _folder_exclude_implementation(commit, source_code_exclude_list):
+		"""
+		This implementation is based on the directory a file is present in, like "tests/" or 
+		"bin/". If all the files affected by a commit are present in directories which are mentioned 
+		source_code_exclude_list, that commit will not be considered for analysis.
+
+		:param commit: a commit structure, returned by the _summary method.
+		:param source_code_exclude_list: a list of either file extensions or directories to exclude		
+		"""
+		for file in commit['files']:
+			if not any(file['file'].startswith(path) for path in source_code_exclude_list):
+				return True
+		return False
+
+	@staticmethod
+	def _extension_exclude_implementation(commit, source_code_exclude_list):
+		"""
+		This implementation is based on the extensions of the files involved in a commit, 
+		like "py", "json", etc.
+		If all the files affected by a commit have extensions which are present in the 
+		source_code_exclude_list parameter, that commit will not be considered for the
+		analysis.
+
+		:param commit: a commit structure, returned by the _summary method.
+		:param source_code_exclude_list: a list of either file extensions or directories to exclude
 		"""
 		extension_set = set()
 		for file in commit['files']:
 			extension_set.add(SourceCode._get_extension(file))
 
-		if source_code_exclude_list is None or len(extension_set.difference(source_code_exclude_list)) > 0:
+		if source_code_exclude_list is None 	\
+						or len(extension_set.difference(source_code_exclude_list)) > 0:
 			return True
 		return False
 	

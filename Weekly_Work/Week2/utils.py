@@ -54,6 +54,6 @@ def read_JSON_file(path):
     with open(path, 'r') as raw_data:
         for line in raw_data:
             line = json.loads(line)
-            data_list.append(line)
 
+            data_list.append(line)
     return data_list

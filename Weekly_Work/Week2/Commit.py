@@ -21,29 +21,26 @@ class Commit(Metric):
         :param source_code_exclude_list: Files extensions to exclude. For example, 
             source_code_exclude_list = ["py", "other", "gitignore"]
         """
-    
         
         data_list = utils.read_JSON_file(path)
         
         super().__init__(data_list)
 
-        raw_data_list = self.raw_df.to_dict(orient='records')
         clean_data_list = list()
         self.repo_urls = set()
-
         self.source_code_exclude_list = source_code_exclude_list
         self.since = date_range[0]
         self.until = date_range[1]
 
-        for commit in raw_data_list:
+        for line in self.raw_df.iterrows():
+            commit = line[1].to_dict()
+            
             self.repo_urls.add(commit['origin'])
             commit = self._clean_commit(commit)
-            if SourceCode._is_source_code(commit, self.source_code_exclude_list):
+            if SourceCode.is_source_code(commit, self.source_code_exclude_list, "naive"):
                 clean_data_list.append(commit)
 
         self.df = pd.DataFrame(clean_data_list)
-
-
         if self.since:
             for df in self.clean_dict.values():
                 df = df[df['created_date'] >= utils.str_to_dt_other(self.since)]
@@ -65,29 +62,28 @@ class Commit(Metric):
         :param line: a raw line fetched by Perceval, present in the JSON file
             It is a dictionary.
         """
-        cdata = line['data']
-        print(cdata)
         cleaned_line =  \
         {
             'repo': line['origin'],
-            'hash': cdata['commit'],
-            'author': cdata['Author'],
+            'hash': line['data_commit'],
+            'author': line['data_Author'],
             'category': "commit",
-            'created_date': utils.str_to_dt_data(cdata['AuthorDate']),
-            'commit': cdata['Commit'],
-            'commit_date': utils.str_to_dt_data(cdata['CommitDate']),
-            'files_no': len(cdata['files']),
-            'refs': cdata['refs'],
-            'parents': cdata['parents'],
-            'files': cdata['files']
+            'created_date': utils.str_to_dt_data(line['data_AuthorDate']),
+            'commit': line['data_Commit'],
+            'commit_date': utils.str_to_dt_data(line['data_CommitDate']),
+            'files_no': len(line['data_files']),
+            'refs': line['data_refs'],
+            'parents': line['data_parents'],
+            'files': line['data_files']
         }
 
         actions = 0
-        for file in cdata['files']:
+        for file in line['data_files']:
             if 'action' in file:
                 actions += 1
         cleaned_line['files_action'] = actions
-        if 'Merge' in cdata:
+
+        if 'data_Merge' in line:
             cleaned_line['merge'] = True
         else:
             cleaned_line['merge'] = False
