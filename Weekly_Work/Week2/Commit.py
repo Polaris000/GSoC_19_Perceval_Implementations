@@ -8,7 +8,7 @@ from SourceCode import SourceCode
 
 class Commit(Metric):
 
-    def __init__(self, path, date_range=(None, None), source_code_exclude_list=None):
+    def __init__(self, data_list, date_range=(None, None), source_code_obj=None):
         """
         Initilizes self.df, the dataframe with one commit per row.
         The source_code_exclude_list parameter is a list which contains file extensions
@@ -16,28 +16,22 @@ class Commit(Metric):
         For files without a standard ".xyz" extension, like LICENCE or AUTHORS, the "others" 
         extension is used. 
         
-        :param path: Path to file with one Perceval JSON document per line
+        :param data_list: A list of dictionaries, each element a line from the JSON file
         :param date_range: A tuple which represents the start and end date of interest
-        :param source_code_exclude_list: Files extensions to exclude. For example, 
-            source_code_exclude_list = ["py", "other", "gitignore"]
+        :param source_code_obj: An object of SourceCode, to be used to determine what comprises
+            source code.
         """
-        
-        data_list = utils.read_JSON_file(path)
-        
+                
         super().__init__(data_list)
 
         clean_data_list = list()
-        self.repo_urls = set()
-        self.source_code_exclude_list = source_code_exclude_list
         self.since = date_range[0]
         self.until = date_range[1]
 
         for line in self.raw_df.iterrows():
             commit = line[1].to_dict()
-            
-            self.repo_urls.add(commit['origin'])
             commit = self._clean_commit(commit)
-            if SourceCode.is_source_code(commit, self.source_code_exclude_list, "naive"):
+            if source_code_obj is None or source_code_obj.is_source_code(commit):
                 clean_data_list.append(commit)
 
         self.df = pd.DataFrame(clean_data_list)
