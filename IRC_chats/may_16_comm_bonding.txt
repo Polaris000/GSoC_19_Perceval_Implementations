@@ -1,139 +1,172 @@
-[8:24:07 PM IST] Join	You (~Polaris00@124.123.75.129) have joined the channel #grimoirelab.
-[8:25:56 PM IST] <Polaris000>	Hey @valcos! The scheduled meeting starts in about 5 minutes. We can wait till aswanipranjal, jgbarah and inischith join
-[8:26:21 PM IST] <valcos>	Hi @Polaris000, sure
-[8:26:27 PM IST] <valcos>	let's wait some minutes, thanks!
-[8:26:40 PM IST] <Polaris000>	Of course!
-[8:36:20 PM IST] Join	jgbarah (~jgb@187.red-88-1-22.dynamicip.rima-tde.net) has joined this channel.
-[8:36:28 PM IST] <Polaris000>	Hi @jgbarah!
-[8:36:33 PM IST] <jgbarah>	Hi all, sorry for being late!
-[8:36:38 PM IST] <valcos>	Hi @jgbarah
-[8:36:41 PM IST] <valcos>	no worries
-[8:37:58 PM IST] <valcos>	@Polaris000 @jgbarah shall we start ?
-[8:38:12 PM IST] <valcos>	(maybe Pranjal and Inishchith will join later)
-[8:38:18 PM IST] <jgbarah>	Yes, please
-[8:38:21 PM IST] <Polaris000>	Yes
-[8:39:03 PM IST] <valcos>	The idea of this meeting is to check a bit the coordination means, answer your questions, and (if needed) schedule activities during the community bounding period
-[8:39:21 PM IST] <Polaris000>	ok
-[8:39:55 PM IST] <valcos>	WRT coordination, you should have received the draft of the guidelines
-[8:40:07 PM IST] <Polaris000>	yes, i went through that
-[8:40:22 PM IST] <valcos>	what do you think about it ?
-[8:41:22 PM IST] <Polaris000>	I think its a great idea, which would ensure good coordination and management: the tuesday -friday series seems ok
-[8:41:54 PM IST] <Polaris000>	I already have a blog and I recently added tagging feature to it
-[8:42:16 PM IST] <Polaris000>	I also wrote a blog post regarding my experience upto the community bonding period
-[8:42:27 PM IST] <valcos>	great!
-[8:42:35 PM IST] <Polaris000>	Thanks @valcos
-[8:43:10 PM IST] <Polaris000>	I had a doubt regaring the sub task issue creation
-[8:43:30 PM IST] <Polaris000>	But we can address that at the end
-[8:44:14 PM IST] <Polaris000>	I also created the repository for experimentation and although it is empty, I will populate it soon
-[8:44:43 PM IST] <valcos>	which is your doubt about the sub task ?
-[8:45:48 PM IST] <Polaris000>	Do we discuss the creation of sub tasks or is that completely my choice, based on what I have mentioned in the timeline of my proposal?
-[8:46:09 PM IST] <jgbarah>	Good progress, Polaris000! We will tell you where to create links to all of this...
-[8:46:20 PM IST] <Polaris000>	Thanks @jgbarah!
-[8:46:36 PM IST] <jgbarah>	i think we can start to discuss details and subtasks when we're closer to the working period...
-[8:46:54 PM IST] <Polaris000>	of course!
-[8:47:00 PM IST] <jgbarah>	Or do you think it is important for you to start with that already for any reason?
-[8:47:39 PM IST] <Polaris000>	Though I don't have any specific reason, I just thought the earlier the better.
-[8:47:44 PM IST] <Polaris000>	I am ok either way
-[8:48:02 PM IST] <Polaris000>	We could start it later if thats ok with everyone
-[8:49:51 PM IST] <valcos>	maybe we can discuss about it in the next meeting, however feel free to start thinking about how to organize the subtasks
-[8:50:00 PM IST] <valcos>	wrt the blog you mentioned before
-[8:50:14 PM IST] <valcos>	it could be linked to an issue in the chaoss/governance repo
-[8:50:29 PM IST] <valcos>	so there is a way to access it from chaoss
-[8:50:56 PM IST] <Polaris000>	So I post the links to my posts there?
-[8:51:48 PM IST] <Polaris000>	That sounds ok. Georg mentioned on inischith's issue that putting the link on the mailing list would be a good idea
-[8:51:56 PM IST] <Polaris000>	I am ok with either, or both
-[8:52:12 PM IST] <valcos>	Yes, maybe the issue body could mention the comunication channels and a link to your blog. Then, you could link the blogposts as issue comment
-[8:52:27 PM IST] <valcos>	*comments
-[8:52:28 PM IST] <Polaris000>	ok @valcos
-[8:53:12 PM IST] <valcos>	-> Georg mentioned on inischith's issue that putting the link on the mailing list would be a good idea, that's perfect
-[8:53:44 PM IST] <valcos>	As a general rule, after all meetings, please get a copy of the log of the meeting, and add it to the corresponding blog post.
-[8:54:20 PM IST] <valcos>	In this way we can have everything linked together
-[8:54:33 PM IST] <valcos>	what do you think ?
-[8:54:36 PM IST] <Polaris000>	Wouldn't it be better to add the logs to my experiment repo?
-[8:55:12 PM IST] <Polaris000>	Since there will be bi-weekly meets
-[8:55:17 PM IST] <Polaris000>	and only weekly posts
-[8:55:50 PM IST] <valcos>	it sounds ok to me
-[8:56:32 PM IST] <valcos>	what do you think @jgbarah ?
-[8:56:56 PM IST] <Polaris000>	If its ok, i'll link the log (present in my repo) of the first meeting of the week with a post
-[8:57:03 PM IST] <jgbarah>	yes, that's ok with me
-[8:57:05 PM IST] <Polaris000>	And not link the second meet
-[8:57:19 PM IST] <jgbarah>	we can adjust as time passes and we see how it works, anyway
-[8:57:23 PM IST] <Polaris000>	Or I could update the post later with both links
-[8:57:31 PM IST] <Polaris000>	Fine @jgbarah
-[8:57:48 PM IST] <valcos>	perfect, yes let's start and see
-[8:57:48 PM IST] <Polaris000>	I'll do that
-[8:58:05 PM IST] <jgbarah>	Great. Anything else you want to discuss?
-[8:58:14 PM IST] <Polaris000>	Yes
-[8:58:51 PM IST] <Polaris000>	Regarding the structure of reference implementations
-[8:59:44 PM IST] <Polaris000>	Should the structure be completely enclosed inside classes? Or can it be more open (like the code changes implementation present in wg-evolution repo)>
-[9:00:19 PM IST] <Polaris000>	I mean, the cleaning takes place inside a class and the analysis occurs outside it
-[9:00:26 PM IST] <Polaris000>	What do you think?
-[9:00:59 PM IST] <valcos>	It makes sense to have the analysis outside
-[9:01:05 PM IST] <jgbarah>	We should explore about that, I think
-[9:01:19 PM IST] <jgbarah>	for clarity, it is better if everything is in the notebook
-[9:01:43 PM IST] <jgbarah>	for testatility, and reuse, it makes sense to have classes and all that, and then notebooks
-[9:02:13 PM IST] <jgbarah>	the main idea of notebooks is to explain the implementation, and to have it in a way easy to consult and run at the same time
-[9:02:36 PM IST] <jgbarah>	But scripts can serve also for all that, and are more easily runnable...
-[9:02:44 PM IST] <jgbarah>	So, my heart is split... ;-)
-[9:03:01 PM IST] <Polaris000>	According to that, it would make sense to have the analysis outside, with the main cleaning done inside classes :)
-[9:03:09 PM IST] <Polaris000>	Same here, @jgbarah :)
-[9:03:50 PM IST] <jgbarah>	Let's work with some of the implementations, and let's find out choices and effects...
-[9:04:12 PM IST] <Polaris000>	Good idea @jgbarah!
-[9:04:30 PM IST] <valcos>	@Polaris000 as an example can we refer to the notebook in microtask6: https://github.com/Polaris000/Chaoss_19_Microtasks/blob/master/microtask6/microtask6.ipynb ?
-[9:04:44 PM IST] <Polaris000>	Of course @valcos
-[9:05:09 PM IST] <Polaris000>	So here, there are three main parts
-[9:05:27 PM IST] <Polaris000>	the first is collecting the data (not in classes and using bash commands)
-[9:05:39 PM IST] <Polaris000>	the second is cleaning and inside the class
-[9:05:49 PM IST] <Polaris000>	The analysis is for the most part, outside classes
-[9:06:02 PM IST] <valcos>	perfect! this notebook looks really clear
-[9:06:15 PM IST] <Polaris000>	Thanks @valcos. What do you think @jgbarah
-[9:06:16 PM IST] <Polaris000>	?
-[9:06:40 PM IST] <jgbarah>	For the scripts to be easily runnable, likely we will start with a JSON file produced by Perceval
-[9:06:52 PM IST] <jgbarah>	that also make them more reproducible.
-[9:07:01 PM IST] <jgbarah>	But we can consider other options...
-[9:07:43 PM IST] <Polaris000>	ok @jgbarah.
-[9:07:48 PM IST] <jgbarah>	In fact, the list of Perceval dictionaries (one per item) could be the entry to the function doing the analysis,
-[9:08:03 PM IST] <jgbarah>	and then this is produced either by reading a JSON file, or live from a repo
-[9:08:24 PM IST] <jgbarah>	I will think about this, now that the start is close!
-[9:08:42 PM IST] <Polaris000>	Of course, whenever it is convenient for you
-[9:10:09 PM IST] <jgbarah>	Good!
-[9:10:17 PM IST] <jgbarah>	Any other topic, Polaris000, valcos?
-[9:10:32 PM IST] <Polaris000>	If we have finished discussing this, I have another query: when writing documentation for the metrics (like this https://github.com/chaoss/wg-evolution/blob/master/metrics/Code_Changes.md), what exactly does known implementations mean?
-[9:11:14 PM IST] <Polaris000>	I mean, how can I know if a project has this imlementation?
-[9:12:14 PM IST] <jgbarah>	Usually that's written by people who knows the projects.
-[9:12:32 PM IST] <jgbarah>	The mimimum is to note if GrimoireLab and Augur support it
-[9:12:42 PM IST] <jgbarah>	If there are others, we take note if we know.
-[9:13:12 PM IST] <jgbarah>	But don't worry about that, that's something that can always be done later, when we learn that a given metric is supported by a given product
-[9:13:41 PM IST] <Polaris000>	Great, thanks jgbarah!
-[9:13:59 PM IST] <Polaris000>	Is there anything else left to discuss @valcos jgbarah?
-[9:14:35 PM IST] <jgbarah>	Not from my side!
-[9:14:43 PM IST] <Polaris000>	By the way, the experiments repo is created here: https://github.com/Polaris000/GSoC_19_Perceval_Implementations
-[9:15:18 PM IST] <valcos>	perfect, it can be a good idea to link to the issue in the governance/repo
-[9:15:22 PM IST] <jgbarah>	ok
-[9:15:28 PM IST] <Polaris000>	ok, valcos
-[9:15:46 PM IST] <Polaris000>	ALso, when is the next meeting?
-[9:16:43 PM IST] <jgbarah>	When were you finishing exams and all that?
-[9:17:04 PM IST] <Polaris000>	As I mentioned in the email, my exams got over on the 14th of May
-[9:18:06 PM IST] <valcos>	we can send an email to schedule the next meeting
-[9:18:20 PM IST] <Polaris000>	Great @valcos.
-[9:18:22 PM IST] <jgbarah>	Thenk we could schedule the kick-off meeting for around 23-24. You are supposed to start on 27, if I'm not wrong
-[9:18:33 PM IST] <Polaris000>	Yes jgbarah
-[9:18:41 PM IST] <jgbarah>	and I'm going to be traveling during 27-29
-[9:18:53 PM IST] <Polaris000>	23-24 sounds great!
-[9:19:00 PM IST] <jgbarah>	But as valcos says, we will discuss, and send you a proposal via email, if that's ok
-[9:19:07 PM IST] <Polaris000>	thats fine too
-[9:19:12 PM IST] <jgbarah>	ok
-[9:19:16 PM IST] <valcos>	perfect!
-[9:19:39 PM IST] <jgbarah>	Good. You're all good?
-[9:19:48 PM IST] <Polaris000>	Yes
-[9:19:49 PM IST] <valcos>	yes!
-[9:20:08 PM IST] <jgbarah>	Great. Talk to you next week, then!
-[9:20:10 PM IST] <jgbarah>	Bye!
-[9:20:15 PM IST] <valcos>	thank you @Polaris000 @jgbarah
-[9:20:15 PM IST] <Polaris000>	If you have any feedback, please email me or comment in the issues of my microtasks if required
-[9:20:17 PM IST] <Polaris000>	https://github.com/Polaris000/Chaoss_19_Microtasks/issues
-[9:20:24 PM IST] <jgbarah>	ok
-[9:20:25 PM IST] <Polaris000>	Thanks @valcos @jgbarah
-[9:20:30 PM IST] <Polaris000>	See you!
-[9:20:35 PM IST] <valcos>	sure! bye
-[9:20:41 PM IST] Part	You (~Polaris00@124.123.75.129) have left channel #grimoirelab ("Konversation terminated!").
+Date: Monday 29 April 2019
+Participants: ron, Polaris000, valcos, jgbarah, aswanipranjal
+Start_Time: 1:00:37 PM IST
+End_Time: 2:12:22 PM IST
+------------------------------------------------------------------------------
+
+[1:00:37 PM IST] Join	You (~Polaris00@106.207.137.87) have joined the channel #grimoirelab.
+[1:00:38 PM IST] Mode	Channel modes: no colors allowed, no messages from outside, topic protection
+[1:00:38 PM IST] Created	This channel was created on 28/08/17 10:32 PM.
+[1:00:47 PM IST] Join	satyag (~satyag@unaffiliated/satyag) has joined this channel.
+[Monday 29 April 2019] [1:01:45 PM IST] <valcos>	Hi @Polaris000
+[Monday 29 April 2019] [1:01:49 PM IST] <Polaris000>	My irc interview was scheduled here
+[Monday 29 April 2019] [1:01:56 PM IST] <Polaris000>	Hi @valeriocos
+[Monday 29 April 2019] [1:01:58 PM IST] <valcos>	how are you ?
+[Monday 29 April 2019] [1:01:58 PM IST] <jgbarah>	Hi Polaris000!
+[Monday 29 April 2019] [1:02:08 PM IST] <Polaris000>	I am fine, thank you!
+[Monday 29 April 2019] [1:02:14 PM IST] <Polaris000>	How are you?
+[Monday 29 April 2019] [1:02:27 PM IST] <valcos>	I'm fine too, thanks!
+[Monday 29 April 2019] [1:02:54 PM IST] <valcos>	@jgbarah, @Polaris000, shall we start with the interview ?
+[Monday 29 April 2019] [1:03:02 PM IST] <jgbarah>	aswanipranjal may be joining us later, but I think we can start
+[Monday 29 April 2019] [1:03:06 PM IST] <Polaris000>	Of course
+[Monday 29 April 2019] [1:03:19 PM IST] <valcos>	Ok, perfect
+[Monday 29 April 2019] [1:03:41 PM IST] <valcos>	@Polaris000 can you please explain in one sentence, why it would be a good idea to work on this project with us?
+[Monday 29 April 2019] [1:04:17 PM IST] <Polaris000>	It is a good idea since this project resonates with my love for data analytics and documentation
+[1:05:40 PM IST] Join	aswanipranjal_ (uid293292@gateway/web/irccloud.com/x-qftjszubpbdohsaq) has joined this channel.
+[Monday 29 April 2019] [1:05:41 PM IST] <valcos>	did you look for other similar projects before focusing on this one ?
+[Monday 29 April 2019] [1:05:58 PM IST] <aswanipranjal_>	Hi all, sorry for being late.
+[Monday 29 April 2019] [1:06:00 PM IST] <valcos>	Hi @aswanipranjal
+[Monday 29 April 2019] [1:06:05 PM IST] <Polaris000>	Just one, its called yt, way back in January
+[Monday 29 April 2019] [1:06:19 PM IST] <valcos>	no worries, we've just started
+[Monday 29 April 2019] [1:06:25 PM IST] <Polaris000>	But I liked the slightly smaller more close knit community here
+[Monday 29 April 2019] [1:06:43 PM IST] <Polaris000>	Hi @aswanipranjal_
+[Monday 29 April 2019] [1:06:53 PM IST] <aswanipranjal_>	Hey @Polaris000, @valcos
+[Monday 29 April 2019] [1:06:57 PM IST] <aswanipranjal_>	please continue
+[Monday 29 April 2019] [1:07:00 PM IST] <ron>	o/
+[Monday 29 April 2019] [1:07:21 PM IST] <valcos>	OK @aswanipranjal
+[Monday 29 April 2019] [1:07:59 PM IST] <jgbarah>	Hi, aswanipranjal_!
+[Monday 29 April 2019] [1:08:10 PM IST] <aswanipranjal_>	Hey @jgbarah!
+[Monday 29 April 2019] [1:08:26 PM IST] <valcos>	@Polaris000 how was your experience working with Perceval, Python and in general with CHAOSS ?
+[Monday 29 April 2019] [1:09:44 PM IST] <Polaris000>	As mentioned before, I love the tightly knit community, where no one is lost in the crowd. I found the community to be very welcoming. I love the help and tips maintainers give to improve my patch submissions while at the same time making me understand where I was going wrong
+[Monday 29 April 2019] [1:10:21 PM IST] <Polaris000>	The idea of using data analytics to describe abstract concepts like metrics resonated with me
+[Monday 29 April 2019] [1:11:01 PM IST] <valcos>	perfect!
+[Monday 29 April 2019] [1:11:44 PM IST] <valcos>	what about your previous experiences with python notebooks and data analytics ?
+[Monday 29 April 2019] [1:13:19 PM IST] <Polaris000>	I started diving into data analytics in December 2017, with pandas, numpy and matlotlib. Over the next few months I started machine learning. In the summer of 2018, I interned at a DeepLearning startup where I worked to clean data and organize it. Throughout this time, almost all my code has been written in jupyter notebooks
+[Monday 29 April 2019] [1:14:15 PM IST] <valcos>	interesting
+[Monday 29 April 2019] [1:14:37 PM IST] <Polaris000>	I have conducted workshops in college as well
+[Monday 29 April 2019] [1:15:23 PM IST] <valcos>	how was the experience of organizing/conducting workshops ?
+[Monday 29 April 2019] [1:15:56 PM IST] <ron>	are the people behind CHAOSS mostly european?
+[Monday 29 April 2019] [1:17:03 PM IST] <Polaris000>	I loved the experience of standing on the other side of the podium for a change. The best way to learn in my opinion is to teach someone. Along with my techinal skills and experience, it helped develop my soft skills 
+[Monday 29 April 2019] [1:17:13 PM IST] <jgbarah>	ron: nope, many are from US too
+[Monday 29 April 2019] [1:17:56 PM IST] <valcos>	yes I agree with you @Polaris000
+[Monday 29 April 2019] [1:18:00 PM IST] <ron>	jgbarah: oh cool. haven't seen the channel active in US time unfortunately.
+[Monday 29 April 2019] [1:18:14 PM IST] <ron>	and right now I'm in a more european time zone.
+[Monday 29 April 2019] [1:18:26 PM IST] <valcos>	let's move the focus to your project @Polaris000
+[Monday 29 April 2019] [1:18:34 PM IST] <Polaris000>	of course, @valcos
+[Monday 29 April 2019] [1:18:48 PM IST] <valcos>	Have you thought about a plan on how to execute the project ?
+[Monday 29 April 2019] [1:19:17 PM IST] <jgbarah>	ron: maybe CHAOSS people from US/Canada tend to use IRC less...
+[Monday 29 April 2019] [1:19:33 PM IST] <ron>	jgbarah: maybe the don't like me ;)
+[Monday 29 April 2019] [1:19:39 PM IST] <ron>	they*
+[Monday 29 April 2019] [1:20:09 PM IST] <jgbarah>	ron: we're running an interview with Polaris000 now, so I'm sorry I cannot engage in conversation now ;-)
+[Monday 29 April 2019] [1:20:44 PM IST] <Polaris000>	I have summarized it in my proposal. The thing about metrics is that they are quite dynamic and definitions and use cases may change.  The project as a whole seems to be quite straight forward, but several developments may arise based on what seems appropriate to the community
+[Monday 29 April 2019] [1:20:53 PM IST] <ron>	oh damn, sorry, didn't mean to interrupt! Will keep quiet :)
+[Monday 29 April 2019] [1:21:15 PM IST] <Polaris000>	Thus, as of now my goal is to follow the timeline as mentioned in my proposal
+[Monday 29 April 2019] [1:21:38 PM IST] <jgbarah>	No problem, ron, only that I won't answer a lot ,-)
+[Monday 29 April 2019] [1:22:05 PM IST] <Polaris000>	For each metric, a similar set of steps will be followed
+[Monday 29 April 2019] [1:22:23 PM IST] <Polaris000>	create the reference implementation, followed by adding documentation
+[Monday 29 April 2019] [1:22:35 PM IST] <valcos>	yes, it sounds reasonable @Polaris000
+[Monday 29 April 2019] [1:22:37 PM IST] <ron>	(I actually have a bunch of newbie questions about the project, as we just recently started playing with it, so if anyone has time later on for a bit of a q&a, please ping me)
+[Monday 29 April 2019] [1:22:52 PM IST] <Polaris000>	Thankyou @valcos
+[Monday 29 April 2019] [1:23:21 PM IST] <valcos>	have you ever worked on a project as long as/longer than this one ?
+[Monday 29 April 2019] [1:24:49 PM IST] <Polaris000>	Unfortunately, I have not done any data analytics projects of this scale before, but I have done backend web development in Python several times before in projects of similar scale
+[Monday 29 April 2019] [1:25:16 PM IST] <Polaris000>	I am a part of two technical clubs where this has been possible
+[Monday 29 April 2019] [1:25:37 PM IST] <Polaris000>	I hope to learn new things through this venture
+[Monday 29 April 2019] [1:25:53 PM IST] <jgbarah>	Polaris000: maybe you can elaborate a bit more on your participation in those tech clubs?
+[Monday 29 April 2019] [1:26:47 PM IST] <jgbarah>	(ron, if the timeframe around 12:30 CEST is ok with you, verly likely I well be available by then)
+[Monday 29 April 2019] [1:27:37 PM IST] <ron>	jgbarah: thanks. I may be away around that time, but should be back no long after.
+[Monday 29 April 2019] [1:28:01 PM IST] <Polaris000>	Of course, @jgbarah! I work in two departments there: backend development with django and machine learning and data analytics. For backend, we generally build websites for fests at the university as well as fix bugs in administrative websites. In the machine learning department, we conduct workshops, talks and make predications on data
+[Monday 29 April 2019] [1:28:48 PM IST] <jgbarah>	ron, ok, very likely I will be around until 14:30, ping me if you see me aroundª
+[Monday 29 April 2019] [1:29:16 PM IST] <Polaris000>	My team is currently very interested in Perceval
+[Monday 29 April 2019] [1:29:28 PM IST] <jgbarah>	Thanks, Polaris000! What role do you have in those clubs?
+[Monday 29 April 2019] [1:31:11 PM IST] <Polaris000>	Though there are no technical positions of power at my club (just administrative, which only third years and above can get), I am a part of almost all projects in those departments and I have led several
+[Monday 29 April 2019] [1:31:29 PM IST] <Polaris000>	I organize workshops and presentations for machine learning and data science
+[Monday 29 April 2019] [1:32:27 PM IST] <jgbarah>	Cool! Thanks, Polaris000!
+[Monday 29 April 2019] [1:32:37 PM IST] <Polaris000>	No problem @jgbarah!
+[Monday 29 April 2019] [1:33:32 PM IST] <valcos>	@Polaris000 have you ever worked remotely ?
+[Monday 29 April 2019] [1:34:53 PM IST] <Polaris000>	Well, my internship was not remote. But the work we do at technical clubs mainly happens during the semester breaks and during holidays. Thus, we work on github and use slack for communication. I am currently trying to encourage them to try out IRC
+[Monday 29 April 2019] [1:35:17 PM IST] <Polaris000>	Though its not going to well...
+[Monday 29 April 2019] [1:35:29 PM IST] <valcos>	why ?
+[Monday 29 April 2019] [1:35:56 PM IST] <Polaris000>	They are more used to slack, with its more comfortable UI 
+[Monday 29 April 2019] [1:36:04 PM IST] <Polaris000>	Its more "modern"
+[Monday 29 April 2019] [1:36:23 PM IST] <Polaris000>	Thus, I have a good command over git, github and slack communication
+[Monday 29 April 2019] [1:36:54 PM IST] <Polaris000>	Just to clarify, I meant convincing them to use IRC isnt going to well
+[Monday 29 April 2019] [1:37:03 PM IST] <Polaris000>	Not the actual work
+[Monday 29 April 2019] [1:37:47 PM IST] <Polaris000>	Sorry for the miscommunication, @valcos!
+[Monday 29 April 2019] [1:37:52 PM IST] <jgbarah>	Interesting ,-)
+[Monday 29 April 2019] [1:38:15 PM IST] <valcos>	no worries :) the sync meetings for this project will rely on IRC (probably this same chanel)
+[Monday 29 April 2019] [1:38:18 PM IST] <jgbarah>	with irc, it depends a lot on the UI you want to use, but I understand what you mean
+[Monday 29 April 2019] [1:38:48 PM IST] <Polaris000>	@valcos, I have no problems with IRC. 
+[Monday 29 April 2019] [1:38:57 PM IST] <valcos>	perfect! :)
+[Monday 29 April 2019] [1:39:42 PM IST] <valcos>	(I confess that I like slack, but IRC does a pretty good job :))
+[Monday 29 April 2019] [1:39:56 PM IST] <Polaris000>	Haha!, same here!
+[Monday 29 April 2019] [1:40:12 PM IST] <valcos>	We are discussing internally about extending this idea to include metrics from other work groups as well. How comfortable will you be there?
+[Monday 29 April 2019] [1:41:02 PM IST] <jgbarah>	valcos Polaris000 aswanipranjal_ I have to leave now. I will read the full log later. Thanks for your time, Polaris000!
+[Monday 29 April 2019] [1:41:18 PM IST] <valcos>	OK @jgbarah, bye!
+[Monday 29 April 2019] [1:41:22 PM IST] <Polaris000>	Thanks for your time@jgbarah!
+[Monday 29 April 2019] [1:41:38 PM IST] <aswanipranjal_>	Sure @jgbarah, bye!
+[Monday 29 April 2019] [1:42:58 PM IST] <Polaris000>	That would depend on the kind of metrics to be implemented. Since I have not specifically accounted for metrics in the other working groups (I have left out buffer weeks). I do not have any problem including them, but it will require more thought. I am open to the idea
+[Monday 29 April 2019] [1:43:42 PM IST] <Polaris000>	It will definitely improve uniformity and allow for the better development of Perceval
+[Monday 29 April 2019] [1:44:33 PM IST] <valcos>	perfect! the reason of this question is due to the fact that if we extend the idea to other working groups, we might select another student to work on this project
+[Monday 29 April 2019] [1:44:42 PM IST] <aswanipranjal_>	You probably won't be doing this alone, we might select anothre student to work along side you. How comfortable will you be with that?
+[Monday 29 April 2019] [1:45:43 PM IST] <Polaris000>	I am perfectly fine working individually as well as with another candidate. I am open to the idea
+[Monday 29 April 2019] [1:45:53 PM IST] <Polaris000>	of working on other metrics
+[Monday 29 April 2019] [1:46:50 PM IST] <valcos>	Have you ever worked together with other students/colleagues for other projects ? If so, which role(s) did you have ?
+[Monday 29 April 2019] [1:49:35 PM IST] <Polaris000>	Technical clubs: I am the unofficial expert of git at my clubs (if I can say so myself). I contribute extensively in my club projects. Since I study computer science, I have several technical group assignments which we work on together. When it comes to a role, I would say I am good at laying out a plan and implementing it efficiently
+[Monday 29 April 2019] [1:50:02 PM IST] <Polaris000>	Also, at my internship, I worked with several other people there
+[Monday 29 April 2019] [1:50:17 PM IST] <Polaris000>	Thus, I am used to working with people as well as individually
+[Monday 29 April 2019] [1:50:32 PM IST] <valcos>	Perfect! thank you for answering @Polaris000
+[Monday 29 April 2019] [1:50:43 PM IST] <Polaris000>	No problem @valcos!
+[Monday 29 April 2019] [1:51:43 PM IST] <valcos>	The interview is almost done :) some more questions and it will be over
+[Monday 29 April 2019] [1:52:14 PM IST] <valcos>	Do you have any pre-engagments during summer ?
+[Monday 29 April 2019] [1:52:52 PM IST] <valcos>	do you see any possible problems coming up during the project?
+[Monday 29 April 2019] [1:55:37 PM IST] <Polaris000>	I do not have any internships / jobs over the summer. I am volunteering at a company (unpaid) where for about 4-5 hours a week (not day), I will work on a simple project for about 3 weeks. Since this is voluntary, I can leave at any time and focus on GSOC. I have kept GSOC as a top priority for the summer and 5 hours a week will not be a problem
+[Monday 29 April 2019] [1:55:57 PM IST] <valcos>	perfect!
+[Monday 29 April 2019] [1:56:29 PM IST] <valcos>	To match with the schedule of @jgbarah @aswanipranjal and @valcos, we plan to schedule the GSoC meetings between 9-14 CEST (thats 12:30pm - 7:30pm IST), will that be fine with you?
+[Monday 29 April 2019] [1:57:00 PM IST] <Polaris000>	I don't think I can predict any problems coming up over the summer. I am free anyway, am not going out on holiday and I feel I have the required skills to work on this project
+[Monday 29 April 2019] [1:58:01 PM IST] <valcos>	that's good to hear this (motivation is always welcomed)!
+[Monday 29 April 2019] [1:59:19 PM IST] <Polaris000>	The timings are fine, but if possible, it would be great if we could meet after 5;00pm (IST)
+[Monday 29 April 2019] [1:59:43 PM IST] <valcos>	I think it won't be any problem
+[Monday 29 April 2019] [2:00:04 PM IST] <Polaris000>	Thanks @valcos!
+[Monday 29 April 2019] [2:00:22 PM IST] <valcos>	thank you @Polaris000, @aswanipranjal do you have some questions for @Polaris000 ?
+[Monday 29 April 2019] [2:01:28 PM IST] <aswanipranjal_>	No @valcos I don't have any. Thanks @Polaris000
+[Monday 29 April 2019] [2:01:32 PM IST] <aswanipranjal_>	Do you have any questions for us.
+[Monday 29 April 2019] [2:01:34 PM IST] <aswanipranjal_>	?
+[Monday 29 April 2019] [2:02:36 PM IST] <Polaris000>	None, as of now! 
+[Monday 29 April 2019] [2:02:47 PM IST] <Polaris000>	I hope I can contact you if I have any
+[Monday 29 April 2019] [2:02:51 PM IST] <Polaris000>	later
+[Monday 29 April 2019] [2:02:57 PM IST] <aswanipranjal_>	Definitely
+[Monday 29 April 2019] [2:03:00 PM IST] <valcos>	sure @Polaris000
+[Monday 29 April 2019] [2:03:15 PM IST] <Polaris000>	Thanks @valcos
+[Monday 29 April 2019] [2:03:23 PM IST] <Polaris000>	@aswanipranjal_
+[Monday 29 April 2019] [2:03:34 PM IST] <valcos>	final question wrt your experience with contributing to CHAOSS
+[Monday 29 April 2019] [2:04:01 PM IST] <valcos>	do you have any feedback or comments about things we should improve ?
+[Monday 29 April 2019] [2:05:31 PM IST] <Polaris000>	Overall, I found of submitting patches and contributing to be very comfortable. The only thing I think we can improve upon would be a bit more consistency, especially when it comes to the metrics. 
+[Monday 29 April 2019] [2:06:03 PM IST] <Polaris000>	I know this is a work in progress
+[Monday 29 April 2019] [2:06:19 PM IST] <Polaris000>	But I think this is where we can improve the most
+[Monday 29 April 2019] [2:06:36 PM IST] <valcos>	totally agree! thank you for the feedback @Polaris000
+[Monday 29 April 2019] [2:06:52 PM IST] <aswanipranjal_>	Consistency as in defining specifics of the metrics @Polaris000 ?
+[Monday 29 April 2019] [2:07:01 PM IST] <Polaris000>	Yes @aswanipranjal_
+[Monday 29 April 2019] [2:07:17 PM IST] <aswanipranjal_>	got it, thanks for the feedback!
+[Monday 29 April 2019] [2:07:19 PM IST] <Polaris000>	Some metric definitions overlap (many have been fixed)
+[Monday 29 April 2019] [2:07:24 PM IST] <Polaris000>	but they may still exist
+[Monday 29 April 2019] [2:07:43 PM IST] <Polaris000>	The concept of weekly community calls will definitely help
+[Monday 29 April 2019] [2:07:45 PM IST] <aswanipranjal_>	Can you tell us which company are you volunteering for (just out of curiosity)?
+[Monday 29 April 2019] [2:07:57 PM IST] <Polaris000>	Of course,
+[Monday 29 April 2019] [2:08:19 PM IST] <Polaris000>	It is a government run company called e-governance
+[Monday 29 April 2019] [2:08:48 PM IST] <Polaris000>	They have simple projects like web development
+[Monday 29 April 2019] [2:08:48 PM IST] <aswanipranjal_>	Oh, cool!
+[Monday 29 April 2019] [2:08:53 PM IST] <Polaris000>	documentation
+[Monday 29 April 2019] [2:08:54 PM IST] <Polaris000>	etc.
+[Monday 29 April 2019] [2:09:14 PM IST] <aswanipranjal_>	Thanks for the info @po
+[Monday 29 April 2019] [2:09:18 PM IST] <aswanipranjal_>	@Polaris000
+[Monday 29 April 2019] [2:09:25 PM IST] <Polaris000>	No problem, @aswanipranjal_
+[Monday 29 April 2019] [2:10:07 PM IST] <valcos>	Thank you for your time @Polaris000, if everybody agrees we can conclude the interview
+[Monday 29 April 2019] [2:10:38 PM IST] <aswanipranjal_>	yeah, thanks for your time @Polaris000, @valcos
+[Monday 29 April 2019] [2:11:03 PM IST] <Polaris000>	I had a great time here. Thanks @valcos @aswanipranjal_
+[Monday 29 April 2019] [2:12:00 PM IST] <valcos>	I had too, thank you @Polaris000 and @aswanipranjal
+[Monday 29 April 2019] [2:12:06 PM IST] <valcos>	bye!
+[Monday 29 April 2019] [2:12:07 PM IST] <Polaris000>	If there isn't anything else, can I leave the channel? 
+[Monday 29 April 2019] [2:12:16 PM IST] <valcos>	yes, sure!
+[Monday 29 April 2019] [2:12:19 PM IST] <Polaris000>	Bye @valcos @aswanipranjal_
+[Monday 29 April 2019] [2:12:20 PM IST] <Polaris000>	Thanks
+[2:12:22 PM IST] Part	You (~Polaris00@106.207.137.87) have left channel #grimoirelab ("Konversation terminated!").

@@ -1,0 +1,149 @@
+Date: Friday 7 June 2019
+Participants: aswanipranjal, jgbarah, inishchith, valcos, Polaris000
+Start_Time: 4:36:15 PM IST
+End_Time: 5:26:46 PM IST
+------------------------------------------------------------------------------
+
+[4:36:15 PM IST] Join	You (~Polaris00@124.123.75.129) have joined the channel #grimoirelab.
+[4:36:16 PM IST] Mode	Channel modes: no colors allowed, no messages from outside, topic protection
+[4:36:16 PM IST] Created	This channel was created on 28/08/17 10:32 PM.
+[Friday 7 June 2019] [4:36:47 PM IST] <aswanipranjal>	This could work Nishchith, this way we will have complete implementations
+[Friday 7 June 2019] [4:37:30 PM IST] <aswanipranjal>	And after the first backend, the others can follow the same flow as the first
+[Friday 7 June 2019] [4:37:30 PM IST] <inishchith>	Yes. @aswanipranjal, that was exactly the thought :)
+[Friday 7 June 2019] [4:38:21 PM IST] <inishchith>	Yes!. It would become easier and after going back, we could make improvements accordingly (if any)
+[Friday 7 June 2019] [4:38:39 PM IST] <aswanipranjal>	Correct
+[Friday 7 June 2019] [4:39:09 PM IST] <inishchith>	BTW. Hi Polaris000 :)
+[Friday 7 June 2019] [4:39:18 PM IST] <Polaris000>	Hi all, did n't want to interrupt
+[4:39:29 PM IST] Join	jgbarah (~jgb@193.147.77.6) has joined this channel.
+[Friday 7 June 2019] [4:39:40 PM IST] <Polaris000>	Hi jgbarah!
+[Friday 7 June 2019] [4:39:42 PM IST] <aswanipranjal>	Hey Polaris000, it's okay!
+[Friday 7 June 2019] [4:39:55 PM IST] <inishchith>	Hi jgbarah!
+[Friday 7 June 2019] [4:39:59 PM IST] <Polaris000>	Thanks aswanipranjal
+[Friday 7 June 2019] [4:40:11 PM IST] <aswanipranjal>	Hey jgbarah!
+[Friday 7 June 2019] [4:40:20 PM IST] <jgbarah>	Hi all!
+[Friday 7 June 2019] [4:40:56 PM IST] <jgbarah>	I'm sorry, today I have a busy day, with some unexpected meetings, but I'll try to stay aware of our stuff here, and participate in it
+[Friday 7 June 2019] [4:41:14 PM IST] <Polaris000>	No problem @jgbarah!
+[Friday 7 June 2019] [4:42:23 PM IST] <inishchith>	No worries jgbarah!.
+[Friday 7 June 2019] [4:42:27 PM IST] <aswanipranjal>	@valcos, should we finish the meeting with Nishchith?
+[Friday 7 June 2019] [4:42:42 PM IST] <inishchith>	valcos: what do you think of above proposed idea?
+[Friday 7 June 2019] [4:45:30 PM IST] <jgbarah>	Polaris000: while valcos answers, if aswanipranjal agrees, we can start our meeting
+[4:45:31 PM IST] Whois	valcos is ~valcos@pct-empresas-136.uc3m.es (realname)
+[4:45:31 PM IST] Whois	valcos is a user on channels: #grimoirelab
+[4:45:31 PM IST] Whois	valcos is online via niven.freenode.net (London, UK, EU).
+[4:45:31 PM IST] Whois	valcos is using a secure connection.
+[4:45:31 PM IST] Whois	valcos has been idle for 10 minutes and 51 seconds.
+[4:45:31 PM IST] Whois	valcos has been online since 07/06/19 1:41 PM.
+[4:45:31 PM IST] Whois	End of WHOIS list.
+[Friday 7 June 2019] [4:45:42 PM IST] <aswanipranjal>	sure @jgbarah
+[Friday 7 June 2019] [4:45:44 PM IST] <Polaris000>	Fine by me
+[Friday 7 June 2019] [4:46:02 PM IST] <jgbarah>	Great!
+[Friday 7 June 2019] [4:46:05 PM IST] <Polaris000>	Did you all get the document I sent?
+[Friday 7 June 2019] [4:48:06 PM IST] <aswanipranjal>	@Polaris000 were you able to write a blogpost for this week's tasks?
+[Friday 7 June 2019] [4:48:28 PM IST] <Polaris000>	I wrote a document and sent it to all of you
+[Friday 7 June 2019] [4:48:38 PM IST] <Polaris000>	I will later incorporate it in today's post
+[Friday 7 June 2019] [4:48:48 PM IST] <aswanipranjal>	Okay, the HTML document?
+[Friday 7 June 2019] [4:48:50 PM IST] <jgbarah>	I'm looking through it right now
+[Friday 7 June 2019] [4:48:51 PM IST] <Polaris000>	Yeah
+[Friday 7 June 2019] [4:49:01 PM IST] <jgbarah>	Just a second...
+[Friday 7 June 2019] [4:50:35 PM IST] <jgbarah>	OK, thanks for the summary, Polaris000.
+[Friday 7 June 2019] [4:50:42 PM IST] <jgbarah>	I basically agree with it.
+[Friday 7 June 2019] [4:50:53 PM IST] <valcos>	sorry @inishchith @aswanipranjal
+[Friday 7 June 2019] [4:51:01 PM IST] <jgbarah>	I think we're almost done with the root class for computing metrics with dataframes.
+[Friday 7 June 2019] [4:51:35 PM IST] <jgbarah>	I think the first thing would be to finish the implementation of the first metric using this class (well, a child of it)
+[Friday 7 June 2019] [4:52:03 PM IST] <aswanipranjal>	I agree with Jesus
+[Friday 7 June 2019] [4:52:04 PM IST] <jgbarah>	Maybe it is close to that with the code you may have written today, which I still couldn't review
+[Friday 7 June 2019] [4:52:30 PM IST] <Polaris000>	It is updated with the patch I sent today
+[Friday 7 June 2019] [4:52:45 PM IST] <jgbarah>	So, in short, let's focus on that first metric, if it would need further work after today
+[Friday 7 June 2019] [4:52:50 PM IST] <Polaris000>	ok
+[Friday 7 June 2019] [4:52:58 PM IST] <inishchith>	sorry to interrupt . valcos: did you see my message (above). I think we stopped there!
+[Friday 7 June 2019] [4:53:09 PM IST] <jgbarah>	The other short-term focus should be the hierarchy of classes with plain Python.
+[Friday 7 June 2019] [4:54:04 PM IST] <jgbarah>	I see in your summary that you feel there is not enough info for you to work on this, am I right Polaris000?
+[Friday 7 June 2019] [4:54:41 PM IST] <Polaris000>	A little, the instructions and ideas were a bit vague
+[Friday 7 June 2019] [4:55:07 PM IST] <Polaris000>	The main problem was probably the amount of time it took
+[Friday 7 June 2019] [4:57:04 PM IST] <Polaris000>	Currently, the heirarchy is like so: Root -> Commit -> Metric class
+[Friday 7 June 2019] [4:57:21 PM IST] <jgbarah>	Yes,
+[Friday 7 June 2019] [4:57:34 PM IST] <valcos>	yes @inishchith I agree with your proposal
+[Friday 7 June 2019] [4:57:36 PM IST] <jgbarah>	but I'm still not sure we have enought knowledge to write Commit
+[4:57:40 PM IST] Quit	valcos (~valcos@pct-empresas-136.uc3m.es) has left this server (Quit: Leaving).
+[4:57:49 PM IST] Join	valcos (~valcos@pct-empresas-136.uc3m.es) has joined this channel.
+[Friday 7 June 2019] [4:58:11 PM IST] <jgbarah>	I'm sure we'll find reusable code, but still I'm not sure the best approach for that
+[Friday 7 June 2019] [4:58:27 PM IST] <jgbarah>	However, if you prefer to work that way, that's fine with me
+[Friday 7 June 2019] [4:58:40 PM IST] <inishchith>	@valcos @jgbarah @aswanipranjal i'll share the meeting log with you now
+[Friday 7 June 2019] [4:58:41 PM IST] <jgbarah>	However, try to keep each class minimal
+[Friday 7 June 2019] [4:58:52 PM IST] <aswanipranjal>	okay, thanks @inishchith!
+[Friday 7 June 2019] [4:58:53 PM IST] <jgbarah>	(thanks, inishchith!!)
+[Friday 7 June 2019] [4:58:57 PM IST] <inishchith>	Bye! everyone!
+[Friday 7 June 2019] [4:59:00 PM IST] <Polaris000>	Bye!
+[Friday 7 June 2019] [4:59:01 PM IST] <valcos>	Thanks @inishchith, bye
+[4:59:12 PM IST] Quit	inishchith (7aaaacf7@gateway/web/freenode/ip.122.170.172.247) has left this server (Quit: Page closed).
+[Friday 7 June 2019] [4:59:50 PM IST] <Polaris000>	jgbarah: I would prefer to start working on the metrics. If you have any other concerns regarding the structure, please let me know
+[Friday 7 June 2019] [4:59:55 PM IST] <Polaris000>	And I'll change it
+[Friday 7 June 2019] [4:59:58 PM IST] <jgbarah>	Polaris000: when wiriting the code, at least in first iterations, try to make it as simple as possible,
+[Friday 7 June 2019] [5:00:19 PM IST] <jgbarah>	because the main reason to write rerference implementations is that they are easy to follow
+[Friday 7 June 2019] [5:00:42 PM IST] <Polaris000>	Sure jgbarah
+[Friday 7 June 2019] [5:00:42 PM IST] <jgbarah>	then, if we find we need to make them more complex, we can do that, to addess corner cases, or whatever
+[Friday 7 June 2019] [5:01:41 PM IST] <jgbarah>	OK, let's work as you propose:
+[Friday 7 June 2019] [5:02:12 PM IST] <jgbarah>	* For the dataframe structure, I see your work of today, let's try to have one metric complete, and at that point you'll pr on the wgevolution repo
+[Friday 7 June 2019] [5:02:39 PM IST] <jgbarah>	Then, in that line, you can start with the other metrics, one by one, in separate prs, all on the evolution repo
+[Friday 7 June 2019] [5:02:53 PM IST] <aswanipranjal>	@Polaris000 I am not sure I understand completely the heirarchy that you are going to follow. Can you elaborate on that a little? (I am sorry if I've missed the changes you've done today, I haven't looked at them yet)
+[Friday 7 June 2019] [5:03:05 PM IST] <jgbarah>	If possible, try to have not more than 2-3 prs pending, to avoid doing a lot of rework if we find issues that affet to all of them
+[Friday 7 June 2019] [5:04:21 PM IST] <Polaris000>	ok @jgbarah: I had a query regarding the analysis: for the notebook, should there be further analysis after the class? (Like me explaining the analysis)
+[Friday 7 June 2019] [5:04:26 PM IST] <Polaris000>	That seems to be a good idea
+[Friday 7 June 2019] [5:04:27 PM IST] <jgbarah>	* For the plain-python classes, we still need to work in your repo, Polaris000, until we settle in the structure
+[Friday 7 June 2019] [5:04:54 PM IST] <jgbarah>	(please, Polaris000, address aswanipranjal comment, and then I take your question ,-) )
+[Friday 7 June 2019] [5:05:15 PM IST] <Polaris000>	of course
+[Friday 7 June 2019] [5:05:50 PM IST] <Polaris000>	My structure (current implementation): A root class which converts the data list to a dataframe by flattening it
+[Friday 7 June 2019] [5:05:54 PM IST] <Polaris000>	A commit class
+[Friday 7 June 2019] [5:06:33 PM IST] <Polaris000>	Which cleans the data, makes sense of the time period (since, until), and source code condition
+[Friday 7 June 2019] [5:06:47 PM IST] <Polaris000>	ANd a metric class, which just computes the metric
+[Friday 7 June 2019] [5:06:56 PM IST] <Polaris000>	With compute() and compute_timeseries()
+[Friday 7 June 2019] [5:07:07 PM IST] <jgbarah>	aswanipranjal: that commit class is the one I'm still not sure about, but we can try, and see how it allows for the reuse of the code...
+[Friday 7 June 2019] [5:07:11 PM IST] <aswanipranjal>	Okay, so the Metric class inherits from the Commit class?
+[Friday 7 June 2019] [5:07:15 PM IST] <Polaris000>	Yeah
+[Friday 7 June 2019] [5:07:23 PM IST] <jgbarah>	But from my side, let's wait and see...
+[Friday 7 June 2019] [5:07:34 PM IST] <aswanipranjal>	So we will have classes for the different data sources that Perceval has?
+[Friday 7 June 2019] [5:07:35 PM IST] <jgbarah>	(with the approach that Polaris000 proposes, I mean)
+[Friday 7 June 2019] [5:07:48 PM IST] <Polaris000>	Yes @aswanipranjal
+[Friday 7 June 2019] [5:08:07 PM IST] <aswanipranjal>	Okay @jgbarah, this approach might also work out. Thanks for explaining this @Polaris000!
+[Friday 7 June 2019] [5:08:16 PM IST] <Polaris000>	No problem aswanipranjal!
+[Friday 7 June 2019] [5:08:37 PM IST] <Polaris000>	Can you come up with any other problems with this approach as of now?
+[Friday 7 June 2019] [5:08:50 PM IST] <jgbarah>	WRT to your query on notebooks (and the overall structure of the implementations)
+[Friday 7 June 2019] [5:09:36 PM IST] <jgbarah>	I think that we will have a notebook for each module (eg: Root, Commit, MetricX classes, each in a module and therefore in a notebook)
+[Friday 7 June 2019] [5:10:12 PM IST] <jgbarah>	MetricX notebook would include the class *and* code showing how the class is used to compute the metric, on the sample JSON file
+[Friday 7 June 2019] [5:10:49 PM IST] <jgbarah>	And then, we will have tests, using unittest (not a notebook), for writing simple tests shwoing that the numbers that the clases compute
+[Friday 7 June 2019] [5:11:04 PM IST] <jgbarah>	are like thesy should be, when used on the sample JSON file
+[Friday 7 June 2019] [5:11:35 PM IST] <aswanipranjal>	> Can you come up with any other problems with this approach as of now?
+[Friday 7 June 2019] [5:11:36 PM IST] <aswanipranjal>	At the moment, I am not sure @Polaris000. I'll let you know if I think of any
+[Friday 7 June 2019] [5:12:01 PM IST] <aswanipranjal>	+1 jgbarah
+[Friday 7 June 2019] [5:12:13 PM IST] <jgbarah>	Of course, in the repo we will have also the .py files produced from the notebooks
+[Friday 7 June 2019] [5:12:21 PM IST] <Polaris000>	Where will the tests go in wg-evolution?
+[Friday 7 June 2019] [5:12:38 PM IST] <Polaris000>	A separate folder of pure python files inside implementations?
+[Friday 7 June 2019] [5:13:38 PM IST] <Polaris000>	No problem aswanipranjal!
+[Friday 7 June 2019] [5:15:18 PM IST] <aswanipranjal>	implementations folder can have a scripts folder which can contain the python files. In a similar structure as how the notebooks will be structured. What do you think @jgbarah?
+[Friday 7 June 2019] [5:16:03 PM IST] <Polaris000>	And a notebooks/ folder, and a tests/ folder
+[Friday 7 June 2019] [5:16:04 PM IST] <Polaris000>	?
+[Friday 7 June 2019] [5:16:36 PM IST] <aswanipranjal>	Yeah, that could be one approach
+[Friday 7 June 2019] [5:17:31 PM IST] <jgbarah>	For now, maybe notebooks could go directly in the implementations repo
+[Friday 7 June 2019] [5:18:14 PM IST] <jgbarah>	Just to simplifythe structure
+[Friday 7 June 2019] [5:19:06 PM IST] <jgbarah>	But maybe at some point it makes sense to move them to /notebooks, and just explain that in a readme file
+[Friday 7 June 2019] [5:19:18 PM IST] <jgbarah>	OK to all then?
+[Friday 7 June 2019] [5:19:34 PM IST] <jgbarah>	Polaris000: do you think priorities and schema are clear enough?
+[Friday 7 June 2019] [5:19:47 PM IST] <Polaris000>	And the tests and scripts?
+[Friday 7 June 2019] [5:19:47 PM IST] <aswanipranjal>	Works @jgbarah
+[Friday 7 June 2019] [5:20:12 PM IST] <Polaris000>	Where do they go?
+[Friday 7 June 2019] [5:21:46 PM IST] <Polaris000>	@jgbarah: definitely more clear! It wasn't a problem of priorities, but one regarding the exact schema. Thanks for your prompt reviews!!
+[Friday 7 June 2019] [5:22:05 PM IST] <jgbarah>	tests, in /tests, scripts in /code (for example)
+[Friday 7 June 2019] [5:22:16 PM IST] <Polaris000>	Ok @jgbarah!
+[Friday 7 June 2019] [5:24:00 PM IST] <jgbarah>	Great!
+[Friday 7 June 2019] [5:24:04 PM IST] <jgbarah>	Something else?
+[Friday 7 June 2019] [5:24:24 PM IST] <Polaris000>	Nothing as of now!
+[Friday 7 June 2019] [5:24:35 PM IST] <valcos>	Nothing from my side
+[Friday 7 June 2019] [5:25:37 PM IST] <jgbarah>	Great! then we're done
+[Friday 7 June 2019] [5:25:54 PM IST] <jgbarah>	See you all in the reviews, and then in our meeting next Friday!
+[Friday 7 June 2019] [5:25:56 PM IST] <jgbarah>	Bye!
+[Friday 7 June 2019] [5:25:58 PM IST] <aswanipranjal>	Nothing from my side as well
+[Friday 7 June 2019] [5:26:11 PM IST] <Polaris000>	Bye all!
+[Friday 7 June 2019] [5:26:12 PM IST] <aswanipranjal>	Bye! thanks for your time @Polaris000, @jgbarah, @valcos !
+[Friday 7 June 2019] [5:26:33 PM IST] <valcos>	Bye, thanks @Polaris000, @jgbarah, @aswanipranjal
+[5:26:40 PM IST] Quit	valcos (~valcos@pct-empresas-136.uc3m.es) has left this server (Quit: Leaving).
+[5:26:46 PM IST] Part	You (~Polaris00@124.123.75.129) have left channel #grimoirelab ("Konversation terminated!").

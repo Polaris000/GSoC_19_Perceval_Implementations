@@ -1,221 +1,227 @@
+Date: Friday 24 May 2019
+Participants: Polaris000, jgbarah, valcos, aswanipranjal
+Start_Time: 5:24:21 PM IST
+End_Time: 6:24:31 PM IST
+------------------------------------------------------------------------------
+
 [5:24:21 PM IST] Join	You (~Polaris00@124.123.75.129) have joined the channel #grimoirelab.
 [5:24:21 PM IST] Mode	Channel modes: no colors allowed, no messages from outside, topic protection
 [5:24:21 PM IST] Created	This channel was created on 28/08/17 10:32 PM.
-[5:24:37 PM IST] <Polaris000>	Hi @jgbarah and @aswanipranjal_
-[5:26:16 PM IST] <Polaris000>	I think the scheduled meeting starts in about 5 mins
-[5:29:33 PM IST] <jgbarah>	Yes Polaris000!!
-[5:29:53 PM IST] <jgbarah>	I think valcos very likely cannot join today
-[5:30:22 PM IST] <jgbarah>	So, we can start as soon as you two ( Polaris000 and aswanipranjal_ ) are ready
-[5:31:26 PM IST] <Polaris000>	ok
-[5:32:31 PM IST] <Polaris000>	Can we start @aswanipranjal_??
-[5:33:13 PM IST] <aswanipranjal	_>	Hey @Polaris000 , @jgbarah !
-[5:33:16 PM IST] <aswanipranjal	_>	sorry for the delay
-[5:33:17 PM IST] <aswanipranjal	_>	please start
-[5:34:14 PM IST] <jgbarah>	Great!
-[5:34:30 PM IST] <jgbarah>	For today, I would like to talk mainly about two topics:
-[5:34:59 PM IST] <jgbarah>	- Fixing a weekly slot for coordination
-[5:35:17 PM IST] <jgbarah>	- Defining the work for the first week
-[5:35:25 PM IST] <jgbarah>	Anything else you would like to discuss?
-[5:35:37 PM IST] <Polaris000>	Lets first discuss these points
-[5:35:47 PM IST] <Polaris000>	I'll ask something later if I need to
-[5:35:55 PM IST] <Polaris000>	Nothing specific as of now
-[5:36:16 PM IST] <Polaris000>	Is that alright?
-[5:36:30 PM IST] <aswanipranjal	_>	okay @Polaris000
-[5:36:49 PM IST] <jgbarah>	ok
-[5:37:14 PM IST] <Polaris000>	Regarding a weekly slot
-[5:37:15 PM IST] <aswanipranjal	_>	Nishchits suggested that we do the weekly meetings on Friday, as a end of the week discussion on what happened and if there were any blockers
-[5:37:27 PM IST] <aswanipranjal	_>	Will you be comfortable with that?
-[5:37:32 PM IST] <jgbarah>	WRT the first one, there is a proposal for having the meeting on Friday morning, by Nishchith
-[5:37:36 PM IST] <aswanipranjal	_>	Nishchith*
-[5:37:40 PM IST] <Polaris000>	I am fine with the day
-[5:37:43 PM IST] <jgbarah>	ok, that's it ;-)
-[5:37:52 PM IST] <jgbarah>	Good!
-[5:38:04 PM IST] <Polaris000>	But it would be great if the timing would be after 14 hrs CEST
-[5:38:06 PM IST] <jgbarah>	What about starting a joint session at about 13:00?
-[5:38:37 PM IST] <jgbarah>	My problem with 14:00 CEST is that usually I would need to leave at about 15:00,
-[5:38:54 PM IST] <jgbarah>	and during July and August, very likely that won't work for me...
-[5:38:54 PM IST] <Polaris000>	What about some other day?
-[5:39:17 PM IST] <jgbarah>	You have specific problems on Friday at this time of the day, Polaris000 ?
-[5:39:32 PM IST] <aswanipranjal	_>	If you don't mind me asking this @Polaris000, do you have any preengagements on Friday at this time?
-[5:39:54 PM IST] <Polaris000>	Not always, like I mentioned my voluntary work takes place a few hours a week
-[5:40:04 PM IST] <Polaris000>	generally during the afternoon
-[5:40:08 PM IST] <Polaris000>	IST
-[5:40:11 PM IST] <jgbarah>	In any case, I don't have a special interest for Fridays.
-[5:40:23 PM IST] <Polaris000>	I would n't want to be late for a meeting
-[5:40:32 PM IST] <jgbarah>	i was asking just to know whether Friday, earlier, could work
-[5:40:53 PM IST] <aswanipranjal	_>	Having both the meetings on Friday would be convenient
-[5:40:57 PM IST] <jgbarah>	I'm usually available since 9:00 CEST (I think that's 12:30 IST, right?)
-[5:41:05 PM IST] <aswanipranjal	_>	what other day suites your timings @Polaris000?
-[5:41:13 PM IST] <aswanipranjal	_>	Correct @jgbarah
-[5:41:20 PM IST] <Polaris000>	any day is fine
-[5:41:34 PM IST] <Polaris000>	It would be better if meetings starting around 2 pm CEST
-[5:41:38 PM IST] <jgbarah>	If we cannot have both meeting on Fri, we can try on Thurs., but my hourly restrictions are going to be similar...
-[5:42:09 PM IST] <aswanipranjal	_>	@Polaris000, you'd prefer if the meetings are at or after 14:00 CEST, correct?
-[5:42:14 PM IST] <Polaris000>	yes
-[5:42:22 PM IST] <jgbarah>	Polaris000: my problem is no with the day of the week, but with the timing
-[5:42:57 PM IST] <aswanipranjal	_>	can you schedule the voulenteering work till 4:30, only on Friday @Polaris000 >
-[5:42:58 PM IST] <aswanipranjal	_>	?
-[5:43:24 PM IST] <Polaris000>	yes, I can make a request, which would be most likely accepted
-[5:43:35 PM IST] <jgbarah>	I would prefer to have both meetings at the same time, and we could schedule yours at 14:00 CEST,
-[5:43:45 PM IST] <aswanipranjal	_>	If that is the case, then please try to do that
-[5:43:59 PM IST] <Polaris000>	Definitely @aswanipranjal_
-[5:44:02 PM IST] <jgbarah>	but that still has the problem that during July and August, likely that's not going to work for me
-[5:44:16 PM IST] <aswanipranjal	_>	@jgbarah
-[5:44:24 PM IST] <jgbarah>	Thanks for the arrangement, Polaris000 aswanipranjal_!
-[5:44:51 PM IST] <aswanipranjal	_>	if @Polaris000 can try to get free by 13:00 on Fridays, we can have a joint meeting with Nishchith and him
-[5:45:00 PM IST] <aswanipranjal	_>	sounds good?
-[5:45:16 PM IST] <jgbarah>	Then, can we set for 13:00? We could arrange with Nishchith  for 12:15, and
-[5:45:24 PM IST] <jgbarah>	that way we can have some overlapping
-[5:45:39 PM IST] <jgbarah>	If you, Polaris000, can come earlier, you join Nishchith's meeting
-[5:45:46 PM IST] <Polaris000>	yeah, i'll definitely try: in any case, I will be free by 13: 30 at the latest
-[5:45:49 PM IST] <jgbarah>	if not, maybe he can join your meeting
-[5:45:56 PM IST] <aswanipranjal	_>	That works as well, what do you think @Polaris000?
-[5:46:08 PM IST] <aswanipranjal	_>	> yeah, i'll definitely try: in any case, I will be free by 13: 30 at the latest
-[5:46:09 PM IST] <aswanipranjal	_>	great!
-[5:46:24 PM IST] <Polaris000>	THats sound fine
-[5:46:30 PM IST] <jgbarah>	OK, then letś settle for Nishchith at 12:15 (if he can, I think he can),
-[5:46:36 PM IST] <jgbarah>	and 13:00 for you, Polaris000
-[5:46:46 PM IST] <Polaris000>	ok
-[5:46:46 PM IST] <aswanipranjal	_>	yes
-[5:46:56 PM IST] <jgbarah>	If some day you need to be a bit later, not later than 13:30 CEST, just let us know in advance
-[5:47:05 PM IST] <jgbarah>	OK to everything?
-[5:47:08 PM IST] <Polaris000>	of course
-[5:47:15 PM IST] <aswanipranjal	_>	Yeah @jgbarah, sounds good
-[5:47:19 PM IST] <jgbarah>	(in any case, we can always find special arrangements for specific days)
-[5:47:24 PM IST] <Polaris000>	sounds great @jgbarah
-[5:47:25 PM IST] <jgbarah>	Good, we have a deal!  ;-)
-[5:47:32 PM IST] <aswanipranjal	_>	:)
-[5:47:37 PM IST] <jgbarah>	OK, second item, then...
-[5:47:58 PM IST] <jgbarah>	I was thinking about the approach of having testeable reference implementations
-[5:48:15 PM IST] <jgbarah>	And I've come to a first step that i would like to share with you,
-[5:48:21 PM IST] <Polaris000>	ok
-[5:48:27 PM IST] <jgbarah>	to know if you agree with the approach,a nd see it reasonable
-[5:48:53 PM IST] <jgbarah>	The idea would be to write, for each metric, a Python class as a Python notebook
-[5:49:20 PM IST] <jgbarah>	then, produce a Python script from that notebook, and use it as a module that will be imported by tests
-[5:49:41 PM IST] <jgbarah>	tests would just (for now) check the value of the metric on a collection of Perceva JSON files
-[5:49:56 PM IST] <jgbarah>	The same module can be used as the basis of a script that could be run on any repo
-[5:50:18 PM IST] <aswanipranjal	_>	As discussed earlier, the analysis will happen outside of the class and the cleaning will happen inside the class, correct @jgbarah?
-[5:50:19 PM IST] <jgbarah>	that script would first run Perceval, to get the data from the repo, then the classes to compute the metrics for that repo
-[5:50:40 PM IST] <jgbarah>	That way, we could have both a reference implementation, documented in the notebook,
-[5:50:45 PM IST] <jgbarah>	a class to test, with tests
-[5:50:59 PM IST] <jgbarah>	and a script to obtain the metrics from any repo
-[5:51:13 PM IST] <jgbarah>	What do you think about the general approach?
-[5:51:32 PM IST] <Polaris000>	The general approach seems fine: what about aswanipranjal_ 's query?
-[5:51:42 PM IST] <jgbarah>	aswanipranjal_: what do you mean by "analysis" and "cleaning"?
-[5:52:32 PM IST] <aswanipranjal	_>	analysis meaning the actual calculation of the metrics from the data
-[5:52:32 PM IST] <aswanipranjal	_>	cleaning meaning getting the data into good shape so that analysis becomes easier
-[5:52:56 PM IST] <Polaris000>	analysis would include creating appropriate charts
-[5:53:12 PM IST] <jgbarah>	But the data is obtained directly from Perceval...
-[5:53:41 PM IST] <Polaris000>	But is can be cleaned, like this one:
-[5:53:55 PM IST] <aswanipranjal	_>	Okay, my bad. I thought there was some more pre processing required for the data to be analyzed
-[5:54:09 PM IST] <Polaris000>	https://github.com/chaoss/wg-evolution/blob/master/implementations/Code_Changes-Git.ipynb
-[5:54:20 PM IST] <jgbarah>	Mmmm. I'm not sure we have the same thing in mind Let me explain with an example
-[5:54:33 PM IST] <jgbarah>	Using that implementation you link...
-[5:54:41 PM IST] <jgbarah>	The idea would be to have a class, like:
-[5:55:32 PM IST] <jgbarah>	class Code_Changes(Period, Source_Code_Criteria)
-[5:55:54 PM IST] <jgbarah>	being "Period" and "Source_Code_Criteria" the parameters for the metric
-[5:56:25 PM IST] <jgbarah>	(first one a starting and finish time, second one a function, for example)
-[5:56:48 PM IST] <jgbarah>	The class would have a function "compute", such as:
-[5:57:04 PM IST] <jgbarah>	def compute(self, data)
-[5:57:29 PM IST] <jgbarah>	It would produce, for some "data" (a list of Perceval dictionaries)
-[5:57:38 PM IST] <jgbarah>	a single number: the value of the metric
-[5:57:51 PM IST] <jgbarah>	We could also have "compute_timeseries", such as
-[5:58:16 PM IST] <jgbarah>	def compute_timeseries(data, period)
-[5:58:58 PM IST] <jgbarah>	Which will produce a time series of numbers, one for each period defined (eg, period could be "week", then one number for each week).
-[5:59:22 PM IST] <jgbarah>	If we want to plot that, or something else, that could be done, but just as a demonstration, and maybe in a separate notebook
-[5:59:48 PM IST] <jgbarah>	The notebook would have the declaration of the class, and in the initialization code for the module,
-[6:00:07 PM IST] <jgbarah>	it would run the metric on some sample Perceval JSON file,
-[6:00:20 PM IST] <jgbarah>	as it does the current notebook that you linked
-[6:00:48 PM IST] <jgbarah>	I'm not sure, but some of the functions could produce some chart (think of "computer_timeseries_chart"),
-[6:01:25 PM IST] <jgbarah>	but I'm not sure about that, because it is easy to do that with the data produced by the above functions, and has nothing to do with the computation of the metric
-[6:01:31 PM IST] <jgbarah>	Is it more clear now?
-[6:01:37 PM IST] <jgbarah>	How do you see it?
-[6:01:53 PM IST] <Polaris000>	yup, its more clear now
-[6:02:06 PM IST] <Polaris000>	From what I understood, we would have a single class in a notebook
-[6:02:21 PM IST] <Polaris000>	which would use perceval data to compute the metric value
-[6:02:26 PM IST] <jgbarah>	Yes, because we still want to have one notebook per metric
-[6:02:46 PM IST] <Polaris000>	And a separate notebook with the charts and demonstration
-[6:02:56 PM IST] <jgbarah>	Remember that the idea of the reference implementation is to make it crystal clear how the metric can be implemented
-[6:03:42 PM IST] <jgbarah>	charts, demosnstrations, etc, could be a part of that other tool that I mentioned, built using the same classes (exported from the notebooks)
-[6:04:18 PM IST] <jgbarah>	Having charts is not fundamental, but is a good idea ;-)
-[6:04:37 PM IST] <Polaris000>	Should n't reference implementations be more explanatory? like the one I linked
-[6:04:45 PM IST] <Polaris000>	I like the idea of testing with a script
-[6:04:58 PM IST] <Polaris000>	But that would mean less explanation in the notebook
-[6:05:03 PM IST] <jgbarah>	If you agree with all of this, and aswanipranjal_finds it ok, you could work on a couple of those during the first days next week
-[6:05:37 PM IST] <jgbarah>	Yes, the idea is that reference implementation is a much explanatory as possible, including comments and all of that with the declaration of the class
-[6:05:55 PM IST] <aswanipranjal	_>	This made it much more clear @jgbarah, thanks! I agree with this approach
-[6:06:09 PM IST] <jgbarah>	Python class can be exported directly form the notebook, so the usual flow would be:
-[6:06:49 PM IST] <jgbarah>	- define the notebook with the class (as a module), and some initialization code for the module testing with a Perceval JSON file, as the example you linked
-[6:07:38 PM IST] <jgbarah>	- export it as a Python script, to have the class as an importable module
-[6:07:46 PM IST] <jgbarah>	- build tests, using that class
-[6:08:16 PM IST] <jgbarah>	- build a script that import the class and runs it on data obtained from a user-specified repo
-[6:08:47 PM IST] <jgbarah>	For the next week, you could try to start with the notebook for a couple of metrics, and maybe some tests
-[6:08:52 PM IST] <Polaris000>	ok
-[6:08:54 PM IST] <jgbarah>	to test the approach itself
-[6:09:20 PM IST] <jgbarah>	If you agree, during this week you could work on your own repo, to test the idea.
-[6:09:25 PM IST] <Polaris000>	And finally where will the script and tests be stored?
-[6:09:33 PM IST] <Polaris000>	If you agree, during this week you could work on your own repo, to test the idea.:
-[6:09:36 PM IST] <Polaris000>	ok
-[6:09:38 PM IST] <jgbarah>	Then, I will prefer that you work directly on the wg-evolution repo.
-[6:10:16 PM IST] <Polaris000>	of course
-[6:10:17 PM IST] <jgbarah>	If you want, you could start to write and document all of this in your repo, and summarize to all of us daily,
-[6:10:24 PM IST] <jgbarah>	so that we can review the code and provide comments
-[6:10:47 PM IST] <aswanipranjal	_>	yeah, that would correct any discrepancies that my arise, earlier
-[6:10:54 PM IST] <jgbarah>	I'm going to be on a travel most of the week, so I don't know how much feedback I can provide before Friday, but I'll try.
-[6:10:55 PM IST] <Polaris000>	yeah, good idea jgbarah
-[6:11:18 PM IST] <jgbarah>	Good. It seems we're all in the same page ;-)
-[6:11:23 PM IST] <Polaris000>	yes :)
-[6:11:40 PM IST] <Polaris000>	I had a query
-[6:11:40 PM IST] <jgbarah>	Then, I think we're almost done, except if you have any other comment or question...
-[6:11:45 PM IST] <jgbarah>	Yes, please
-[6:12:31 PM IST] <Polaris000>	For certain metrics like the one I'll link below: https://github.com/chaoss/wg-evolution/blob/master/focus_areas/code_development.md
-[6:12:45 PM IST] <Polaris000>	eg. Review_Acceptance
-[6:13:07 PM IST] <Polaris000>	which metrics are we considering: the ones created during the period only?
-[6:13:24 PM IST] <Polaris000>	*reviews
-[6:13:52 PM IST] <Polaris000>	That is my query
-[6:14:34 PM IST] <jgbarah>	We still need to define those metrics in detail, but in short, yes, we need to specify a period
-[6:15:07 PM IST] <jgbarah>	Check https://github.com/chaoss/wg-evolution/pull/151
-[6:15:30 PM IST] <jgbarah>	in it I propose a detailed description for Reviews_Duration, which is quite similar
-[6:15:49 PM IST] <Polaris000>	I'll have a look , thanks @jgbarah
-[6:16:08 PM IST] <Polaris000>	Period during which accepted reviews are considered.
-[6:16:08 PM IST] <Polaris000>	An accepted review is consdiered to be in the period if
-[6:16:08 PM IST] <Polaris000>	its creation event is in the period.
-[6:16:09 PM IST] <jgbarah>	ok. Anything else?
-[6:16:29 PM IST] <Polaris000>	Thats all
-[6:16:36 PM IST] <jgbarah>	(yes, that part)
-[6:16:45 PM IST] <jgbarah>	(but it is still only a proposal...)
-[6:16:56 PM IST] <jgbarah>	ok, thanks a alot!
-[6:17:02 PM IST] <jgbarah>	Polaris000: please...
-[6:17:21 PM IST] <jgbarah>	* produce a log of this meeting and send it to the chaoss mailing list
-[6:17:44 PM IST] <Polaris000>	will do: I'll upload it to my repo too and post a blog as well
-[6:17:56 PM IST] <aswanipranjal	_>	thanks @Polaris000
-[6:17:58 PM IST] <jgbarah>	* produce a blog post summarizing the first tasks to do and anything remarkable you have to say about starting your internship
-[6:18:29 PM IST] <Polaris000>	ok jgbarah,
-[6:18:38 PM IST] <jgbarah>	(include the link to the blog post in the message with the log, and remember to prefix the subject with [GSoC])
-[6:18:48 PM IST] <Polaris000>	yes
-[6:19:16 PM IST] <jgbarah>	And remember to send us all daily summaries of your progress, with links, so that can have a look at how you're progressing and provide feedback
-[6:19:36 PM IST] <Polaris000>	definitely
-[6:19:39 PM IST] <jgbarah>	Of course, any question is welcome. You can use email or ping me here if you see me around
-[6:20:14 PM IST] <jgbarah>	And we meet next Friday at 13:00 (or earlier if you can). If something happens that prevent any of us of joining, we all try to tell the other via email
-[6:20:32 PM IST] <jgbarah>	i'm also sending a message with the proposed schedules for weekly meetings
-[6:20:40 PM IST] <jgbarah>	And i think this is all from my side!
-[6:20:48 PM IST] <Polaris000>	THanks a lot jgbarah!
-[6:20:57 PM IST] <Polaris000>	aswanipranjal_: anything else?
-[6:21:02 PM IST] <jgbarah>	Ohh, one moment, i forgot...
-[6:21:49 PM IST] <jgbarah>	Please, open an issue like "Rewriting reference implementation for Code_Changes",
-[6:21:57 PM IST] <jgbarah>	in the wg-evolution repo,
-[6:22:31 PM IST] <Polaris000>	ok
-[6:22:40 PM IST] <jgbarah>	the description should be writing a new approach for the reference implementation, and that we're going to use your repo for testing the idea
-[6:22:57 PM IST] <jgbarah>	Later on, we will use issues in that repo for scheduling the work
-[6:23:16 PM IST] <jgbarah>	Well, and now that's all from my side
-[6:23:21 PM IST] <jgbarah>	Really
-[6:23:22 PM IST] <jgbarah>	;-)
-[6:23:29 PM IST] <Polaris000>	:)
-[6:23:30 PM IST] <aswanipranjal	_>	Thanks @jgbarah
-[6:23:37 PM IST] <Polaris000>	Thanks all
-[6:23:43 PM IST] <jgbarah>	Read you next week!!! Thanks a lot
-[6:23:55 PM IST] <Polaris000>	Yes, bye!
-[6:23:59 PM IST] <aswanipranjal	_>	Nothing else from my side @Polaris000. Please let us know in case you are stuck anywhere
-[6:24:05 PM IST] <Polaris000>	ok aswanipranjal_
-[6:24:11 PM IST] <aswanipranjal	_>	Bye!
+[Friday 24 May 2019] [5:24:37 PM IST] <Polaris000>	Hi @jgbarah and @aswanipranjal_
+[Friday 24 May 2019] [5:26:16 PM IST] <Polaris000>	I think the scheduled meeting starts in about 5 mins
+[Friday 24 May 2019] [5:29:33 PM IST] <jgbarah>	Yes Polaris000!!
+[Friday 24 May 2019] [5:29:53 PM IST] <jgbarah>	I think valcos very likely cannot join today
+[Friday 24 May 2019] [5:30:22 PM IST] <jgbarah>	So, we can start as soon as you two ( Polaris000 and aswanipranjal_ ) are ready
+[Friday 24 May 2019] [5:31:26 PM IST] <Polaris000>	ok
+[Friday 24 May 2019] [5:32:31 PM IST] <Polaris000>	Can we start @aswanipranjal_??
+[Friday 24 May 2019] [5:33:13 PM IST] <aswanipranjal_>	Hey @Polaris000 , @jgbarah !
+[Friday 24 May 2019] [5:33:16 PM IST] <aswanipranjal_>	sorry for the delay
+[Friday 24 May 2019] [5:33:17 PM IST] <aswanipranjal_>	please start
+[Friday 24 May 2019] [5:34:14 PM IST] <jgbarah>	Great!
+[Friday 24 May 2019] [5:34:30 PM IST] <jgbarah>	For today, I would like to talk mainly about two topics:
+[Friday 24 May 2019] [5:34:59 PM IST] <jgbarah>	- Fixing a weekly slot for coordination
+[Friday 24 May 2019] [5:35:17 PM IST] <jgbarah>	- Defining the work for the first week
+[Friday 24 May 2019] [5:35:25 PM IST] <jgbarah>	Anything else you would like to discuss?
+[Friday 24 May 2019] [5:35:37 PM IST] <Polaris000>	Lets first discuss these points
+[Friday 24 May 2019] [5:35:47 PM IST] <Polaris000>	I'll ask something later if I need to
+[Friday 24 May 2019] [5:35:55 PM IST] <Polaris000>	Nothing specific as of now
+[Friday 24 May 2019] [5:36:16 PM IST] <Polaris000>	Is that alright?
+[Friday 24 May 2019] [5:36:30 PM IST] <aswanipranjal_>	okay @Polaris000
+[Friday 24 May 2019] [5:36:49 PM IST] <jgbarah>	ok
+[Friday 24 May 2019] [5:37:14 PM IST] <Polaris000>	Regarding a weekly slot
+[Friday 24 May 2019] [5:37:15 PM IST] <aswanipranjal_>	Nishchits suggested that we do the weekly meetings on Friday, as a end of the week discussion on what happened and if there were any blockers
+[Friday 24 May 2019] [5:37:27 PM IST] <aswanipranjal_>	Will you be comfortable with that?
+[Friday 24 May 2019] [5:37:32 PM IST] <jgbarah>	WRT the first one, there is a proposal for having the meeting on Friday morning, by Nishchith 
+[Friday 24 May 2019] [5:37:36 PM IST] <aswanipranjal_>	Nishchith*
+[Friday 24 May 2019] [5:37:40 PM IST] <Polaris000>	I am fine with the day
+[Friday 24 May 2019] [5:37:43 PM IST] <jgbarah>	ok, that's it ;-)
+[Friday 24 May 2019] [5:37:52 PM IST] <jgbarah>	Good!
+[Friday 24 May 2019] [5:38:04 PM IST] <Polaris000>	But it would be great if the timing would be after 14 hrs CEST
+[Friday 24 May 2019] [5:38:06 PM IST] <jgbarah>	What about starting a joint session at about 13:00?
+[Friday 24 May 2019] [5:38:37 PM IST] <jgbarah>	My problem with 14:00 CEST is that usually I would need to leave at about 15:00,
+[Friday 24 May 2019] [5:38:54 PM IST] <jgbarah>	and during July and August, very likely that won't work for me...
+[Friday 24 May 2019] [5:38:54 PM IST] <Polaris000>	What about some other day?
+[Friday 24 May 2019] [5:39:17 PM IST] <jgbarah>	You have specific problems on Friday at this time of the day, Polaris000 ?
+[Friday 24 May 2019] [5:39:32 PM IST] <aswanipranjal_>	If you don't mind me asking this @Polaris000, do you have any preengagements on Friday at this time?
+[Friday 24 May 2019] [5:39:54 PM IST] <Polaris000>	Not always, like I mentioned my voluntary work takes place a few hours a week
+[Friday 24 May 2019] [5:40:04 PM IST] <Polaris000>	generally during the afternoon
+[Friday 24 May 2019] [5:40:08 PM IST] <Polaris000>	IST
+[Friday 24 May 2019] [5:40:11 PM IST] <jgbarah>	In any case, I don't have a special interest for Fridays.
+[Friday 24 May 2019] [5:40:23 PM IST] <Polaris000>	I would n't want to be late for a meeting
+[Friday 24 May 2019] [5:40:32 PM IST] <jgbarah>	i was asking just to know whether Friday, earlier, could work
+[Friday 24 May 2019] [5:40:53 PM IST] <aswanipranjal_>	Having both the meetings on Friday would be convenient
+[Friday 24 May 2019] [5:40:57 PM IST] <jgbarah>	I'm usually available since 9:00 CEST (I think that's 12:30 IST, right?)
+[Friday 24 May 2019] [5:41:05 PM IST] <aswanipranjal_>	what other day suites your timings @Polaris000?
+[Friday 24 May 2019] [5:41:13 PM IST] <aswanipranjal_>	Correct @jgbarah
+[Friday 24 May 2019] [5:41:20 PM IST] <Polaris000>	any day is fine
+[Friday 24 May 2019] [5:41:34 PM IST] <Polaris000>	It would be better if meetings starting around 2 pm CEST
+[Friday 24 May 2019] [5:41:38 PM IST] <jgbarah>	If we cannot have both meeting on Fri, we can try on Thurs., but my hourly restrictions are going to be similar...
+[Friday 24 May 2019] [5:42:09 PM IST] <aswanipranjal_>	@Polaris000, you'd prefer if the meetings are at or after 14:00 CEST, correct?
+[Friday 24 May 2019] [5:42:14 PM IST] <Polaris000>	yes
+[Friday 24 May 2019] [5:42:22 PM IST] <jgbarah>	Polaris000: my problem is no with the day of the week, but with the timing
+[Friday 24 May 2019] [5:42:57 PM IST] <aswanipranjal_>	can you schedule the voulenteering work till 4:30, only on Friday @Polaris000 >
+[Friday 24 May 2019] [5:42:58 PM IST] <aswanipranjal_>	?
+[Friday 24 May 2019] [5:43:24 PM IST] <Polaris000>	yes, I can make a request, which would be most likely accepted
+[Friday 24 May 2019] [5:43:35 PM IST] <jgbarah>	I would prefer to have both meetings at the same time, and we could schedule yours at 14:00 CEST,
+[Friday 24 May 2019] [5:43:45 PM IST] <aswanipranjal_>	If that is the case, then please try to do that
+[Friday 24 May 2019] [5:43:59 PM IST] <Polaris000>	Definitely @aswanipranjal_
+[Friday 24 May 2019] [5:44:02 PM IST] <jgbarah>	but that still has the problem that during July and August, likely that's not going to work for me
+[Friday 24 May 2019] [5:44:16 PM IST] <aswanipranjal_>	@jgbarah
+[Friday 24 May 2019] [5:44:24 PM IST] <jgbarah>	Thanks for the arrangement, Polaris000 aswanipranjal_!
+[Friday 24 May 2019] [5:44:51 PM IST] <aswanipranjal_>	if @Polaris000 can try to get free by 13:00 on Fridays, we can have a joint meeting with Nishchith and him
+[Friday 24 May 2019] [5:45:00 PM IST] <aswanipranjal_>	sounds good?
+[Friday 24 May 2019] [5:45:16 PM IST] <jgbarah>	Then, can we set for 13:00? We could arrange with Nishchith  for 12:15, and
+[Friday 24 May 2019] [5:45:24 PM IST] <jgbarah>	that way we can have some overlapping
+[Friday 24 May 2019] [5:45:39 PM IST] <jgbarah>	If you, Polaris000, can come earlier, you join Nishchith's meeting
+[Friday 24 May 2019] [5:45:46 PM IST] <Polaris000>	yeah, i'll definitely try: in any case, I will be free by 13: 30 at the latest
+[Friday 24 May 2019] [5:45:49 PM IST] <jgbarah>	if not, maybe he can join your meeting
+[Friday 24 May 2019] [5:45:56 PM IST] <aswanipranjal_>	That works as well, what do you think @Polaris000?
+[Friday 24 May 2019] [5:46:08 PM IST] <aswanipranjal_>	> yeah, i'll definitely try: in any case, I will be free by 13: 30 at the latest
+[Friday 24 May 2019] [5:46:09 PM IST] <aswanipranjal_>	great!
+[Friday 24 May 2019] [5:46:24 PM IST] <Polaris000>	THats sound fine
+[Friday 24 May 2019] [5:46:30 PM IST] <jgbarah>	OK, then letś settle for Nishchith at 12:15 (if he can, I think he can),
+[Friday 24 May 2019] [5:46:36 PM IST] <jgbarah>	and 13:00 for you, Polaris000
+[Friday 24 May 2019] [5:46:46 PM IST] <Polaris000>	ok
+[Friday 24 May 2019] [5:46:46 PM IST] <aswanipranjal_>	yes
+[Friday 24 May 2019] [5:46:56 PM IST] <jgbarah>	If some day you need to be a bit later, not later than 13:30 CEST, just let us know in advance
+[Friday 24 May 2019] [5:47:05 PM IST] <jgbarah>	OK to everything?
+[Friday 24 May 2019] [5:47:08 PM IST] <Polaris000>	of course
+[Friday 24 May 2019] [5:47:15 PM IST] <aswanipranjal_>	Yeah @jgbarah, sounds good
+[Friday 24 May 2019] [5:47:19 PM IST] <jgbarah>	(in any case, we can always find special arrangements for specific days)
+[Friday 24 May 2019] [5:47:24 PM IST] <Polaris000>	sounds great @jgbarah
+[Friday 24 May 2019] [5:47:25 PM IST] <jgbarah>	Good, we have a deal!  ;-)
+[Friday 24 May 2019] [5:47:32 PM IST] <aswanipranjal_>	:)
+[Friday 24 May 2019] [5:47:37 PM IST] <jgbarah>	OK, second item, then...
+[Friday 24 May 2019] [5:47:58 PM IST] <jgbarah>	I was thinking about the approach of having testeable reference implementations
+[Friday 24 May 2019] [5:48:15 PM IST] <jgbarah>	And I've come to a first step that i would like to share with you,
+[Friday 24 May 2019] [5:48:21 PM IST] <Polaris000>	ok
+[Friday 24 May 2019] [5:48:27 PM IST] <jgbarah>	to know if you agree with the approach,a nd see it reasonable
+[Friday 24 May 2019] [5:48:53 PM IST] <jgbarah>	The idea would be to write, for each metric, a Python class as a Python notebook
+[Friday 24 May 2019] [5:49:20 PM IST] <jgbarah>	then, produce a Python script from that notebook, and use it as a module that will be imported by tests
+[Friday 24 May 2019] [5:49:41 PM IST] <jgbarah>	tests would just (for now) check the value of the metric on a collection of Perceva JSON files
+[Friday 24 May 2019] [5:49:56 PM IST] <jgbarah>	The same module can be used as the basis of a script that could be run on any repo
+[Friday 24 May 2019] [5:50:18 PM IST] <aswanipranjal_>	As discussed earlier, the analysis will happen outside of the class and the cleaning will happen inside the class, correct @jgbarah?
+[Friday 24 May 2019] [5:50:19 PM IST] <jgbarah>	that script would first run Perceval, to get the data from the repo, then the classes to compute the metrics for that repo
+[Friday 24 May 2019] [5:50:40 PM IST] <jgbarah>	That way, we could have both a reference implementation, documented in the notebook,
+[Friday 24 May 2019] [5:50:45 PM IST] <jgbarah>	a class to test, with tests
+[Friday 24 May 2019] [5:50:59 PM IST] <jgbarah>	and a script to obtain the metrics from any repo
+[Friday 24 May 2019] [5:51:13 PM IST] <jgbarah>	What do you think about the general approach?
+[Friday 24 May 2019] [5:51:32 PM IST] <Polaris000>	The general approach seems fine: what about aswanipranjal_ 's query?
+[Friday 24 May 2019] [5:51:42 PM IST] <jgbarah>	aswanipranjal_: what do you mean by "analysis" and "cleaning"?
+[Friday 24 May 2019] [5:52:32 PM IST] <aswanipranjal_>	analysis meaning the actual calculation of the metrics from the data
+[Friday 24 May 2019] [5:52:32 PM IST] <aswanipranjal_>	cleaning meaning getting the data into good shape so that analysis becomes easier
+[Friday 24 May 2019] [5:52:56 PM IST] <Polaris000>	analysis would include creating appropriate charts
+[Friday 24 May 2019] [5:53:12 PM IST] <jgbarah>	But the data is obtained directly from Perceval...
+[Friday 24 May 2019] [5:53:41 PM IST] <Polaris000>	But is can be cleaned, like this one:
+[Friday 24 May 2019] [5:53:55 PM IST] <aswanipranjal_>	Okay, my bad. I thought there was some more pre processing required for the data to be analyzed
+[Friday 24 May 2019] [5:54:09 PM IST] <Polaris000>	https://github.com/chaoss/wg-evolution/blob/master/implementations/Code_Changes-Git.ipynb
+[Friday 24 May 2019] [5:54:20 PM IST] <jgbarah>	Mmmm. I'm not sure we have the same thing in mind Let me explain with an example
+[Friday 24 May 2019] [5:54:33 PM IST] <jgbarah>	Using that implementation you link...
+[Friday 24 May 2019] [5:54:41 PM IST] <jgbarah>	The idea would be to have a class, like:
+[Friday 24 May 2019] [5:55:32 PM IST] <jgbarah>	class Code_Changes(Period, Source_Code_Criteria)
+[Friday 24 May 2019] [5:55:54 PM IST] <jgbarah>	being "Period" and "Source_Code_Criteria" the parameters for the metric
+[Friday 24 May 2019] [5:56:25 PM IST] <jgbarah>	(first one a starting and finish time, second one a function, for example)
+[Friday 24 May 2019] [5:56:48 PM IST] <jgbarah>	The class would have a function "compute", such as:
+[Friday 24 May 2019] [5:57:04 PM IST] <jgbarah>	def compute(self, data)
+[Friday 24 May 2019] [5:57:29 PM IST] <jgbarah>	It would produce, for some "data" (a list of Perceval dictionaries)
+[Friday 24 May 2019] [5:57:38 PM IST] <jgbarah>	a single number: the value of the metric
+[Friday 24 May 2019] [5:57:51 PM IST] <jgbarah>	We could also have "compute_timeseries", such as
+[Friday 24 May 2019] [5:58:16 PM IST] <jgbarah>	def compute_timeseries(data, period)
+[Friday 24 May 2019] [5:58:58 PM IST] <jgbarah>	Which will produce a time series of numbers, one for each period defined (eg, period could be "week", then one number for each week).
+[Friday 24 May 2019] [5:59:22 PM IST] <jgbarah>	If we want to plot that, or something else, that could be done, but just as a demonstration, and maybe in a separate notebook
+[Friday 24 May 2019] [5:59:48 PM IST] <jgbarah>	The notebook would have the declaration of the class, and in the initialization code for the module,
+[Friday 24 May 2019] [6:00:07 PM IST] <jgbarah>	it would run the metric on some sample Perceval JSON file,
+[Friday 24 May 2019] [6:00:20 PM IST] <jgbarah>	as it does the current notebook that you linked
+[Friday 24 May 2019] [6:00:48 PM IST] <jgbarah>	I'm not sure, but some of the functions could produce some chart (think of "computer_timeseries_chart"),
+[Friday 24 May 2019] [6:01:25 PM IST] <jgbarah>	but I'm not sure about that, because it is easy to do that with the data produced by the above functions, and has nothing to do with the computation of the metric
+[Friday 24 May 2019] [6:01:31 PM IST] <jgbarah>	Is it more clear now?
+[Friday 24 May 2019] [6:01:37 PM IST] <jgbarah>	How do you see it?
+[Friday 24 May 2019] [6:01:53 PM IST] <Polaris000>	yup, its more clear now
+[Friday 24 May 2019] [6:02:06 PM IST] <Polaris000>	From what I understood, we would have a single class in a notebook
+[Friday 24 May 2019] [6:02:21 PM IST] <Polaris000>	which would use perceval data to compute the metric value
+[Friday 24 May 2019] [6:02:26 PM IST] <jgbarah>	Yes, because we still want to have one notebook per metric
+[Friday 24 May 2019] [6:02:46 PM IST] <Polaris000>	And a separate notebook with the charts and demonstration
+[Friday 24 May 2019] [6:02:56 PM IST] <jgbarah>	Remember that the idea of the reference implementation is to make it crystal clear how the metric can be implemented
+[Friday 24 May 2019] [6:03:42 PM IST] <jgbarah>	charts, demosnstrations, etc, could be a part of that other tool that I mentioned, built using the same classes (exported from the notebooks)
+[Friday 24 May 2019] [6:04:18 PM IST] <jgbarah>	Having charts is not fundamental, but is a good idea ;-)
+[Friday 24 May 2019] [6:04:37 PM IST] <Polaris000>	Should n't reference implementations be more explanatory? like the one I linked
+[Friday 24 May 2019] [6:04:45 PM IST] <Polaris000>	I like the idea of testing with a script
+[Friday 24 May 2019] [6:04:58 PM IST] <Polaris000>	But that would mean less explanation in the notebook
+[Friday 24 May 2019] [6:05:03 PM IST] <jgbarah>	If you agree with all of this, and aswanipranjal_finds it ok, you could work on a couple of those during the first days next week
+[Friday 24 May 2019] [6:05:37 PM IST] <jgbarah>	Yes, the idea is that reference implementation is a much explanatory as possible, including comments and all of that with the declaration of the class
+[Friday 24 May 2019] [6:05:55 PM IST] <aswanipranjal_>	This made it much more clear @jgbarah, thanks! I agree with this approach
+[Friday 24 May 2019] [6:06:09 PM IST] <jgbarah>	Python class can be exported directly form the notebook, so the usual flow would be:
+[Friday 24 May 2019] [6:06:49 PM IST] <jgbarah>	- define the notebook with the class (as a module), and some initialization code for the module testing with a Perceval JSON file, as the example you linked
+[Friday 24 May 2019] [6:07:38 PM IST] <jgbarah>	- export it as a Python script, to have the class as an importable module
+[Friday 24 May 2019] [6:07:46 PM IST] <jgbarah>	- build tests, using that class
+[Friday 24 May 2019] [6:08:16 PM IST] <jgbarah>	- build a script that import the class and runs it on data obtained from a user-specified repo
+[Friday 24 May 2019] [6:08:47 PM IST] <jgbarah>	For the next week, you could try to start with the notebook for a couple of metrics, and maybe some tests
+[Friday 24 May 2019] [6:08:52 PM IST] <Polaris000>	ok
+[Friday 24 May 2019] [6:08:54 PM IST] <jgbarah>	to test the approach itself
+[Friday 24 May 2019] [6:09:20 PM IST] <jgbarah>	If you agree, during this week you could work on your own repo, to test the idea.
+[Friday 24 May 2019] [6:09:25 PM IST] <Polaris000>	And finally where will the script and tests be stored?
+[Friday 24 May 2019] [6:09:33 PM IST] <Polaris000>	If you agree, during this week you could work on your own repo, to test the idea.:
+[Friday 24 May 2019] [6:09:36 PM IST] <Polaris000>	ok
+[Friday 24 May 2019] [6:09:38 PM IST] <jgbarah>	Then, I will prefer that you work directly on the wg-evolution repo.
+[Friday 24 May 2019] [6:10:16 PM IST] <Polaris000>	of course
+[Friday 24 May 2019] [6:10:17 PM IST] <jgbarah>	If you want, you could start to write and document all of this in your repo, and summarize to all of us daily,
+[Friday 24 May 2019] [6:10:24 PM IST] <jgbarah>	so that we can review the code and provide comments
+[Friday 24 May 2019] [6:10:47 PM IST] <aswanipranjal_>	yeah, that would correct any discrepancies that my arise, earlier
+[Friday 24 May 2019] [6:10:54 PM IST] <jgbarah>	I'm going to be on a travel most of the week, so I don't know how much feedback I can provide before Friday, but I'll try.
+[Friday 24 May 2019] [6:10:55 PM IST] <Polaris000>	yeah, good idea jgbarah
+[Friday 24 May 2019] [6:11:18 PM IST] <jgbarah>	Good. It seems we're all in the same page ;-)
+[Friday 24 May 2019] [6:11:23 PM IST] <Polaris000>	yes :)
+[Friday 24 May 2019] [6:11:40 PM IST] <Polaris000>	I had a query
+[Friday 24 May 2019] [6:11:40 PM IST] <jgbarah>	Then, I think we're almost done, except if you have any other comment or question...
+[Friday 24 May 2019] [6:11:45 PM IST] <jgbarah>	Yes, please
+[Friday 24 May 2019] [6:12:31 PM IST] <Polaris000>	For certain metrics like the one I'll link below: https://github.com/chaoss/wg-evolution/blob/master/focus_areas/code_development.md
+[Friday 24 May 2019] [6:12:45 PM IST] <Polaris000>	eg. Review_Acceptance
+[Friday 24 May 2019] [6:13:07 PM IST] <Polaris000>	which metrics are we considering: the ones created during the period only?
+[Friday 24 May 2019] [6:13:24 PM IST] <Polaris000>	*reviews
+[Friday 24 May 2019] [6:13:52 PM IST] <Polaris000>	That is my query
+[Friday 24 May 2019] [6:14:34 PM IST] <jgbarah>	We still need to define those metrics in detail, but in short, yes, we need to specify a period
+[Friday 24 May 2019] [6:15:07 PM IST] <jgbarah>	Check https://github.com/chaoss/wg-evolution/pull/151
+[Friday 24 May 2019] [6:15:30 PM IST] <jgbarah>	in it I propose a detailed description for Reviews_Duration, which is quite similar
+[Friday 24 May 2019] [6:15:49 PM IST] <Polaris000>	I'll have a look , thanks @jgbarah
+[Friday 24 May 2019] [6:16:08 PM IST] <Polaris000>	     Period during which accepted reviews are considered.
+[Friday 24 May 2019] [6:16:08 PM IST] <Polaris000>	    An accepted review is consdiered to be in the period if
+[Friday 24 May 2019] [6:16:08 PM IST] <Polaris000>	    its creation event is in the period.
+[Friday 24 May 2019] [6:16:09 PM IST] <jgbarah>	ok. Anything else?
+[Friday 24 May 2019] [6:16:29 PM IST] <Polaris000>	Thats all
+[Friday 24 May 2019] [6:16:36 PM IST] <jgbarah>	(yes, that part)
+[Friday 24 May 2019] [6:16:45 PM IST] <jgbarah>	(but it is still only a proposal...)
+[Friday 24 May 2019] [6:16:56 PM IST] <jgbarah>	ok, thanks a alot!
+[Friday 24 May 2019] [6:17:02 PM IST] <jgbarah>	Polaris000: please...
+[Friday 24 May 2019] [6:17:21 PM IST] <jgbarah>	* produce a log of this meeting and send it to the chaoss mailing list
+[Friday 24 May 2019] [6:17:44 PM IST] <Polaris000>	will do: I'll upload it to my repo too and post a blog as well
+[Friday 24 May 2019] [6:17:56 PM IST] <aswanipranjal_>	thanks @Polaris000
+[Friday 24 May 2019] [6:17:58 PM IST] <jgbarah>	* produce a blog post summarizing the first tasks to do and anything remarkable you have to say about starting your internship
+[Friday 24 May 2019] [6:18:29 PM IST] <Polaris000>	ok jgbarah,
+[Friday 24 May 2019] [6:18:38 PM IST] <jgbarah>	(include the link to the blog post in the message with the log, and remember to prefix the subject with [GSoC])
+[Friday 24 May 2019] [6:18:48 PM IST] <Polaris000>	yes
+[Friday 24 May 2019] [6:19:16 PM IST] <jgbarah>	And remember to send us all daily summaries of your progress, with links, so that can have a look at how you're progressing and provide feedback
+[Friday 24 May 2019] [6:19:36 PM IST] <Polaris000>	definitely
+[Friday 24 May 2019] [6:19:39 PM IST] <jgbarah>	Of course, any question is welcome. You can use email or ping me here if you see me around
+[Friday 24 May 2019] [6:20:14 PM IST] <jgbarah>	And we meet next Friday at 13:00 (or earlier if you can). If something happens that prevent any of us of joining, we all try to tell the other via email
+[Friday 24 May 2019] [6:20:32 PM IST] <jgbarah>	i'm also sending a message with the proposed schedules for weekly meetings
+[Friday 24 May 2019] [6:20:40 PM IST] <jgbarah>	And i think this is all from my side!
+[Friday 24 May 2019] [6:20:48 PM IST] <Polaris000>	THanks a lot jgbarah!
+[Friday 24 May 2019] [6:20:57 PM IST] <Polaris000>	aswanipranjal_: anything else?
+[Friday 24 May 2019] [6:21:02 PM IST] <jgbarah>	Ohh, one moment, i forgot...
+[Friday 24 May 2019] [6:21:49 PM IST] <jgbarah>	Please, open an issue like "Rewriting reference implementation for Code_Changes",
+[Friday 24 May 2019] [6:21:57 PM IST] <jgbarah>	in the wg-evolution repo,
+[Friday 24 May 2019] [6:22:31 PM IST] <Polaris000>	ok
+[Friday 24 May 2019] [6:22:40 PM IST] <jgbarah>	the description should be writing a new approach for the reference implementation, and that we're going to use your repo for testing the idea
+[Friday 24 May 2019] [6:22:57 PM IST] <jgbarah>	Later on, we will use issues in that repo for scheduling the work
+[Friday 24 May 2019] [6:23:16 PM IST] <jgbarah>	Well, and now that's all from my side
+[Friday 24 May 2019] [6:23:21 PM IST] <jgbarah>	Really
+[Friday 24 May 2019] [6:23:22 PM IST] <jgbarah>	;-)
+[Friday 24 May 2019] [6:23:29 PM IST] <Polaris000>	:)
+[Friday 24 May 2019] [6:23:30 PM IST] <aswanipranjal_>	Thanks @jgbarah
+[Friday 24 May 2019] [6:23:37 PM IST] <Polaris000>	Thanks all
+[Friday 24 May 2019] [6:23:43 PM IST] <jgbarah>	Read you next week!!! Thanks a lot
+[Friday 24 May 2019] [6:23:55 PM IST] <Polaris000>	Yes, bye!
+[Friday 24 May 2019] [6:23:59 PM IST] <aswanipranjal_>	Nothing else from my side @Polaris000. Please let us know in case you are stuck anywhere
+[Friday 24 May 2019] [6:24:05 PM IST] <Polaris000>	ok aswanipranjal_
+[Friday 24 May 2019] [6:24:11 PM IST] <aswanipranjal_>	Bye!
 [6:24:31 PM IST] Part	You (~Polaris00@124.123.75.129) have left channel #grimoirelab ("Konversation terminated!").
