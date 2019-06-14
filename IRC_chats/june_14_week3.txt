@@ -1,0 +1,178 @@
+Date: Friday 14 June 2019
+Participants: inishchith, valcos, Polaris000, jgbarah
+Start_Time: 4:33:16 PM IST
+End_Time: 5:30:34 PM IST
+------------------------------------------------------------------------------
+
+[4:33:16 PM IST] Join	You (~Polaris00@124.123.75.129) have joined the channel #grimoirelab.
+[4:33:17 PM IST] Mode	Channel modes: no colors allowed, no messages from outside, topic protection
+[4:33:17 PM IST] Created	This channel was created on 28/08/17 10:32 PM.
+[Friday 14 June 2019] [4:33:21 PM IST] <valcos>	ok perfect
+[Friday 14 June 2019] [4:33:22 PM IST] <jgbarah>	I would say that could be useful for other reasons (such as using directly the data produced by Graal)
+[Friday 14 June 2019] [4:33:34 PM IST] <jgbarah>	but at some point in the past, I remember considering that having
+[Friday 14 June 2019] [4:33:49 PM IST] <jgbarah>	specific dictionaires per analysis (tool) cold be convenient,
+[Friday 14 June 2019] [4:33:59 PM IST] <jgbarah>	which already prevents having a flat analysis...
+[Friday 14 June 2019] [4:34:10 PM IST] <jgbarah>	(a flat index, I mean)
+[Friday 14 June 2019] [4:35:19 PM IST] <valcos>	ok thanks @jgbarah
+[Friday 14 June 2019] [4:35:34 PM IST] <Polaris000>	Hi all!
+[Friday 14 June 2019] [4:35:34 PM IST] <valcos>	@inishchith any thoughts on this ?
+[Friday 14 June 2019] [4:35:37 PM IST] <inishchith>	I think the current output structure of Graal looks okay. We can make the proposed structural changes for enriched  index ( as you proposed earlier )
+[Friday 14 June 2019] [4:35:43 PM IST] <valcos>	Hi @Polaris000
+[Friday 14 June 2019] [4:35:53 PM IST] <Polaris000>	hi
+[Friday 14 June 2019] [4:36:09 PM IST] <inishchith>	Also we can have the repository-level analysis as a add-on option. if you agree.
+[Friday 14 June 2019] [4:36:13 PM IST] <jgbarah>	Hi, Polaris000!
+[Friday 14 June 2019] [4:36:26 PM IST] <inishchith>	Hi, Polaris000 :)
+[Friday 14 June 2019] [4:36:29 PM IST] <valcos>	sure @inishchith
+[Friday 14 June 2019] [4:37:05 PM IST] <valcos>	@jgbarah @inishchith do you have any questions ? Is the plan for next week clear ?
+[Friday 14 June 2019] [4:37:59 PM IST] <inishchith>	Yes. Thanks. I'll create the corresponding issues then we can proceed from there.
+[Friday 14 June 2019] [4:38:02 PM IST] <jgbarah>	I'm well, thanks
+[Friday 14 June 2019] [4:38:14 PM IST] <jgbarah>	(I'm good, I meant ;-) )
+[Friday 14 June 2019] [4:38:31 PM IST] <valcos>	eheh perfect! thank you @inishchith @jgbarah
+[Friday 14 June 2019] [4:39:12 PM IST] <jgbarah>	Great!
+[Friday 14 June 2019] [4:39:13 PM IST] <valcos>	@jgbarah if you agree, we can start with the meeting with @Polaris000
+[Friday 14 June 2019] [4:39:21 PM IST] <jgbarah>	Yes, please!
+[Friday 14 June 2019] [4:39:34 PM IST] <inishchith>	Great!
+[Friday 14 June 2019] [4:39:47 PM IST] <valcos>	thank you @inishchith
+[Friday 14 June 2019] [4:39:59 PM IST] <valcos>	@Polaris if you are OK with it, we can start
+[Friday 14 June 2019] [4:40:01 PM IST] <inishchith>	I'll share the meeting log with you guys!. Bye :)
+[Friday 14 June 2019] [4:40:08 PM IST] <jgbarah>	Polaris000: let's start then
+[Friday 14 June 2019] [4:40:13 PM IST] <Polaris000>	Bye inishchith, Did you all get my summary for this week? 
+[Friday 14 June 2019] [4:40:43 PM IST] <valcos>	bye @inishchith! yes @Polaris000, I got it
+[Friday 14 June 2019] [4:41:06 PM IST] <jgbarah>	Yes, thanks
+[4:41:16 PM IST] Quit	inishchith (7aa94d0b@gateway/web/freenode/ip.122.169.77.11) has left this server (Quit: Page closed).
+[Friday 14 June 2019] [4:41:29 PM IST] <jgbarah>	BTW, I just posted a new review on your pr in wg-evolution
+[Friday 14 June 2019] [4:41:53 PM IST] <jgbarah>	(sorry, it was supposed to be posted yesterday night, but I forgot to click for the final push :-( )
+[Friday 14 June 2019] [4:42:14 PM IST] <Polaris000>	Thats al right!
+[Friday 14 June 2019] [4:42:35 PM IST] <jgbarah>	For now, i didn't comment on the other metrics that you're developing in your repo until we settle on the first one in the wg-evo repo
+[Friday 14 June 2019] [4:42:45 PM IST] <Polaris000>	Thats fine as well!
+[Friday 14 June 2019] [4:43:05 PM IST] <jgbarah>	I think we still have at least one issue with it, that I highlighted in this last review
+[Friday 14 June 2019] [4:43:52 PM IST] <jgbarah>	The class hierarchy for deciding what is source code shouldn't include a "switch", or at least I don't understand why do we need it
+[Friday 14 June 2019] [4:44:34 PM IST] <Polaris000>	While implementing it, I thought it is easieron the user, to just pass in a string
+[Friday 14 June 2019] [4:44:41 PM IST] <Polaris000>	Rather than create an object and pass that
+[Friday 14 June 2019] [4:45:03 PM IST] <jgbarah>	Now I see
+[Friday 14 June 2019] [4:45:20 PM IST] <Polaris000>	The factory class creates the object using globals()
+[Friday 14 June 2019] [4:45:25 PM IST] <jgbarah>	But that causes a problem when extending: any new class would require a change in that switch object,
+[Friday 14 June 2019] [4:45:36 PM IST] <Polaris000>	It is not hardcoded
+[Friday 14 June 2019] [4:45:48 PM IST] <jgbarah>	with that we miss the whole idea of extending a class...
+[Friday 14 June 2019] [4:46:09 PM IST] <jgbarah>	I'm not sure I understand that, let me check the code once again...
+[Friday 14 June 2019] [4:46:14 PM IST] <Polaris000>	https://github.com/chaoss/wg-evolution/pull/162#discussion_r293701520
+[Friday 14 June 2019] [4:46:20 PM IST] <Polaris000>	THis is the link to my comment in the review
+[Friday 14 June 2019] [4:47:17 PM IST] <Polaris000>	I'll add a check for None as well
+[Friday 14 June 2019] [4:49:06 PM IST] <jgbarah>	I still don't get it.
+[Friday 14 June 2019] [4:49:33 PM IST] <Polaris000>	So the user creates a Is SourceCode object, passing the stringname of the algorithm class to be used
+[Friday 14 June 2019] [4:49:35 PM IST] <jgbarah>	Let me explain how I see that issue, because maybe we're having fundamental differences on our perception of how the class hierarchy works
+[Friday 14 June 2019] [4:49:41 PM IST] <Polaris000>	please carry on..
+[Friday 14 June 2019] [4:50:24 PM IST] <jgbarah>	First of all, let's assume all metrics have an object from the "IsSourceCode" hierarchy as a parameter with instantiating
+[Friday 14 June 2019] [4:50:41 PM IST] <jgbarah>	(or maybe just a class, that could be easier and maybe good enough).
+[Friday 14 June 2019] [4:51:23 PM IST] <jgbarah>	It provides the algorithm used to determine that a given file in a given commit is considered as source code
+[Friday 14 June 2019] [4:52:13 PM IST] <jgbarah>	The metric class will just call to "check()" for that class, with the file name as a parameter, which will be evaluated to True or False
+[Friday 14 June 2019] [4:52:38 PM IST] <jgbarah>	Then the way people will use it (assuming we use the class as a parameter to the instationation) is:
+[Friday 14 June 2019] [4:53:16 PM IST] <jgbarah>	my_metric = CodeChanges(..., is_source_code = ISC_Naive)
+[Friday 14 June 2019] [4:53:37 PM IST] <jgbarah>	the implementation of CodeChanges (or maybe one level up in the hierarchy)
+[Friday 14 June 2019] [4:54:02 PM IST] <jgbarah>	will just call to self.is_source_code(filename) for each file name it finds
+[Friday 14 June 2019] [4:54:24 PM IST] <jgbarah>	(of course we can also cache, and if a file name was already analyzed, store the result)
+[Friday 14 June 2019] [4:55:08 PM IST] <jgbarah>	Sorry, the call would be to self.is_source_code.check(filename),
+[Friday 14 June 2019] [4:55:30 PM IST] <jgbarah>	assuming all classes in the IsSourcecode hierarchy provide a .check() method for checking filenames
+[Friday 14 June 2019] [4:56:24 PM IST] <jgbarah>	In this way, the code is simple, extension of the IsSourceCode hiearchy has no dependencies whatsoever, and the
+[Friday 14 June 2019] [4:56:34 PM IST] <jgbarah>	instantiation of a new metric is easy enough
+[Friday 14 June 2019] [4:57:36 PM IST] <jgbarah>	Passing ISC_Naive (a class) is not more difficult or confusing than passing "isc_naive" (a string)
+[Friday 14 June 2019] [4:57:50 PM IST] <jgbarah>	if for some reason we need an object, the code would be a bit more long:
+[Friday 14 June 2019] [4:58:09 PM IST] <jgbarah>	my_source_code_criteria = ISC_Naive()
+[Friday 14 June 2019] [4:58:32 PM IST] <jgbarah>	my_metric = codeChanges(.... is_source_code = my_source_criteria)
+[Friday 14 June 2019] [4:58:47 PM IST] <jgbarah>	(but likely we can avoid this)
+[Friday 14 June 2019] [4:58:52 PM IST] <jgbarah>	What do you think?
+[Friday 14 June 2019] [4:59:43 PM IST] <Polaris000>	1. The only difference between our proposals I feel is that I am using a string, while you are using a class directly. Even my method would not cause a problem with extension, since it is not hard coded. 
+[Friday 14 June 2019] [4:59:59 PM IST] <Polaris000>	I will implement yours is you want
+[Friday 14 June 2019] [5:00:10 PM IST] <Polaris000>	2. The source code check 
+[Friday 14 June 2019] [5:00:34 PM IST] <Polaris000>	works for each commit. I feel it is not necessary to check for each file, rather: check for each commit
+[Friday 14 June 2019] [5:00:43 PM IST] <Polaris000>	and output a boolean (we can still cache)
+[Friday 14 June 2019] [5:01:07 PM IST] <Polaris000>	3. Passing a class would involve importing the source code file for each metric
+[Friday 14 June 2019] [5:01:21 PM IST] <Polaris000>	whereas passing a string would not. Still, I am fine with either implementatin
+[Friday 14 June 2019] [5:01:45 PM IST] <Polaris000>	check() can be static methods so there is no need to create objects
+[Friday 14 June 2019] [5:01:56 PM IST] <Polaris000>	That is all
+[Friday 14 June 2019] [5:02:20 PM IST] <Polaris000>	What do you think @valcos
+[Friday 14 June 2019] [5:02:22 PM IST] <Polaris000>	?
+[Friday 14 June 2019] [5:02:27 PM IST] <Polaris000>	@jgbarah
+[Friday 14 June 2019] [5:02:36 PM IST] <jgbarah>	1. Thanks. i think you need to hardcode it at some level, or (as you do) use the global namespace, which can be considered as a sideeffect...
+[Friday 14 June 2019] [5:02:48 PM IST] <jgbarah>	It is clever doing it that way, anyway ;-)
+[Friday 14 June 2019] [5:04:05 PM IST] <jgbarah>	2. I agree for some of the metrics we're considering now, since all that matters is if a commit touches a source code file or not (eg, number of changes)
+[Friday 14 June 2019] [5:04:43 PM IST] <jgbarah>	But for others, such as "number of lines touched in source code", it matters. You can commit README.md with file.c, and with a criteria that defines
+[Friday 14 June 2019] [5:04:58 PM IST] <jgbarah>	only the second as souece code, you need to know that you have to count only the lines for the second
+[Friday 14 June 2019] [5:05:59 PM IST] <jgbarah>	3. I don't understand. If you mean using "import" for the module defining the class for the criteria, that's right, and that's a good thing (explicit vs implicit)
+[Friday 14 June 2019] [5:06:08 PM IST] <jgbarah>	But maybe you mean something else
+[Friday 14 June 2019] [5:07:01 PM IST] <Polaris000>	2. Good point! I had forgotten about that. Will need to work on that. 
+[Friday 14 June 2019] [5:07:19 PM IST] <Polaris000>	3. I thought it would be better to "hide" the classes from the user, so to speak
+[Friday 14 June 2019] [5:07:33 PM IST] <Polaris000>	Rather than importing  in each and every file
+[Friday 14 June 2019] [5:07:46 PM IST] <Polaris000>	But I get your point. We can do as you propose
+[Friday 14 June 2019] [5:08:03 PM IST] <Polaris000>	What about for issues and pul lrequests?
+[Friday 14 June 2019] [5:08:14 PM IST] <jgbarah>	3. Thanks. In general, it is considered that hidden effects are not a good thing. I know that in some cases they do simplify things,
+[Friday 14 June 2019] [5:08:40 PM IST] <jgbarah>	but still, I tend to be very careful with that. If we're including a dependency, I think it is better to make that crystal clear.
+[Friday 14 June 2019] [5:09:01 PM IST] <jgbarah>	In any case, I also get your point. If you agree, you can implement this way, and after it is, we can consider if it makes sense
+[Friday 14 June 2019] [5:09:11 PM IST] <jgbarah>	to also provide the way of doing it via a string.
+[Friday 14 June 2019] [5:09:20 PM IST] <Polaris000>	Good idea!
+[Friday 14 June 2019] [5:09:42 PM IST] <jgbarah>	I don't like messing with global, but maybe we can figure out something else, likely using introspection
+[Friday 14 June 2019] [5:09:56 PM IST] <jgbarah>	What I'm not sure is if that would pay for the pain ;-)
+[Friday 14 June 2019] [5:10:09 PM IST] <Polaris000>	:)
+[Friday 14 June 2019] [5:10:38 PM IST] <Polaris000>	Lets stick with yours for now
+[Friday 14 June 2019] [5:10:53 PM IST] <jgbarah>	OK, thanks
+[Friday 14 June 2019] [5:10:54 PM IST] <Polaris000>	Do we need to do it for issues/pull requests too?
+[Friday 14 June 2019] [5:11:20 PM IST] <Polaris000>	I don't see how
+[Friday 14 June 2019] [5:11:32 PM IST] <jgbarah>	For issues, the problem is knowing when an issue affects source code. I think we need to skip it for now
+[Friday 14 June 2019] [5:11:58 PM IST] <jgbarah>	For pull requests, we could check the commit, and depending on the files it touches, consider it touches code or not,
+[Friday 14 June 2019] [5:12:13 PM IST] <jgbarah>	but for now we don't have that information coming from Perceval, so I would also skip that
+[Friday 14 June 2019] [5:12:28 PM IST] <jgbarah>	But we can leave a note explaining why we're doing that
+[Friday 14 June 2019] [5:12:54 PM IST] <Polaris000>	Good idea
+[Friday 14 June 2019] [5:13:23 PM IST] <Polaris000>	Can me move on to flatten_data?
+[Friday 14 June 2019] [5:13:31 PM IST] <Polaris000>	If this topic is over?
+[Friday 14 June 2019] [5:13:48 PM IST] <jgbarah>	I think so
+[Friday 14 June 2019] [5:13:56 PM IST] <Polaris000>	Great
+[Friday 14 June 2019] [5:14:00 PM IST] <jgbarah>	What's the issue with flatten_data?
+[Friday 14 June 2019] [5:14:23 PM IST] <Polaris000>	It should be implemented in the child classes right?
+[Friday 14 June 2019] [5:14:35 PM IST] <Polaris000>	Then what would happen in the root class
+[Friday 14 June 2019] [5:15:02 PM IST] <Polaris000>	Do I need to call super().__init__ in commit.py?
+[Friday 14 June 2019] [5:16:02 PM IST] <jgbarah>	The root class is not intended to be called directly,
+[Friday 14 June 2019] [5:16:14 PM IST] <jgbarah>	so you can so anything wich is reasonable
+[Friday 14 June 2019] [5:16:27 PM IST] <jgbarah>	I would just raise an exception,
+[Friday 14 June 2019] [5:17:10 PM IST] <jgbarah>	Or even not having it defined in the root class (remember that in Python you can do this)
+[Friday 14 June 2019] [5:17:24 PM IST] <jgbarah>	I prefer having the method and raising the exception, since that is more explicit
+[Friday 14 June 2019] [5:17:41 PM IST] <Polaris000>	Finally I get it! I kept thinking you wanted me to call a child class method in the parent class... :)
+[Friday 14 June 2019] [5:17:57 PM IST] <Polaris000>	I prefer the exception too: NotImplemented one right?
+[Friday 14 June 2019] [5:19:11 PM IST] <jgbarah>	Yes, something like that
+[Friday 14 June 2019] [5:19:38 PM IST] <Polaris000>	Great. if its ok, lets move on to compute_timeseries
+[Friday 14 June 2019] [5:19:39 PM IST] <jgbarah>	But yes, when you're coding the parent class, maybe you're calling a method in a child class
+[Friday 14 June 2019] [5:20:13 PM IST] <jgbarah>	in that case you *need* the method in the parent class, even if it just raises an exception, because you want to redefine it in a children
+[Friday 14 June 2019] [5:20:41 PM IST] <jgbarah>	Do you understand this?
+[Friday 14 June 2019] [5:20:48 PM IST] <Polaris000>	Yes, thanks!
+[Friday 14 June 2019] [5:22:25 PM IST] <Polaris000>	I have two more questions: 1. an alternate implementation for compute_timeseries without using getdate (to populate when since and until are None)
+[Friday 14 June 2019] [5:22:50 PM IST] <Polaris000>	2. Do we need to have notebooks + explanatory documentation for non-metric files?
+[Friday 14 June 2019] [5:22:57 PM IST] <Polaris000>	Like metric.py or commit.py?
+[Friday 14 June 2019] [5:23:07 PM IST] <jgbarah>	When filtering the dataframe, if since is None, you can just not filter "since some date".
+[Friday 14 June 2019] [5:23:13 PM IST] <jgbarah>	Same for until
+[Friday 14 June 2019] [5:23:47 PM IST] <jgbarah>	2. For now, I had thought that yes, it would be better having everything as a notebook, fro consistency.
+[Friday 14 June 2019] [5:24:18 PM IST] <jgbarah>	I don't mind if for now "internal" modules such as a these are kept only as Python modules,
+[Friday 14 June 2019] [5:24:24 PM IST] <jgbarah>	we can later produce notebooks for them
+[Friday 14 June 2019] [5:24:54 PM IST] <Polaris000>	Regarding 1, you had said in a review, that we will keep it for now and discuss it later
+[Friday 14 June 2019] [5:24:56 PM IST] <Polaris000>	https://github.com/chaoss/wg-evolution/pull/162#discussion_r292684688
+[Friday 14 June 2019] [5:25:36 PM IST] <Polaris000>	compute_timeseries is not about filtering : I think we are talking about two different things here
+[Friday 14 June 2019] [5:25:56 PM IST] <Polaris000>	2. Ok, I'll add the notebooks later
+[Friday 14 June 2019] [5:26:41 PM IST] <Polaris000>	Anything else, jgbarah?
+[Friday 14 June 2019] [5:26:48 PM IST] <Polaris000>	@valcos?
+[Friday 14 June 2019] [5:27:04 PM IST] <valcos>	not from my side, thanks @Polaris000
+[Friday 14 June 2019] [5:27:35 PM IST] <jgbarah>	For 1, ok, if you want let's keep it is as it is now, and we can revisit later
+[Friday 14 June 2019] [5:28:20 PM IST] <jgbarah>	compute_timeseries is not about filtering, I know, but for comptuing timeseries all you need is group by (month,year), for example,
+[Friday 14 June 2019] [5:28:35 PM IST] <jgbarah>	which doesn't need the starting or ending date
+[Friday 14 June 2019] [5:28:38 PM IST] <jgbarah>	(I think)
+[Friday 14 June 2019] [5:28:52 PM IST] <jgbarah>	But ok, let's keep it that way if you want for now
+[Friday 14 June 2019] [5:29:04 PM IST] <jgbarah>	Nothing else from my side...
+[Friday 14 June 2019] [5:29:36 PM IST] <Polaris000>	Great, by tonight, I'll update the CodeChanges patch, along with the usual blog post/log
+[Friday 14 June 2019] [5:29:45 PM IST] <jgbarah>	Just to clarify priorities: let's try to finish this first metric asap, then the other metrics for commits, then the other metrics in the hierarchy
+[Friday 14 June 2019] [5:29:48 PM IST] <Polaris000>	Next week, I'll continue with the other metrics
+[Friday 14 June 2019] [5:29:54 PM IST] <jgbarah>	Thanks!
+[Friday 14 June 2019] [5:30:00 PM IST] <Polaris000>	And update my pull request of the pure_python implementation
+[Friday 14 June 2019] [5:30:05 PM IST] <Polaris000>	Bye, thanks all!
+[Friday 14 June 2019] [5:30:11 PM IST] <jgbarah>	I'm uploading a new review of some missing aspects, I think nothing serious...
+[Friday 14 June 2019] [5:30:19 PM IST] <jgbarah>	Thanks!
+[Friday 14 June 2019] [5:30:22 PM IST] <Polaris000>	ok @jgbarah
+[Friday 14 June 2019] [5:30:24 PM IST] <Polaris000>	Bye
+[Friday 14 June 2019] [5:30:30 PM IST] <jgbarah>	Bye!
+[5:30:34 PM IST] Part	You (~Polaris00@124.123.75.129) have left channel #grimoirelab ("Konversation terminated!").
