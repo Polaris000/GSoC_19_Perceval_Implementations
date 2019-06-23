@@ -1,8 +1,7 @@
-import pandas as pd
 import unittest
 import sys
+sys.path.append('..')
 sys.path.append('../..')
-print(sys.path)
 from code_df.metric import Metric
 from code_df import utils
 
@@ -25,5 +24,4 @@ class TestMetric(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main(verbosity=2)
-
 
