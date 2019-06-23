@@ -8,9 +8,6 @@ from code_df import utils
 
 class TestMetric(unittest.TestCase):
 
-    def test_init(self):
-        pass
-
     def test__flatten(self):
         """Test whether a NotImplementedError is thrown"""
 

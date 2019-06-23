@@ -1,13 +1,13 @@
 import pandas as pd
 
-import conditions
-from metric import Metric
-import utils
+from . import conditions
+from .metric import Metric
+from . import utils
 
 
 class Commit(Metric):
     """
-    Initilizes self.df, the dataframe with one commit per row.
+    Initializes self.df, the dataframe with one commit per row.
 
     :param items: A list of dictionaries.
         Each item is a Perceval dictionary, obtained from a JSON
