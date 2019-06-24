@@ -1,0 +1,133 @@
+Date: Monday 24 June 2019
+Participants: aswanipranjal, Polaris000, jgbarah
+Start_Time: 4:17:16 PM IST
+End_Time: 5:24:57 PM IST
+------------------------------------------------------------------------------
+
+[4:17:16 PM IST] Join	You (~Polaris00@124.123.75.129) have joined the channel #grimoirelab.
+[4:17:17 PM IST] Mode	Channel modes: no colors allowed, no messages from outside, topic protection
+[4:17:17 PM IST] Created	This channel was created on 28/08/17 10:32 PM.
+[4:17:56 PM IST] <Polaris000>	Hi valcos and aswanipranjal!
+[4:19:14 PM IST] <Polaris000>	Since we could n't meet on Friday, the meeting was rescheduled to 1300 hrs CEST today
+[4:23:24 PM IST] <Polaris000>	(by Jesus)
+[4:31:19 PM IST] <aswanipranjal>	Hey @Polaris000! How have you been?
+[4:31:40 PM IST] <Polaris000>	Great! Thanks
+[4:32:35 PM IST] <Polaris000>	Lets wait for jgbarah.
+[4:38:52 PM IST] <aswanipranjal>	Yeah, he should join in a moment
+[4:41:34 PM IST] <Polaris000>	OK. Did you get my summary for the past week?
+[4:43:37 PM IST] <aswanipranjal>	Yes, thanks for that!
+[4:46:13 PM IST] <Polaris000>	While we wait, could you have a look at the following comments and let me know what you think?
+[4:46:14 PM IST] <Polaris000>	https://github.com/chaoss/wg-evolution/pull/172#discussion_r296601553
+[4:47:37 PM IST] <aswanipranjal>	sure
+[4:47:40 PM IST] <Polaris000>	Regarding the location of compute_timeseries
+[4:52:01 PM IST] <aswanipranjal>	sorry, I got disconnected. Can you please email Jesus once about the meeting?
+[4:52:18 PM IST] <Polaris000>	I already did
+[4:53:20 PM IST] <aswanipranjal>	okay, thanks
+[4:54:49 PM IST] <aswanipranjal>	Regarding the compute_timeseries method, `count_new` is the custom aggregation method that you are talking about?
+[4:55:39 PM IST] <Polaris000>	yeah
+[4:56:21 PM IST] <Polaris000>	I am finding it difficult to generalize the method enough to define it in a higher class
+[4:58:52 PM IST] Join	jgbarah (~jgb@11.red-2-137-30.dynamicip.rima-tde.net) has joined this channel.
+[4:58:58 PM IST] <aswanipranjal>	Everything apart from the aggregation would be the same, correct? We can look into other methods (maybe pass the aggregation function as a argument to `compute`
+[4:59:08 PM IST] <jgbarah>	Hi all!
+[4:59:10 PM IST] <aswanipranjal>	`compute_timeseries`?
+[4:59:13 PM IST] <jgbarah>	I see you already started
+[4:59:14 PM IST] <aswanipranjal>	Hey @jgbarah!
+[4:59:19 PM IST] <Polaris000>	Hi @jgbarah
+[4:59:30 PM IST] <Polaris000>	Yes @aswanipranjal
+[4:59:55 PM IST] <jgbarah>	Can you please summarize the meeting up to now?
+[5:00:22 PM IST] <Polaris000>	Nothing much @jgbarah. We were just discussing compute_timeseries
+[5:00:31 PM IST] <Polaris000>	As to how we could move it to a higher clas
+[5:00:37 PM IST] <Polaris000>	We realized
+[5:00:52 PM IST] <jgbarah>	Ah, ok. Good
+[5:00:53 PM IST] <Polaris000>	that one of the problems was the aggreagatiuon method
+[5:01:04 PM IST] <jgbarah>	There are two issues with compute_timeseries:
+[5:01:16 PM IST] <jgbarah>	I think it should move up, likely to Metric,
+[5:01:44 PM IST] <jgbarah>	and I think there are better ways of computing it, as I commented in the review to your latest pull request
+[5:01:53 PM IST] <Polaris000>	Yes. I replied
+[5:01:55 PM IST] <jgbarah>	Do you need more elaboration on this?
+[5:02:38 PM IST] <jgbarah>	OK, I see
+[5:02:50 PM IST] <Polaris000>	I 'll need to try it out with the new method. By moving it to a higher class, do you mean something like _flatten
+[5:03:04 PM IST] <Polaris000>	in metric.py>
+[5:03:07 PM IST] <Polaris000>	?
+[5:03:18 PM IST] <jgbarah>	When you compute timeseries, you basically split by periods, and aggregate all items in the period using some aggregator function
+[5:03:35 PM IST] <jgbarah>	Splitting in periods can be do at the Metric level.
+[5:04:08 PM IST] <jgbarah>	And then aggregating can be done at the specific metric level
+[5:05:01 PM IST] <jgbarah>	The "timeseries" method in Metric would call the abstract method "aggregate", which will be overridden  by children classes
+[5:05:24 PM IST] <Polaris000>	Yeah ok.Hopefully it works with the new method.
+[5:05:32 PM IST] <jgbarah>	I'm not completely sure this can be done at the Metric level, but i think it can be done. If not, at the Commit level...
+[5:05:46 PM IST] <jgbarah>	OK. Can you try then?
+[5:05:50 PM IST] <Polaris000>	Of course
+[5:05:54 PM IST] <jgbarah>	Great!
+[5:06:09 PM IST] <Polaris000>	Did you have a look at this weeks summasry?
+[5:06:24 PM IST] <jgbarah>	Not yet. Sorry, i come straight from a meeting
+[5:06:31 PM IST] <jgbarah>	Give me two minutes
+[5:06:41 PM IST] <Polaris000>	Thats alright.
+[5:09:20 PM IST] <jgbarah>	I saw. That s consistent with what I saw, so we're on the same page ;-)
+[5:09:41 PM IST] <Polaris000>	Great!
+[5:09:49 PM IST] <jgbarah>	I didn't review new metrics until we're completely done with the class structure. So let's try to finish that asap, and then:
+[5:10:26 PM IST] <jgbarah>	* modify new metrics that you are pr-ing, according to the latest version of the class hierarchy
+[5:10:31 PM IST] <jgbarah>	* work on tests
+[5:10:51 PM IST] <jgbarah>	* work on the the class hierarchy using lists instead of prs
+[5:11:34 PM IST] <jgbarah>	For the relative import, let me do a couple of tests. I think maybe we can solve that more cleanly with a module
+[5:12:07 PM IST] <jgbarah>	Do you agree with this plan?
+[5:12:16 PM IST] <Polaris000>	Yes. Perfectly
+[5:12:26 PM IST] <jgbarah>	OK. I see that you also wanted to comment on
+[5:12:39 PM IST] <jgbarah>	"A possible structure for tests"
+[5:12:46 PM IST] <jgbarah>	What do you mean?
+[5:13:17 PM IST] <Polaris000>	https://github.com/Polaris000/GSoC_19_Perceval_Implementations/pull/12#issuecomment-504899619
+[5:13:22 PM IST] <Polaris000>	I commented here.
+[5:14:25 PM IST] <Polaris000>	Just wanted to decide on a directory structure for tests
+[5:14:42 PM IST] <Polaris000>	Again, this would as of now require relative imports
+[5:14:56 PM IST] <jgbarah>	We can try with that structure. Jut don't use "pure", to shorten names ;-)
+[5:15:02 PM IST] <aswanipranjal>	I suggest there can be 1 directory called tests with two sub folders: `dataframes`, `lists`
+[5:15:27 PM IST] <jgbarah>	Maybe later we will discover that it is better to organize by "subject" (code, tests, notebooks)
+[5:15:40 PM IST] <jgbarah>	(I see that's what aswanipranjal actually suggests ;-) )
+[5:15:47 PM IST] <Polaris000>	yes..
+[5:16:07 PM IST] <jgbarah>	Honestly, I don't know what is better. Let's start with any of those, and then we decide. since we already have code, code_df, etc,
+[5:16:20 PM IST] <jgbarah>	Maybe we can go on with tests, tests_df,
+[5:16:25 PM IST] <aswanipranjal>	Sure
+[5:16:35 PM IST] <jgbarah>	and maybe later on, if we feel that's better, move to what aswanipranjal suggests.
+[5:16:49 PM IST] <jgbarah>	In any case, at least for now I would not have subdirs in tests.
+[5:17:08 PM IST] <jgbarah>	We can have several files, but for now, there is no need of further subdirs...
+[5:17:41 PM IST] <Polaris000>	> Jut don't use "pure", to shorten names ;-) -> Do you prefer anything in particular? :)
+[5:17:56 PM IST] <jgbarah>	For now, we could have one testing file per tested metric class,
+[5:18:09 PM IST] <jgbarah>	(for 8nit testing)
+[5:18:13 PM IST] <jgbarah>	(unit)
+[5:18:40 PM IST] <jgbarah>	and then a single file for testing the computing of the metrics with one or more JSON files
+[5:18:51 PM IST] <jgbarah>	that could be one for all the metrics of a class, eg, commits
+[5:19:01 PM IST] <jgbarah>	(I mean, a hierarchy of classes)
+[5:19:12 PM IST] <jgbarah>	> Do you prefer anything in particular?
+[5:19:18 PM IST] <jgbarah>	Just nothing ;-)
+[5:19:26 PM IST] <jgbarah>	We can have "code" and "code_df"
+[5:19:29 PM IST] <jgbarah>	(for now)
+[5:19:34 PM IST] <jgbarah>	That's easy to change later...
+[5:19:41 PM IST] <Polaris000>	No problem jgbarah will do that
+[5:19:47 PM IST] <jgbarah>	Thanks!
+[5:20:01 PM IST] <jgbarah>	Anything else to discuss from any of you?
+[5:20:04 PM IST] <Polaris000>	could you explain the metric tests file part again?
+[5:20:12 PM IST] <aswanipranjal>	Nothing more from my side
+[5:20:17 PM IST] <Polaris000>	I didn't get the structure for that
+[5:20:24 PM IST] <aswanipranjal>	tests?
+[5:20:27 PM IST] <jgbarah>	ok
+[5:20:30 PM IST] <Polaris000>	yeah
+[5:20:40 PM IST] <jgbarah>	Two directories: tests and tests_df
+[5:20:53 PM IST] <jgbarah>	for each of them, a file per class, with unit testing for that class.
+[5:21:21 PM IST] <jgbarah>	Then, in addition, a file for each of the class hierarchies (eg, one for Commit, one for Issue...)
+[5:21:38 PM IST] <Polaris000>	Great! Got it
+[5:21:52 PM IST] <jgbarah>	That one will test all of the metrics in that hiearchy by computing all the metrics for a certain JSON file
+[5:21:57 PM IST] <jgbarah>	(or maybe for some of them)
+[5:22:26 PM IST] <jgbarah>	All of the metrcis will also be computed with several filters (eg, for a period of time, only for master, etc...)
+[5:22:29 PM IST] <jgbarah>	OK
+[5:22:32 PM IST] <jgbarah>	Anything else?
+[5:22:51 PM IST] <Polaris000>	OK @jgbarah. But the current test strucutre would require relative imports
+[5:23:04 PM IST] <Polaris000>	Is that ok for now?
+[5:23:19 PM IST] <jgbarah>	Go ahead with relative imports, while I try to find something better ;-)
+[5:23:31 PM IST] <Polaris000>	OK. Great!
+[5:23:35 PM IST] <Polaris000>	Nothing else from my side
+[5:23:42 PM IST] <jgbarah>	Good. Are we done then for today?
+[5:23:53 PM IST] <Polaris000>	Yes I think so
+[5:24:00 PM IST] <aswanipranjal>	yes @jgbarah
+[5:24:10 PM IST] <jgbarah>	Thanks a lot! Read you on Friday. And thanks a lot for the change of this meeting to today
+[5:24:14 PM IST] <jgbarah>	Bye!
+[5:24:19 PM IST] <Polaris000>	Bye!
+[5:24:57 PM IST] Part	You (~Polaris00@124.123.75.129) have left channel #grimoirelab ("Konversation terminated!").
