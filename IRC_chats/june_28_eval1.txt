@@ -1,0 +1,218 @@
+Date: Friday 28 June 2019
+Participants: jgbarah, valcos, inishchith, aswanipranjal, Polaris000
+Start_Time: 4:30:59 PM IST
+End_Time: 5:43:40 PM IST
+------------------------------------------------------------------------------
+
+[4:30:59 PM IST] Join	You (~Polaris00@124.123.75.129) have joined the channel #grimoirelab.
+[4:31:00 PM IST] Mode	Channel modes: no colors allowed, no messages from outside, topic protection
+[4:31:00 PM IST] Created	This channel was created on 28/08/17 10:32 PM.
+[4:31:26 PM IST] <inishchith>	valcos You're referring to out current implementation of CoCom enricher right?
+[4:31:55 PM IST] <valcos>	yes
+[4:33:27 PM IST] <inishchith>	I agree with the storage issue part and yes, there's a scope for improvement(as you'd suggested a solution). Do you want me to evaluate the log file solution? I think some of the license metrics defined here(https://github.com/chaoss/metrics/issues/139) wouldn't require repository-level implementation like we did for CoCom backend.
+[4:35:28 PM IST] <valcos>	as you prefer, we could have something stable for colic and cocom and then perform another iteration
+[4:35:46 PM IST] <valcos>	(which would target scalability issue)
+[4:36:17 PM IST] <valcos>	@jgbarah any preferences?
+[4:36:26 PM IST] <valcos>	Hi @Polaris000
+[4:36:33 PM IST] <Polaris000>	Hi valcos!
+[4:36:51 PM IST] <jgbarah>	Hi, Polaris000! We're still in the meeting with inishchith
+[4:37:07 PM IST] <inishchith>	Hi Polaris000!
+[4:37:08 PM IST] <Polaris000>	Its alright, we can start when you are done
+[4:37:12 PM IST] <Polaris000>	Hi!
+[4:38:29 PM IST] <jgbarah>	Well, for me both options are ok
+[4:39:48 PM IST] <valcos>	thank you @jgbarah, if you all agree we can finish the first iteration over the colic and cocom dashboards
+[4:40:11 PM IST] <inishchith>	Yes. valcos.
+[4:40:19 PM IST] <valcos>	and in the second iteration we will focus on performance
+[4:40:41 PM IST] <inishchith>	Sure. That would be better!
+[4:40:51 PM IST] <valcos>	great!
+[4:41:21 PM IST] <valcos>	@jgbara @inishchith do you want to comment on something?
+[4:41:47 PM IST] <jgbarah>	Nothing in particular. Thanks!
+[4:42:01 PM IST] <inishchith>	Nothing from my side too. Thanks :)
+[4:43:01 PM IST] <valcos>	perfect! thank you for your time
+[4:43:08 PM IST] <jgbarah>	Thanks to you all!
+[4:43:20 PM IST] <jgbarah>	Polaris000: we can start, if you all want
+[4:43:29 PM IST] <Polaris000>	Yes jgbarah!
+[4:43:30 PM IST] <inishchith>	Thanks. Is there a way to get the log from this new UI?
+[4:44:55 PM IST] <jgbarah>	inishchith: Which UI are you talking about?
+[4:45:21 PM IST] <jgbarah>	Polaris000: did you send your blog post, or a draft of it? I couldn't see it .-(
+[4:45:33 PM IST] <Polaris000>	I sent it about 20 min ago
+[4:45:51 PM IST] <Polaris000>	Could you check again?
+[4:46:50 PM IST] <Polaris000>	Its in the same thread where I send all of my summaries
+[4:48:06 PM IST] <inishchith>	Bye valcos jgbarah Polaris000!
+[4:48:18 PM IST] <Polaris000>	Bye inishchith!
+[4:48:25 PM IST] <valcos>	Bye @inishchith
+[4:48:26 PM IST] <jgbarah>	Bye inishchith!
+[4:48:31 PM IST] Quit	inishchith (6ee3c2c4@110.227.194.196) has left this server (Remote host closed the connection).
+[4:48:38 PM IST] <jgbarah>	Polaris000: I saw your message now.
+[4:48:46 PM IST] <Polaris000>	Great!
+[4:49:15 PM IST] <Polaris000>	Of course, it includes only the last three days
+[4:49:16 PM IST] <jgbarah>	Please, send it more in advance. For me it would be great if I can read it early in the morning, so that i can comment by email before the meeting, if needed
+[4:49:31 PM IST] <Polaris000>	Oh.. Ok will do
+[4:50:05 PM IST] <jgbarah>	Thanks!
+[4:50:12 PM IST] <aswanipranjal>	Hey Polaris000!
+[4:50:16 PM IST] <Polaris000>	Hi aswanipranjal
+[4:50:44 PM IST] <jgbarah>	In this case that's not important for me, because I think i'm in all the details, but for reference of others,
+[4:50:58 PM IST] <jgbarah>	please in the summary link repos, pull requests, issues, etc.
+[4:51:19 PM IST] <jgbarah>	For the rest, ok, I think we're on the same page.
+[4:51:19 PM IST] <Polaris000>	Sorry jgbarah
+[4:51:31 PM IST] <jgbarah>	No problem, Polaris000 ;-)
+[4:51:36 PM IST] <Polaris000>	Will keep that in mind
+[4:51:45 PM IST] <aswanipranjal>	If you can Polaris000, I'd say you should write the blogpost and publish it early on the day of the meeting. That worked out well for me
+[4:51:56 PM IST] <jgbarah>	Then, we can start with the code for timeseries, ok?
+[4:52:19 PM IST] <jgbarah>	(yes, I agree with aswanipranjal. You can edit it after the meeting, add complementary information, links to the logs, etc.)
+[4:52:38 PM IST] <Polaris000>	Got it. WIll do. We can begin jgbarah
+[4:53:11 PM IST] <Polaris000>	https://github.com/chaoss/wg-evolution/pull/176
+[4:53:25 PM IST] <Polaris000>	Please have a look for timeseries
+[4:56:26 PM IST] <jgbarah>	I'm having a look at the current implementation you're proposing
+[4:56:37 PM IST] <jgbarah>	But I see _agg is doing more than aggregating.
+[4:56:53 PM IST] <jgbarah>	In "df.resample(period)['category'].agg(['count'])"
+[4:57:15 PM IST] <jgbarah>	I was expecting that _agg would basically be doing "agg(['count'])"
+[4:57:33 PM IST] <Polaris000>	We need to select columns to perform the aggregation on
+[4:57:45 PM IST] <jgbarah>	Do you have a rationale about why doing the resampling too?
+[4:58:08 PM IST] <jgbarah>	What do you mean?
+[4:58:35 PM IST] <Polaris000>	If I don't do ['category'], the resulting df will have all the columns in self.fd
+[4:58:38 PM IST] <Polaris000>	*df
+[4:58:54 PM IST] <Polaris000>	So I have to choose ['category] to apply the aggregation on
+[4:58:58 PM IST] <jgbarah>	OK, I see.
+[4:59:07 PM IST] <jgbarah>	Let me think for a moment...
+[4:59:14 PM IST] <Polaris000>	sure jgbarah
+[5:01:33 PM IST] <Polaris000>	This implementation also makes it easier to choose multiple columns, as in the case of code_changes_Lines.
+[5:02:43 PM IST] <Polaris000>	additions and deletions
+[5:03:05 PM IST] <jgbarah>	OK, I think I understand where the problem is
+[5:03:31 PM IST] <jgbarah>	You are in fact doing two things: selecting columns, and aggregating by period
+[5:03:42 PM IST] <Polaris000>	yes
+[5:04:00 PM IST] <jgbarah>	That's something (I think) you'll be doing always for timeseries
+[5:04:07 PM IST] <aswanipranjal>	@Polaris000, can't a series be directly passed to the `_agg` function?
+[5:04:20 PM IST] <Polaris000>	It can aswanipranjal. That was my original idea
+[5:04:37 PM IST] <jgbarah>	So, you can have two methods, instead of on: _agg and _columns
+[5:05:06 PM IST] <jgbarah>	That way, you first create the dataframe you want by _columnsand then call _agg on it
+[5:05:41 PM IST] <Polaris000>	Where will resampling happen?
+[5:08:15 PM IST] <jgbarah>	Think of it as: df = self._columns(df)
+[5:08:16 PM IST] <jgbarah>	df = df.resample(df)
+[5:08:16 PM IST] <jgbarah>	df = self._agg(df)
+[5:08:44 PM IST] <jgbarah>	And yes, you can do it also producing a timeseries and passing it to _agg (in that final step)
+[5:08:55 PM IST] <Polaris000>	resample(period) does not return a df
+[5:09:55 PM IST] <jgbarah>	Hmm. You're right.
+[5:10:25 PM IST] <jgbarah>	Let's go one step back:
+[5:10:48 PM IST] <jgbarah>	my concern is trying to capture what's general when building timeseries, and keeping that for the toplevel class
+[5:11:39 PM IST] <jgbarah>	and what's specific for the specific metrics, and making that abstract methods in the toplevel class, and implement thm in the specific metrics classes
+[5:12:07 PM IST] <jgbarah>	From the above conversation, it seems that selecting columns depends on the specific metric, and the kind of aggregation, too
+[5:12:25 PM IST] <jgbarah>	Then, I would like to have _columns and _agg for them
+[5:12:38 PM IST] <Polaris000>	Would it be better to add a count column with all rows as 1 and then just use a count aggregations?  LIke this:
+[5:12:44 PM IST] <Polaris000>	df = self.add_cols()
+[5:12:44 PM IST] <Polaris000>	# add count col
+[5:12:44 PM IST] <Polaris000>	df = self._agg(df, period)
+[5:12:44 PM IST] <Polaris000>	return df
+[5:12:44 PM IST] <Polaris000>	inside _agg:
+[5:12:44 PM IST] <Polaris000>	df = df.resample(period).agg({"count": 'count'})
+[5:12:44 PM IST] <Polaris000>	return df
+[5:13:16 PM IST] <Polaris000>	the add_cols method or somehting like that adds whatever columns are specific to the metric
+[5:13:29 PM IST] <Polaris000>	For code_changes_lines, that would be additions and deletions
+[5:13:39 PM IST] <jgbarah>	But some of the metrics could do for example mean instead of count
+[5:13:51 PM IST] <jgbarah>	and besides, if we can avoid adding a new column, that would be great
+[5:13:58 PM IST] <Polaris000>	Yes, but self_agg is defined for each metric
+[5:14:12 PM IST] <jgbarah>	Then, I missed something
+[5:14:28 PM IST] <jgbarah>	The code that you printed above, is for which method?
+[5:14:43 PM IST] <Polaris000>	The upper part is the timeseries method.
+[5:14:48 PM IST] <Polaris000>	After inside_agg:
+[5:14:51 PM IST] <Polaris000>	It is self._agg
+[5:14:56 PM IST] <Polaris000>	in each metric class
+[5:15:09 PM IST] <Polaris000>	overridden from metric.py
+[5:15:17 PM IST] <Polaris000>	Just like the structure we have now
+[5:16:25 PM IST] <jgbarah>	Then, I don't understand. The current code is "df = df.resample(period)['category'].agg(['count'])"
+[5:16:39 PM IST] <jgbarah>	which already addresses that issue, and does not require new columns...
+[5:17:09 PM IST] <jgbarah>	OK, I think we're stuck here. Let's do the following:
+[5:17:30 PM IST] <jgbarah>	* I accept your current code, but follow on thinking about how to separate column selection from aggregation
+[5:18:34 PM IST] <jgbarah>	* aswanipranjal or Polaris000 if you can propose some code using timeseries, as you suggest, and respecting this
+[5:18:35 PM IST] <jgbarah>	difference between the "generic" and the "specific" code, I would be very interested in reading it
+[5:18:46 PM IST] <jgbarah>	Is that ok with you?
+[5:19:07 PM IST] <aswanipranjal>	Sure jgbarah, I was looking into how to separate this, right now, as well
+[5:19:13 PM IST] <Polaris000>	Could you have a look this one last time:
+[5:19:16 PM IST] <Polaris000>	# metric.py
+[5:19:16 PM IST] <Polaris000>	def time_series():
+[5:19:16 PM IST] <Polaris000>	df = self.add_cols()
+[5:19:16 PM IST] <Polaris000>	# add count col
+[5:19:16 PM IST] <Polaris000>	df = df.set_index(...)
+[5:19:16 PM IST] <Polaris000>	df = self._agg(df, period)
+[5:19:16 PM IST] <Polaris000>	return df
+[5:19:16 PM IST] <Polaris000>	# individual metric class
+[5:19:16 PM IST] <Polaris000>	def _agg():_
+[5:19:16 PM IST] <Polaris000>	df = df.resample(period).agg({"count": 'count'})
+[5:19:16 PM IST] <Polaris000>	return df
+[5:19:16 PM IST] <Polaris000>	# also in indiv metric class
+[5:19:16 PM IST] <Polaris000>	def add_cols():
+[5:19:16 PM IST] <Polaris000>	df['count'] = ...
+[5:19:16 PM IST] <Polaris000>	return df
+[5:20:22 PM IST] <jgbarah>	I don't like adding more stuff to df, just for aggregating. Otherwise, I think it would work...
+[5:20:31 PM IST] <Polaris000>	We have to add columns for other metrics, like Code_changes_lines which needs additions and deletions
+[5:20:33 PM IST] <jgbarah>	...when we're counting
+[5:20:52 PM IST] <jgbarah>	But I see this is specific, so for other metrics we would do some other stuff, so I see the line
+[5:21:51 PM IST] <jgbarah>	OK, let's do as i commented above: I merge this pr, but we follow on thinking about how to separate both things,
+[5:21:51 PM IST] <jgbarah>	if possible withouht adding new columns. If we cannot, we can revert to this.
+[5:22:11 PM IST] <Polaris000>	Fair enough!
+[5:22:11 PM IST] <jgbarah>	Can you maybe open an specific issue about this, Polaris000, including proposing this solution that you say,
+[5:22:21 PM IST] <Polaris000>	OK will do
+[5:22:25 PM IST] <jgbarah>	But we all keep thinking about other ways of doing it?
+[5:22:30 PM IST] <jgbarah>	Good!
+[5:22:38 PM IST] <aswanipranjal>	yes jgbarah
+[5:22:42 PM IST] <jgbarah>	Thanks!
+[5:23:00 PM IST] <jgbarah>	Now, Polaris000, about testing.... You wanted to comment something?
+[5:23:06 PM IST] <Polaris000>	Yes.
+[5:23:32 PM IST] <Polaris000>	If I am testing an instance method which is called inside the __init__ method of that class, how should I go about testing it?
+[5:23:55 PM IST] <Polaris000>	Since, to test that method, I would have to create an object, which would implicitly
+[5:23:58 PM IST] <Polaris000>	call the method
+[5:25:06 PM IST] <jgbarah>	Example?
+[5:25:22 PM IST] <Polaris000>	One sec
+[5:26:14 PM IST] <Polaris000>	https://github.com/chaoss/wg-evolution/blob/24338f5da4c84db752d5cc035296ed25dac41741/implementations/code_df/code_changes_lines.py#L27
+[5:26:36 PM IST] <Polaris000>	If I want to test _add_lines method, how do I do it?
+[5:27:07 PM IST] <Polaris000>	If there is some problem in the __init__ method, my test would fail trivially
+[5:27:46 PM IST] <Polaris000>	I won;t be able to "isolate" this method
+[5:29:34 PM IST] <jgbarah>	I see. If you absolutely need to do that, you can subclass it, and for that subclass, create either an empty __init__,
+[5:29:34 PM IST] <jgbarah>	or an __init__ that does what you may want (in this case, probably using a df for initializing self.df,
+[5:29:34 PM IST] <jgbarah>	so that when you later call _add_lines from the testing code, it just works with it
+[5:29:42 PM IST] <jgbarah>	So, the testing code could be like:
+[5:30:21 PM IST] <jgbarah>	object = Subclass(testing_df)
+[5:30:21 PM IST] <jgbarah>	check(object._add_lines())
+[5:30:46 PM IST] <jgbarah>	But in this case, being the code so simple, maybe that's an overkill. You decide ;-)
+[5:30:57 PM IST] <Polaris000>	Yes, sure jgbarah THanks a lot
+[5:31:10 PM IST] <Polaris000>	IS there anything else we need to discuss? jgbarah aswanipranjal?
+[5:31:55 PM IST] <aswanipranjal>	Nothing more @Polaris000. This is up for review now: https://github.com/chaoss/wg-evolution/pull/190, right?
+[5:32:07 PM IST] <jgbarah>	I'm a bit worried by the slow pace, Polaris000
+[5:32:24 PM IST] <Polaris000>	Yes aswanipranjal.
+[5:32:26 PM IST] <jgbarah>	i feel in some cases I'm stopping you, like with the class hierarchy implementation
+[5:33:05 PM IST] <Polaris000>	It takes several iterations for me to do what you want..
+[5:33:05 PM IST] <jgbarah>	But in other cases, maybe we're having some misunderstanding. For example, during these last three days that you couldn't work a lot on classes because of reviews,
+[5:33:15 PM IST] <jgbarah>	I was expecting that tests and scripts would advance...
+[5:33:34 PM IST] <jgbarah>	I know it is difficult to find the balance, so I'm just saying ;-)
+[5:33:49 PM IST] <Polaris000>	Very sorry..
+[5:34:08 PM IST] <jgbarah>	From my side, nothing serious for now, I'm just saying to avoid this becomes a problem.
+[5:34:13 PM IST] <aswanipranjal>	> It takes several iterations for me to do what you want..
+[5:34:14 PM IST] <aswanipranjal>	That is okay @Polaris000, the important thing is, do you understand the higher level of things that we want you to do?
+[5:34:27 PM IST] <jgbarah>	Please, let me know if you don't know what to do when you're blocked by us in some line
+[5:34:41 PM IST] <Polaris000>	Yes aswanipranjal. The problem happens in the specifics
+[5:34:48 PM IST] <Polaris000>	Sure @jgbarah
+[5:34:57 PM IST] <jgbarah>	And I have nothing else to say about this. As I said, nothing serious for now ;-)
+[5:35:03 PM IST] <jgbarah>	ok, so for the next week,
+[5:35:43 PM IST] <jgbarah>	now that we have a class hiearchy for commits, I think you could try to implement all metrics for the commits hierarchy
+[5:36:06 PM IST] <jgbarah>	and produce proposals for Issues and PullRequests (with one specific metric for each of them)
+[5:36:43 PM IST] <jgbarah>	You could also work on setting up a testing system (for now, you can focus on testing the files needed for the current hierarchy)
+[5:37:34 PM IST] <Polaris000>	OK @jgbarah.
+[5:37:41 PM IST] <jgbarah>	And you can also start to produce a draft of a script that, given thre JSON files (for commits, issues  and prs)
+[5:37:48 PM IST] <jgbarah>	would compute mertrics for it
+[5:38:08 PM IST] <jgbarah>	(for now it would work only with the metrics that we have implemented, but with time it would work with all of them)
+[5:38:26 PM IST] <jgbarah>	I would say, that you can proceed in this order
+[5:38:29 PM IST] <jgbarah>	OK?
+[5:38:37 PM IST] <Polaris000>	sure
+[5:38:56 PM IST] <Polaris000>	what are you referring to here?
+[5:38:56 PM IST] <Polaris000>	>> I know it is difficult to find the balance, so I'm just saying ;-)
+[5:38:56 PM IST] <Polaris000>	what are you referring to here?
+[5:40:04 PM IST] <jgbarah>	I meant "finding the balance between waiting until the stuff is more mature, to implement things that depend on it, and going ahead with nee code"
+[5:40:49 PM IST] <jgbarah>	For example, when writing code for a new metric, that depends on the class hierarchy, and therefore maybe will need to be rewritten when the class hiearchy is still not set in stone
+[5:41:30 PM IST] <Polaris000>	Yes, got it jgbarah. Hopefully this won't be a problem once we are done with all category classes (issues.py and pull requests.py too)
+[5:41:45 PM IST] <Polaris000>	OK. Anything else from your side?
+[5:42:49 PM IST] <Polaris000>	If not, we can end this meeting here.
+[5:43:10 PM IST] <jgbarah>	Yes, let's finsih. We're well over one hour!
+[5:43:19 PM IST] <Polaris000>	oops!
+[5:43:24 PM IST] <Polaris000>	Bye all!
+[5:43:25 PM IST] <jgbarah>	Thanks a lot to all of you, Polaris000 aswanipranjal valcos
+[5:43:40 PM IST] Part	You (~Polaris00@124.123.75.129) have left channel #grimoirelab ("Konversation terminated!").
