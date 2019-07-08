@@ -1,0 +1,130 @@
+Date: Friday 5 July 2019
+Participants: jgbarah, Polaris000, aswanipranjal, valcos
+Start_Time: 4:47:34 PM IST
+End_Time: 5:19:37 PM IST
+------------------------------------------------------------------------------
+
+[4:47:34 PM IST] Join	You (~Polaris00@124.123.75.129) have joined the channel #grimoirelab.
+[4:47:34 PM IST] Mode	Channel modes: no colors allowed, no messages from outside, topic protection
+[4:47:34 PM IST] Created	This channel was created on 28/08/17 10:32 PM.
+[4:47:47 PM IST] <aswanipranjal>	Hey @Polaris000!
+[4:47:52 PM IST] <Polaris000>	Hi jgbarah aswanipranjal valcos, really sorry for the delay!
+[4:47:54 PM IST] <Polaris000>	HI
+[4:48:07 PM IST] <Polaris000>	Did you get the link to my post?
+[4:48:13 PM IST] <Polaris000>	I emailed in to all the mentors
+[4:48:30 PM IST] <jgbarah>	Hi, Polaris000!
+[4:48:36 PM IST] <Polaris000>	HI jgbarah
+[4:48:37 PM IST] <jgbarah>	Yes, I got your message, thanks
+[4:48:45 PM IST] <valcos>	Hi Polaris000, yes, I got it, thanks
+[4:48:53 PM IST] <Polaris000>	Great valcos
+[4:48:56 PM IST] <jgbarah>	aswanipranjal valcos Polaris000: can we start our meeting?
+[4:49:05 PM IST] <Polaris000>	yeah of course im ready
+[4:49:08 PM IST] <aswanipranjal>	yes please @jgbarah
+[4:49:51 PM IST] <valcos>	sure!
+[4:50:10 PM IST] <jgbarah>	OK, let's go
+[4:50:26 PM IST] <jgbarah>	Polaris000: I was reviewing some of your prs this morning.
+[4:50:50 PM IST] <jgbarah>	In short, I think we have a new Commit-descendant metric,
+[4:51:03 PM IST] <jgbarah>	I agree with the schema for tests, but you should comment each test,
+[4:51:29 PM IST] <jgbarah>	and I also merged the first PullREquest-descendant metrci
+[4:51:44 PM IST] <jgbarah>	Which blockers do you have now?
+[4:51:49 PM IST] <Polaris000>	issues
+[4:52:05 PM IST] <Polaris000>	https://github.com/chaoss/wg-evolution/pull/180
+[4:52:06 PM IST] <jgbarah>	(I know i owe you a review of the Issues-decentant metric, I will do that asap)
+[4:52:18 PM IST] <jgbarah>	Yes, that one ;-)
+[4:52:25 PM IST] <Polaris000>	no problem!
+[4:53:37 PM IST] <jgbarah>	Any other blocker?
+[4:53:56 PM IST] <Polaris000>	I can finish the remaining issue and pull request metrics for the following week
+[4:54:14 PM IST] <Polaris000>	And write more tests (and open the current draft pr for review)
+[4:54:45 PM IST] <jgbarah>	No blocker, then?
+[4:54:48 PM IST] <Polaris000>	And also start the first draft of pure python scripts
+[4:54:51 PM IST] <Polaris000>	None as of now
+[4:55:01 PM IST] <Polaris000>	One thing
+[4:55:05 PM IST] <jgbarah>	OK, then, we're on track ;-)
+[4:55:23 PM IST] <jgbarah>	Yes?
+[4:55:42 PM IST] <Polaris000>	What method do you suggest we go for: override _flatten, add a new column or modify the entire self.df?
+[4:55:55 PM IST] <Polaris000>	We have done a little of all three in the metrics
+[4:56:13 PM IST] <Polaris000>	I think the implementations should be more uniform..
+[4:56:37 PM IST] <jgbarah>	Yes, having them as much uniform as possible is a good idea
+[4:56:52 PM IST] <jgbarah>	I think we should check what's common in all the implementations, and put that in the root class,
+[4:56:58 PM IST] <jgbarah>	the rest in the implementations
+[4:57:29 PM IST] <jgbarah>	Now, my feeling is that _flatten is doing more than flatternning, and that may be the cause of the messy code
+[4:58:06 PM IST] <jgbarah>	I don't mind having different dfs for each metric, but the "process" for each of them should be similar, if possible the same
+[4:58:23 PM IST] <Polaris000>	And what about nested aggregation methods?
+[4:58:44 PM IST] <jgbarah>	What do you mean by that?
+[4:58:59 PM IST] <Polaris000>	For example, new_contributors_of_commits,
+[4:59:34 PM IST] <Polaris000>	my original implementation involved a custom aggregation method which calculated the number of new committers in that period directly
+[4:59:47 PM IST] <Polaris000>	no need for modifying df or adding a new column or overriding _flattne
+[4:59:59 PM IST] <jgbarah>	Oh, now i understand
+[5:00:18 PM IST] <jgbarah>	But the matter here is how to find code that can be reused at upper levels in the hierarchy of classes,
+[5:00:41 PM IST] <jgbarah>	isntead of having some code in the higher parts of the hiearchy to which we have to adapt in the lower levels,
+[5:00:56 PM IST] <jgbarah>	because it is really not helping to those lower levels...
+[5:01:27 PM IST] <jgbarah>	If you need to do a new aggregation, maybe we don't have the right aggregation in the first place...
+[5:01:52 PM IST] <jgbarah>	So that's how I think that now that we're learning more about the lower levels, we can study what they have in commnon,
+[5:02:05 PM IST] <jgbarah>	and figure out a framework for moving that common code up
+[5:02:43 PM IST] <jgbarah>	What do you think?
+[5:03:09 PM IST] <Polaris000>	if anyone wants to look at the aggregation method that I was refering to, check this:
+[5:03:10 PM IST] <Polaris000>	https://github.com/Polaris000/wg-gmd/blob/7be82efdca4d68c108b3fa84b931fca6c105c31a/implementations/code_df/new_contributors_of_commits.py
+[5:03:19 PM IST] <Polaris000>	Im not sure jgbarah
+[5:03:44 PM IST] <Polaris000>	I'll open an issue for this
+[5:04:15 PM IST] <jgbarah>	OK, thanks. Let's discuss that in that issue
+[5:04:20 PM IST] <Polaris000>	I feel that we have to a great extent moved all the common parts up
+[5:04:34 PM IST] <Polaris000>	Only some metrics require a new column
+[5:04:39 PM IST] <jgbarah>	But try to think from the point of view of "how to reuse code", instead of "how to adapt to the current structure of the code"
+[5:04:54 PM IST] <jgbarah>	ok
+[5:04:58 PM IST] <Polaris000>	Sure jgbarah
+[5:05:15 PM IST] <Polaris000>	Do you have any other pointers on the tests?
+[5:05:31 PM IST] <Polaris000>	So we can do that faster without me making some obvious mistake...
+[5:05:38 PM IST] <Polaris000>	*mistakes
+[5:06:04 PM IST] <jgbarah>	;-)
+[5:06:35 PM IST] <jgbarah>	I don't think you're doing much mistakes, it is just that we're having different views on the problems...
+[5:06:48 PM IST] <Polaris000>	That is what I meant .;)
+[5:07:02 PM IST] <jgbarah>	Let's settle on this first pr for tests, and then we can again try to learn if code can be reused, or a better structure can be designed
+[5:07:12 PM IST] <jgbarah>	Btu for now, I'm good ;-)
+[5:07:24 PM IST] <jgbarah>	Anything else from your side?
+[5:07:36 PM IST] <Polaris000>	Nonething else jgbarah!
+[5:07:43 PM IST] <jgbarah>	OK, I have some issues
+[5:07:54 PM IST] <Polaris000>	yes?
+[5:08:02 PM IST] <jgbarah>	* I think we need a name schema for the reference implementations. it is starting to become a mess...
+[5:09:07 PM IST] <jgbarah>	I suggest: name_of_metric_system.py (being "system" "git" for code changes, "github" for prs and issues
+[5:10:22 PM IST] <jgbarah>	For the higher levels of the hierarchy, I suggest "class_system.py", such as "commit_git.py" or "issue_github" or "review_github",
+[5:10:45 PM IST] <jgbarah>	but maybe it could also be "pullrequest_github.py", I'm not completely sure about this.
+[5:11:06 PM IST] <jgbarah>	For the root, we can stay with metric.py for now
+[5:11:34 PM IST] <Polaris000>	I am fine with this. We could have something so that it is easier to calculate all metrics for a given data, the same way all unittests should start with a test_
+[5:11:36 PM IST] <jgbarah>	Names of classes would be the same, spelled in uppercase, eg Commit_Git.py
+[5:11:58 PM IST] <jgbarah>	Yes,
+[5:12:02 PM IST] <Polaris000>	With underscores?
+[5:12:08 PM IST] <jgbarah>	Maybe later we can even use subdir...
+[5:12:24 PM IST] <jgbarah>	Polaris000: sorry: CommitGit (the name of the class)
+[5:12:49 PM IST] <Polaris000>	ok jgbarah
+[5:13:04 PM IST] <jgbarah>	* WE should start working with test when we define the metrics,
+[5:13:16 PM IST] <jgbarah>	so for now on, try to have tests in the same pr than the metric
+[5:13:50 PM IST] <jgbarah>	And I think that's it for now... The rest is the work for the next week. I would say:
+[5:13:50 PM IST] <Polaris000>	ok
+[5:13:58 PM IST] <jgbarah>	* Finish pending issues
+[5:14:09 PM IST] <jgbarah>	* Implement missing metrics with current schema (df)
+[5:14:17 PM IST] <jgbarah>	(including tests)
+[5:14:33 PM IST] <jgbarah>	* Work on the script to compute all metrics for a repo
+[5:14:45 PM IST] <jgbarah>	* Work on the pure Python hierarchy
+[5:15:00 PM IST] <jgbarah>	The last two, in the order you may prefer...
+[5:15:02 PM IST] <jgbarah>	Is that ok?
+[5:15:08 PM IST] <Polaris000>	perfectly!
+[5:15:17 PM IST] <jgbarah>	Good!
+[5:15:35 PM IST] <Polaris000>	Nothing else from my side
+[5:15:49 PM IST] <jgbarah>	A final thing from my side:
+[5:16:09 PM IST] <jgbarah>	Next Friday I'm traveling. Could we have our meeting eg on Thursday?
+[5:16:26 PM IST] <jgbarah>	Polaris000 valcos aswanipranjal is that ok with you?
+[5:16:37 PM IST] <aswanipranjal>	Works for me @jgbarah
+[5:17:39 PM IST] <jgbarah>	13:00 CEST? (i guess that's 16:30 IST, if I'm not wrong)
+[5:17:46 PM IST] <Polaris000>	OK jgbarah. my volunteering work got over about 10 days ago. But the final presentaion of my work is scheduled some time next week
+[5:18:03 PM IST] <Polaris000>	Im 99% sure I can make it to the meeting
+[5:18:15 PM IST] <jgbarah>	Well, if it is on Thursday, just say it in advance and we move.
+[5:18:15 PM IST] <Polaris000>	at 13:00 CEST thursday
+[5:18:20 PM IST] <jgbarah>	ok
+[5:18:22 PM IST] <Polaris000>	ok
+[5:18:22 PM IST] <jgbarah>	valcos?
+[5:19:02 PM IST] <jgbarah>	OK, let's assume that's ok for valcos too ;-)
+[5:19:12 PM IST] <jgbarah>	Thanks a lot for this meeting today!
+[5:19:18 PM IST] <Polaris000>	Thanks all!
+[5:19:24 PM IST] <jgbarah>	Bye
+[5:19:27 PM IST] <Polaris000>	Bye!
+[5:19:37 PM IST] Part	You (~Polaris00@124.123.75.129) have left channel #grimoirelab ("Konversation terminated!").
