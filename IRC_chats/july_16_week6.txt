@@ -1,0 +1,157 @@
+Date: Tuesday 16 July 2019
+Participants: travis, jgbarah, valcos, Polaris000, aswanipranjal
+Start_Time: 4:30:24 PM IST
+End_Time: 5:07:31 PM IST
+------------------------------------------------------------------------------
+
+[4:30:24 PM IST] Join	You (~Polaris00@124.123.75.129) have joined the channel #grimoirelab.
+[4:30:24 PM IST] Mode	Channel modes: no colors allowed, no messages from outside, topic protection
+[4:30:24 PM IST] Created	This channel was created on 28/08/17 10:32 PM.
+[4:30:31 PM IST] <Polaris000>	Hi all!
+[4:31:00 PM IST] <valcos>	Hi Polaris000
+[4:31:06 PM IST] <valcos>	how are you doing
+[4:31:17 PM IST] <Polaris000>	Doing great! What about you?
+[4:31:36 PM IST] <valcos>	I'm fine thanks
+[4:32:26 PM IST] <jgbarah>	Hi, Polaris000!!!
+[4:32:34 PM IST] <Polaris000>	Hi jgbarah
+[4:32:39 PM IST] <jgbarah>	Polaris000 aswanipranjal valcos can we start?
+[4:32:46 PM IST] <Polaris000>	I'm ready
+[4:33:05 PM IST] <aswanipranjal>	yes please jgbarah, hi Polaris000!
+[4:33:23 PM IST] <Polaris000>	Hi aswanipranjal
+[4:33:37 PM IST] <valcos>	sure!
+[4:33:39 PM IST] <valcos>	thanks
+[4:33:46 PM IST] <jgbarah>	Good!
+[4:34:00 PM IST] <jgbarah>	Polaris000: can you summarize the current status, and the blockers you may have?
+[4:34:18 PM IST] <Polaris000>	Sure..
+[4:34:39 PM IST] <Polaris000>	Im sent an email of the summary a few hours ago,
+[4:35:30 PM IST] <Polaris000>	Last week I worked on tests, PUll request hierarchy metrics and non-pandas metrics
+[4:35:44 PM IST] <Polaris000>	Also a little on the execution script
+[4:36:28 PM IST] <Polaris000>	1. Regarding the structure, I noticed that almost each metric requires just one additional column
+[4:36:42 PM IST] <jgbarah>	For the execution script, did you upload a pull request?
+[4:37:13 PM IST] <Polaris000>	SO instead of overriding _flatten, we could have an add column method, adding that column, and at the same time, checking the validity of teh dataframe
+[4:37:19 PM IST] <jgbarah>	OK, i see the pr you just submitted ;-)
+[4:37:24 PM IST] <Polaris000>	@jgbarah: its not ready
+[4:37:27 PM IST] <Polaris000>	just a draft
+[4:37:33 PM IST] <jgbarah>	ok
+[4:37:34 PM IST] <Polaris000>	so we could discuss if required
+[4:37:57 PM IST] <Polaris000>	2. The new_contributors_ series of metrics require an additional date parameter
+[4:38:00 PM IST] <jgbarah>	i see you like adding columns ;-)
+[4:38:08 PM IST] <Polaris000>	:)
+[4:38:33 PM IST] <jgbarah>	My take is that, if we really only need one more column, likely we could have a common _flatten,
+[4:38:56 PM IST] <jgbarah>	and then some other method, that would be called by the abstract class after _flatten,
+[4:39:06 PM IST] <jgbarah>	fro doing the specific studd
+[4:39:09 PM IST] <jgbarah>	(stuff)
+[4:39:31 PM IST] <Polaris000>	yes jgbarah, that it what I mean
+[4:39:48 PM IST] <jgbarah>	OK, then go a head and propose a pr for that, good idea!
+[4:39:53 PM IST] <Polaris000>	DO you expect the other method you mention to add a column?
+[4:40:24 PM IST] <jgbarah>	I'm nto sure that's needed. If it is not needed, I would prefer to avoid that, but do it the way you may think is more appropriate,
+[4:40:27 PM IST] <jgbarah>	then we can discuss
+[4:40:42 PM IST] <Polaris000>	sure
+[4:40:47 PM IST] <jgbarah>	For (2), which date parameter do you mean?
+[4:40:52 PM IST] <Polaris000>	one sec
+[4:41:25 PM IST] <Polaris000>	https://github.com/chaoss/wg-evolution/blob/e8ef8db4261951fd99c50355297f02fff3997955/implementations/code_df/new_contributors_of_commits.py#L34
+[4:41:50 PM IST] <Polaris000>	In my current implementation, the compute method has an additional check range parameter
+[4:42:36 PM IST] <Polaris000>	IT is basically the range when new committers are checked with respect to the date_range paramter
+[4:43:01 PM IST] <jgbarah>	I'm sorry, but I don't understand what you mean
+[4:43:17 PM IST] <Polaris000>	Every metric we have has a date_range parameter,
+[4:43:43 PM IST] <jgbarah>	we need number of people who are new between say Jan 1 2018 and Jan 1 2019. Which other date do we need?
+[4:44:14 PM IST] <Polaris000>	A date range for which committs are considered
+[4:44:23 PM IST] <Polaris000>	The _flatten method does that
+[4:44:59 PM IST] <Polaris000>	So we need one range to filter the dataframe and one to check for new committers wrt the filtered dataframe
+[4:45:14 PM IST] <jgbarah>	I still don't get you...
+[4:45:18 PM IST] <Polaris000>	jgbarah: from your example,
+[4:45:45 PM IST] <Polaris000>	we calculate the new committers by comparing them with all other committers (so we know whose new)
+[4:45:54 PM IST] <Polaris000>	The _flatten method,
+[4:46:10 PM IST] <Polaris000>	filters out commits using the date_range
+[4:46:28 PM IST] <Polaris000>	So for new committers between the dates you gave,
+[4:46:37 PM IST] <jgbarah>	But maybe we don't need _flatten here...
+[4:47:07 PM IST] <jgbarah>	We need to find out the first date of (say) commit for each contributor,
+[4:47:24 PM IST] <jgbarah>	and then compute those for which the first date is between two dates
+[4:47:26 PM IST] <jgbarah>	That's all
+[4:47:56 PM IST] <aswanipranjal>	Polaris000: we might not need the `check_range` parameter
+[4:47:57 PM IST] <jgbarah>	Likely, we need a _flatten that considers all commits previous to the last date,
+[4:48:13 PM IST] <Polaris000>	yes jgbarah
+[4:48:19 PM IST] <jgbarah>	and then the dataframe is built with that,
+[4:48:32 PM IST] <jgbarah>	and then it is grouped_by and filtered for the period...
+[4:48:41 PM IST] <Polaris000>	but our current _flatten just removes commits not in date_range
+[4:48:47 PM IST] <Polaris000>	meaning that every committer will be new
+[4:48:53 PM IST] <jgbarah>	In other words: try to implement it, and then we learn what's common with the current code
+[4:49:13 PM IST] <jgbarah>	Then, don't use _flatten ;-)
+[4:49:31 PM IST] <jgbarah>	Remember: we should learn which code is to be reused, and that will be the code in the abstract classes,
+[4:49:41 PM IST] <jgbarah>	Don't discard that we need a new hierarchy for this
+[4:49:59 PM IST] <jgbarah>	(that's my gut feeling, since counting commits, eg, is way different from counting developers)
+[4:50:23 PM IST] <jgbarah>	Try to implement it, and if needed, propose changes to the current hierarcgy
+[4:50:29 PM IST] <Polaris000>	ok jgbarah
+[4:50:38 PM IST] <jgbarah>	Good!
+[4:50:44 PM IST] <Polaris000>	Yes aswanipranjal
+[4:50:45 PM IST] <jgbarah>	More blockers?
+[4:51:44 PM IST] <Polaris000>	Thats all I think
+[4:51:51 PM IST] <Polaris000>	(for noew)
+[4:51:55 PM IST] <jgbarah>	Great!
+[4:52:20 PM IST] <jgbarah>	Before going into the next steps: I will be traveling from this Friday to August 1st.
+[4:52:44 PM IST] <jgbarah>	valcos will be available in case you need help (and I think aswanipranjal as well)
+[4:52:53 PM IST] <jgbarah>	But the next meeting with me will be on August 1st
+[4:53:03 PM IST] <jgbarah>	OK with that?
+[4:53:13 PM IST] <Polaris000>	thats fine with me!
+[4:53:19 PM IST] <aswanipranjal>	sure, jgbarah
+[4:54:10 PM IST] <Polaris000>	https://github.com/chaoss/wg-evolution/blob/master/focus_areas/code_development.md#summary-of-metrics
+[4:54:25 PM IST] <jgbarah>	Good!
+[4:54:28 PM IST] <Polaris000>	Except for these metrics, are any others required to be implemented at the moment?
+[4:54:56 PM IST] <jgbarah>	You can work with the other metrics that are listed in that doument, but not yet fully described
+[4:55:31 PM IST] <jgbarah>	I mean, those that have a name in the list of goals at the begining of the document.
+[4:55:39 PM IST] <jgbarah>	Some of them correspond to legacy metrics, some not...
+[4:55:44 PM IST] <jgbarah>	But in addition to that, you can:
+[4:56:03 PM IST] <jgbarah>	* Finish the implementation for the non-pandas reference implementations
+[4:56:31 PM IST] <jgbarah>	* Advance with the script. You could include some charting in it if you want, but the basic idea would be to start by providing metrics
+[4:56:40 PM IST] <jgbarah>	for a single repository
+[4:56:46 PM IST] <jgbarah>	Something like
+[4:57:11 PM IST] <jgbarah>	analyze.py chaoss/wg-evolution
+[4:57:38 PM IST] <jgbarah>	And that will list all metrics for the chaoss/wg-evolution repo, as a single number, and as time series
+[4:57:48 PM IST] <jgbarah>	Period for time series could be a parameter
+[4:58:04 PM IST] <jgbarah>	And you could also have as parameters the start and finish date for the period to consider
+[4:58:16 PM IST] <jgbarah>	* Tests for everything
+[4:58:23 PM IST] <jgbarah>	* Tests working in travis
+[4:58:51 PM IST] <jgbarah>	For this, valcos, maybe you can setup the repo infrastrcture so that tests are run in travis?
+[4:59:08 PM IST] <valcos>	sure!
+[4:59:13 PM IST] <jgbarah>	I mean, with a very simple config file for travis, that Polaris000 can later improve
+[4:59:37 PM IST] <jgbarah>	Great! That way, every time we change the implementation of the metrics, we get a test run
+[5:00:10 PM IST] <jgbarah>	Polaris000: if during this time you have some time, the analysis script could also produce some charting
+[5:00:26 PM IST] <jgbarah>	(eg, the time series charts could be charted as such)
+[5:00:53 PM IST] <jgbarah>	And of course you can work in other metrics that you feel are relevant, including of course
+[5:00:59 PM IST] <jgbarah>	a proposal for how to define them
+[5:01:24 PM IST] <jgbarah>	Am i missing something that we had in the backlog, Polaris000 ?
+[5:02:10 PM IST] <Polaris000>	maybe i'll work on a few of the issues we have opened, they are minor things
+[5:02:19 PM IST] <jgbarah>	WRT other metrics, i would start with those related to efficiency, which is the topic we're discussing now, and you already have names and short descriptions
+[5:02:21 PM IST] <Polaris000>	But I think you have mentioned everything
+[5:02:35 PM IST] <jgbarah>	Yes, of course, this in addition to other minor stuff
+[5:03:11 PM IST] <jgbarah>	Great! In this case, you have about 10-11 days to advance.
+[5:03:19 PM IST] <Polaris000>	Great! sure jgbarah
+[5:03:31 PM IST] <jgbarah>	and if needed, please schedule a meeting with valcos and aswanipranjal in the meanwhile
+[5:03:49 PM IST] <Polaris000>	I think we can stick to our regular friday meetings
+[5:03:53 PM IST] <jgbarah>	Also, don't forget that in a few days we have the second evaluation for the working term
+[5:03:55 PM IST] <Polaris000>	just the three of us
+[5:04:08 PM IST] <jgbarah>	OK from my side
+[5:04:30 PM IST] <Polaris000>	Yes, jgbarah its on the 22nd
+[5:05:03 PM IST] <jgbarah>	BTW, Polaris000, I'm happy with how you have advanced in all the fronts during the last days. i think we're close t have a first reference implementation for all the metric
+[5:05:04 PM IST] Join	travis-ci (~travis-ci@ec2-52-0-249-12.compute-1.amazonaws.com) has joined this channel.
+[5:05:04 PM IST] <Polaris000>	ALso, except for the ReviewsDeclined pull request, I have updated the others, So you could have a look
+[5:05:04 PM IST] <travis	-ci>	chaoss/grimoirelab-sortinghat#378 (master - 032fe5b : Valerio Cosentino): The build was broken.
+[5:05:04 PM IST] <travis	-ci>	Change view : https://github.com/chaoss/grimoirelab-sortinghat/compare/4b2e73ed6699...032fe5b13062
+[5:05:04 PM IST] <travis	-ci>	Build details : https://travis-ci.org/chaoss/grimoirelab-sortinghat/builds/559400935
+[5:05:04 PM IST] Part	travis-ci (~travis-ci@ec2-52-0-249-12.compute-1.amazonaws.com) has left this channel.
+[5:05:22 PM IST] <jgbarah>	OK, I will
+[5:05:36 PM IST] <Polaris000>	Great jgbarah
+[5:05:40 PM IST] <Polaris000>	Thanks a lot!
+[5:05:54 PM IST] <jgbarah>	OK. Anything else Polaris000 valcos aswanipranjal ?
+[5:06:01 PM IST] <Polaris000>	My advancemnts would not have been possibnlw without all of your tips and guidance
+[5:06:15 PM IST] <jgbarah>	Polaris000: your work is your work ;-)
+[5:06:25 PM IST] <aswanipranjal>	Nothing from my side jgbarah
+[5:06:39 PM IST] <Polaris000>	Thats all from my side jgbarah
+[5:06:43 PM IST] <valcos>	nothing from my side, thanks
+[5:06:46 PM IST] <jgbarah>	OK!
+[5:07:13 PM IST] <Polaris000>	Bye all!
+[5:07:14 PM IST] <jgbarah>	Please Polaris000 post the final version of the blog post, the log of this meeting, and everything as usual!
+[5:07:21 PM IST] <jgbarah>	Thanks to all of you, bye!
+[5:07:23 PM IST] <Polaris000>	Of course jgbarah will do
+[5:07:31 PM IST] <aswanipranjal>	thanks all! Bye!
+[5:07:31 PM IST] Part	You (~Polaris00@124.123.75.129) have left channel #grimoirelab ("Konversation terminated!").
