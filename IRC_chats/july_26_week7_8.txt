@@ -1,0 +1,172 @@
+Date: Friday 26 July 2019
+Participants: valcos, aswanipranjal, Polaris000, inishchith
+Start_Time: 4:31:21 PM IST
+End_Time: 5:22:45 PM IST
+------------------------------------------------------------------------------
+
+[4:31:21 PM IST] Join	You (~Polaris00@124.123.75.129) have joined the channel #grimoirelab.
+[4:31:21 PM IST] Mode	Channel modes: no colors allowed, no messages from outside, topic protection
+[4:31:21 PM IST] Created	This channel was created on 28/08/17 10:32 PM.
+[4:31:32 PM IST] <Polaris000>	Hi aswanipranjal valcos!
+[4:34:18 PM IST] <Polaris000>	Should we start?
+[4:34:25 PM IST] <aswanipranjal>	Hey Polaris000!
+[4:34:34 PM IST] <Polaris000>	Hi aswanipranjal
+[4:34:43 PM IST] <Polaris000>	How are you?
+[4:34:44 PM IST] <valcos>	Hi Polaris000
+[4:34:50 PM IST] <valcos>	aswanipranjal
+[4:34:53 PM IST] <Polaris000>	Hey valcos
+[4:34:56 PM IST] <valcos>	how are you doing?
+[4:35:05 PM IST] <Polaris000>	Im good
+[4:35:25 PM IST] <Polaris000>	Did you receive the email to a summary?
+[4:35:34 PM IST] <Polaris000>	the*
+[4:35:45 PM IST] <valcos>	yes, thank you for the update
+[4:35:53 PM IST] <Polaris000>	You're welcome
+[4:36:50 PM IST] <valcos>	I guess there was an error in the url
+[4:37:08 PM IST] <valcos>	I got http://127.0.0.1:4000/blog/week_7_8 instead of https://polaris000.github.io/blog/week_7_8
+[4:37:23 PM IST] <Polaris000>	oops!
+[4:37:25 PM IST] <Polaris000>	Very sorry
+[4:37:40 PM IST] <valcos>	no worries :) it was an internal email
+[4:37:45 PM IST] <valcos>	shall we start?
+[4:37:51 PM IST] <Polaris000>	yeah sure!
+[4:38:01 PM IST] <valcos>	perfect!
+[4:38:26 PM IST] <valcos>	can you summarize the work done and the blockers found?
+[4:38:32 PM IST] <Polaris000>	Sure!
+[4:38:47 PM IST] <valcos>	thanks"
+[4:38:48 PM IST] <valcos>	!
+[4:39:15 PM IST] <Polaris000>	Regarding the work done, as usual I continued adding tests and metrics implementations. If I am not wrong, about 2-3 are left.
+[4:39:24 PM IST] <Polaris000>	They are the issue metrics
+[4:39:44 PM IST] <Polaris000>	Also, I worked on the analysis script which would run,
+[4:39:51 PM IST] <Polaris000>	on all metrics for a repository.
+[4:39:58 PM IST] <Polaris000>	Here, I had two questions
+[4:40:14 PM IST] <Polaris000>	Also, regarding your patch (for travis),
+[4:40:17 PM IST] <valcos>	yes
+[4:40:46 PM IST] <Polaris000>	I found that in some places (when I run modules individually), the code gets confused between commit.Commit and conditions.Commit
+[4:41:00 PM IST] <Polaris000>	mind you, the tests are fine
+[4:41:08 PM IST] <Polaris000>	Again, this is not an issue
+[4:41:16 PM IST] <Polaris000>	since Commit will be renamed to CommitGit anyway
+[4:41:40 PM IST] <valcos>	yes, we could rename one of the two classes
+[4:42:22 PM IST] <Polaris000>	Also, there will be two test folders, tests_df and tests. So we can add that later, once my tests pr is merged
+[4:42:30 PM IST] <valcos>	in Python you can assign an alias to an import (import .. from .. as), however the code can turn a bit more complicated
+[4:42:48 PM IST] <valcos>	why two folders for tests?
+[4:42:55 PM IST] <Polaris000>	regular tests and pandas tests
+[4:43:03 PM IST] <Polaris000>	sicne we have two series of implementations
+[4:43:55 PM IST] <Polaris000>	But this is just a point to be noted, and nothing serious
+[4:45:22 PM IST] <valcos>	we could have a single tests folder with different test cases
+[4:45:37 PM IST] <valcos>	however I agree with you that it's not a big deal
+[4:45:54 PM IST] <valcos>	maybe we can discuss about it on an issue and ping Jesus
+[4:45:58 PM IST] <valcos>	WDYT?
+[4:46:02 PM IST] <Polaris000>	sure!
+[4:46:17 PM IST] <Polaris000>	Coming to the analysis script,
+[4:46:45 PM IST] <Polaris000>	in the last meeting with Jesus, he had said that the script should work like so:
+[4:47:01 PM IST] <Polaris000>	$ analyze.py chaoss/wg-evolution
+[4:47:33 PM IST] <Polaris000>	I didn't think of asking then, but does he expect Perceval to generate data inside the script?
+[4:47:53 PM IST] <Polaris000>	Would n't it be better to pass Perceval json files directly to analyze.py?
+[4:47:58 PM IST] <Polaris000>	What do you think?
+[4:49:42 PM IST] <aswanipranjal>	sorry, I had bad connectivity
+[4:49:43 PM IST] <valcos>	I guess the analyze.py should call perceval and then process the data
+[4:49:53 PM IST] <valcos>	no worries @aswanipranjal
+[4:49:58 PM IST] <Polaris000>	no problem aswanipranjal
+[4:50:11 PM IST] <valcos>	why you think that it's better to pass a list of JSON files?
+[4:50:51 PM IST] <Polaris000>	so that a user will end up with just one extra pdf file (the analysis report) rather than suddenly having a 20MB json file from Perceval.
+[4:51:08 PM IST] <Polaris000>	All users may not directly know how Perceval works
+[4:51:44 PM IST] <Polaris000>	I have no problem doing either implementation, but I am not sure which one is better
+[4:52:39 PM IST] <valcos>	what should be the output of analyze.py?
+[4:53:05 PM IST] <Polaris000>	jgbarah did not specify anything, but I think it would be great to have a pdf report,
+[4:53:09 PM IST] <Polaris000>	with matplotlib charts
+[4:53:21 PM IST] <Polaris000>	Jesus wanted the output to have charts
+[4:53:29 PM IST] <aswanipranjal>	> All users may not directly know how Perceval works
+[4:53:29 PM IST] <aswanipranjal>	correct, hence analyse.py should call perceval internally
+[4:53:46 PM IST] <valcos>	I agree with aswanipranjal
+[4:53:51 PM IST] <Polaris000>	along with individual metrics calculations
+[4:54:15 PM IST] <Polaris000>	aswanipranjal: the way I meant it was that a user may not expect to have such a large file generated
+[4:54:29 PM IST] <valcos>	if the analyze.py receives the url of the repo and a list of metrics to analyze
+[4:54:54 PM IST] <valcos>	the analyze.py can have a function/method that runs perceval and return the list of JSON docs
+[4:55:22 PM IST] <valcos>	then this list is passed to another method that calculates the metrics
+[4:55:54 PM IST] <aswanipranjal>	Polaris000: there will be a file generated via perceval in any case, better to abstract out it's functionality and save user the hassel to generate the data themselves
+[4:55:55 PM IST] <valcos>	what you propose Polaris000 makes sense, however then another script will be needed to generates the JSON docs
+[4:57:07 PM IST] <Polaris000>	valcos: most of our code has been to avoid abstraction. Even pull requests are not removed from issue data internally (the github api thing). Instead of having another script, the user can do so himself separately
+[4:57:49 PM IST] <Polaris000>	Ok. Lets go with the abstract implementation and see what Jesus has to say
+[4:57:59 PM IST] <Polaris000>	when he returns
+[4:58:43 PM IST] <valcos>	if the user has to do it separately, he will have to know perceval
+[4:59:28 PM IST] <Polaris000>	Ok valcos.
+[4:59:30 PM IST] <valcos>	I guess including Perceval as part of the analyze.py is something that can help the user
+[4:59:48 PM IST] <valcos>	we can wait for Jesus
+[5:00:00 PM IST] <Polaris000>	Do you have any suggestions as to what the output format should be (other than a pdf)?
+[5:00:07 PM IST] <valcos>	however, you can already start with the analysis part
+[5:00:18 PM IST] <Polaris000>	yes valcos, I already have
+[5:00:24 PM IST] <valcos>	since the perceval integration can be added later on
+[5:00:47 PM IST] <valcos>	can I have a look at it?
+[5:00:54 PM IST] <Polaris000>	sure, one sec
+[5:00:59 PM IST] Join	inishchith (~textual@223.229.129.67) has joined this channel.
+[5:01:16 PM IST] <valcos>	thanks Polaris000
+[5:01:22 PM IST] <valcos>	Hi inishchith
+[5:01:30 PM IST] <aswanipranjal>	hey inishchith
+[5:01:33 PM IST] <Polaris000>	https://github.com/chaoss/wg-evolution/pull/207/files
+[5:01:39 PM IST] <Polaris000>	Hey inishchith
+[5:01:49 PM IST] <Polaris000>	How are you doing?
+[5:02:13 PM IST] <inishchith>	Hi valcos aswanipranja Polaris000 :)
+[5:02:38 PM IST] <Polaris000>	valcos, the timeseries part and the write to pdf part has not been implemented yet...
+[5:02:39 PM IST] <valcos>	thank you for sharing the script
+[5:02:48 PM IST] <inishchith>	I'm good Polaris000. How are you?
+[5:02:52 PM IST] <valcos>	the integration with perceval is going to be easy
+[5:02:55 PM IST] <Polaris000>	no problem.. any suggestions valcos
+[5:02:56 PM IST] <Polaris000>	?
+[5:02:59 PM IST] <Polaris000>	Im great inishchith
+[5:03:21 PM IST] <valcos>	I can add some comments there?
+[5:03:36 PM IST] <Polaris000>	sure
+[5:03:40 PM IST] <inishchith>	valcos aswanipranjal I'm sorry about the delay. I wasn't aware if we're going to have a meeting today. (We can continue after Polaris000's meeting if you agree.)
+[5:03:53 PM IST] <valcos>	thanks, I'll do it later today
+[5:03:59 PM IST] <aswanipranjal>	no worries inishchith
+[5:04:18 PM IST] <valcos>	no worries inishchith
+[5:04:19 PM IST] <Polaris000>	valcos, I dont think I pushed the last change to the pr
+[5:04:25 PM IST] <Polaris000>	I'll do it after the meeting
+[5:04:43 PM IST] <valcos>	ok, perfect!
+[5:04:54 PM IST] <valcos>	What about blockers @Polaris000?
+[5:05:12 PM IST] <Polaris000>	Just one last thing
+[5:05:37 PM IST] <Polaris000>	Is there a way to run modules in package without adding to PYTHONPATH?
+[5:05:58 PM IST] <Polaris000>	Not exactly a blocker, but just a query, I have already asked any doubts I had
+[5:06:38 PM IST] <valcos>	> Is there a way to run modules in package without adding to PYTHONPATH?
+[5:06:58 PM IST] <valcos>	Can you give more context about it, what do you want to achieve?
+[5:07:29 PM IST] <valcos>	a concrete example could be really useful
+[5:07:34 PM IST] <aswanipranjal>	is this because the relative imports Polaris000?
+[5:07:39 PM IST] <Polaris000>	For example, importing a module in code_df to test in tests_df
+[5:07:50 PM IST] <Polaris000>	not exactly aswanipranjal, that problem has been solved by valcos
+[5:07:58 PM IST] <aswanipranjal>	oh, okay
+[5:09:35 PM IST] <Polaris000>	the import only works if you use the unittest command line (which I think internally adds the module to path)
+[5:09:56 PM IST] <valcos>	aswanipranjal in case you want more info: https://github.com/chaoss/wg-evolution/pull/226
+[5:10:23 PM IST] <aswanipranjal>	thanks valcos!
+[5:10:50 PM IST] <valcos>	you're welcome aswanipranjal
+[5:11:27 PM IST] <Polaris000>	But if say it was another sub directory, like notebooks_df, how would I do it?
+[5:12:01 PM IST] <valcos>	ok, I see
+[5:13:01 PM IST] <valcos>	have you tried to add main in the file you want to execute?
+[5:13:11 PM IST] <valcos>	I see that you did something similar
+[5:13:26 PM IST] <valcos>	in code_df/code_changes_git
+[5:14:04 PM IST] <valcos>	this should work I guess
+[5:14:24 PM IST] <Polaris000>	valcos, I need to import code_changes_git into notebooks_df/code_changesgit.ipynb
+[5:14:41 PM IST] <Polaris000>	How would main help there?
+[5:15:34 PM IST] <Polaris000>	Lets do one thing. I;ll try out a few differnt things and then ask you later on google hangouts?
+[5:15:44 PM IST] <valcos>	perfect!
+[5:15:45 PM IST] <Polaris000>	SO we don't waste time here
+[5:15:58 PM IST] <Polaris000>	That is all from my side. ANything else aswanipranjal valcos?
+[5:16:17 PM IST] <aswanipranjal>	Polaris000: regarding the resample thing, have you tried using the `value_counts` function?
+[5:16:48 PM IST] <aswanipranjal>	something like:
+[5:16:48 PM IST] <aswanipranjal>	> df['created_date'].apply(lambda x: "_".join([str(x.month), str(x.year)])).value_counts()
+[5:17:54 PM IST] <Polaris000>	aswanipranjal: I need to implement a resample() method like thing without using pandas. But value_counts is a pandas method
+[5:18:19 PM IST] <Polaris000>	say, I have a list of dictionaries, where each dictionary is like a row in a dataframe
+[5:18:27 PM IST] <aswanipranjal>	i am sorry, but what problem were you facing exactly with resample?
+[5:19:19 PM IST] <Polaris000>	Since there are two series of implementations, with pandas and without, I need to have a resample like method which I can use in the non-pandas series to perfrom the same function
+[5:19:54 PM IST] <Polaris000>	To that list of dictionaries, I want to see how many commits are created per month and per week, for example.
+[5:20:15 PM IST] <aswanipranjal>	got it
+[5:20:44 PM IST] <Polaris000>	https://github.com/chaoss/wg-evolution/pull/203#discussion_r303256380
+[5:20:53 PM IST] <aswanipranjal>	I'll update you once I have anything else
+[5:21:01 PM IST] <Polaris000>	Sure, aswanipranjal thanks for the help
+[5:21:10 PM IST] <Polaris000>	ANything else aswanipranjal valcos?
+[5:21:21 PM IST] <valcos>	nothing from my side @Polaris000
+[5:21:27 PM IST] <aswanipranjal>	nothing else from my side Polaris000
+[5:21:34 PM IST] <Polaris000>	Great, lets conclude here!
+[5:21:46 PM IST] <Polaris000>	Thanks valcos aswanipranjal
+[5:22:20 PM IST] <Polaris000>	Bye valcos aswanipranjal inishchith!
+[5:22:30 PM IST] <inishchith>	Bye Polaris000
+[5:22:31 PM IST] <aswanipranjal>	thanks for your time Polaris000, bye!
+[5:22:32 PM IST] <valcos>	bye Polaris000, thanks!
+[5:22:45 PM IST] Part	You (~Polaris00@124.123.75.129) have left channel #grimoirelab ("Konversation terminated!").

@@ -1,0 +1,117 @@
+Date: Tuesday 23 July 2019
+Participants: valcos, Polaris000, aswanipranjal
+Start_Time: 4:30:59 PM IST
+End_Time: 5:02:53 PM IST
+------------------------------------------------------------------------------
+
+[4:30:59 PM IST] Join	You (~Polaris00@124.123.75.129) have joined the channel #grimoirelab.
+[4:31:00 PM IST] Mode	Channel modes: no colors allowed, no messages from outside, topic protection
+[4:31:00 PM IST] Created	This channel was created on 28/08/17 10:32 PM.
+[4:31:10 PM IST] <Polaris000>	Hi aswanipranjal
+[4:31:21 PM IST] <aswanipranjal>	Hey Polaris000 !
+[4:31:38 PM IST] <Polaris000>	Lets wait a few minutes for valcos
+[4:32:15 PM IST] <aswanipranjal>	sure
+[4:32:27 PM IST] <aswanipranjal>	how is the progress? Any blockers till now?
+[4:33:06 PM IST] <Polaris000>	progress is fine.. not many metrics left to implement. should be done by the end of this week
+[4:33:12 PM IST] <Polaris000>	But,
+[4:33:28 PM IST] <Polaris000>	there are a few issues which i was unable to resolve
+[4:33:54 PM IST] <Polaris000>	They are very minor
+[4:34:13 PM IST] <Polaris000>	For example, the structure kind of forces us to use relative imports
+[4:34:19 PM IST] <Polaris000>	which jgbarah does not agree with
+[4:34:31 PM IST] <aswanipranjal>	Ah, okay. Have you been stuck with them long?
+[4:34:56 PM IST] <Polaris000>	Well, they were raised a while ago, but kind of put on the back burner since they werent important
+[4:35:07 PM IST] <Polaris000>	Like I said, very minor
+[4:36:49 PM IST] <Polaris000>	We also had to discuss a way to integrate travis ci
+[4:36:59 PM IST] <aswanipranjal>	yeah, we need to fix the relative imports problem
+[4:38:22 PM IST] <aswanipranjal>	> We also had to discuss a way to integrate travis ci
+[4:38:22 PM IST] <aswanipranjal>	yes
+[4:38:42 PM IST] <aswanipranjal>	have you read the docs on how to do that?
+[4:39:01 PM IST] Join	valcos (~valcos@2a0c:5a80:360b:4500:a0b7:e017:2c40:1cc0) has joined this channel.
+[4:39:07 PM IST] <Polaris000>	Hi valcos!
+[4:39:15 PM IST] <valcos>	hi Polaris000 aswanipranjal
+[4:39:20 PM IST] <valcos>	sorry for being late!
+[4:39:26 PM IST] <aswanipranjal>	Hey valcos!
+[4:39:29 PM IST] <valcos>	how are you doing?
+[4:39:44 PM IST] <Polaris000>	I'm great, hope you are doing well
+[4:39:55 PM IST] <valcos>	yes! thanks!
+[4:40:04 PM IST] <Polaris000>	Should we start then?
+[4:40:10 PM IST] <valcos>	yes!
+[4:40:21 PM IST] <aswanipranjal>	yes please
+[4:41:17 PM IST] <Polaris000>	So, over the past few days, as usual I have been adding implementations and tests. I have added several and I think I should be done by the end of this week or the start of the next week
+[4:41:48 PM IST] <valcos>	OK, thanks for the summary Polaris000
+[4:41:53 PM IST] <Polaris000>	I have added all commit related metrics and about 5-6 are remaining (issues and pull requests) for the non-pandas hierarchy
+[4:42:26 PM IST] <Polaris000>	The biggest problem I see is fixing relative imports
+[4:42:43 PM IST] <valcos>	ok, I can have a look if you want
+[4:42:49 PM IST] <Polaris000>	Yes, please
+[4:43:18 PM IST] <valcos>	can you pass the repo?
+[4:43:30 PM IST] <valcos>	beyond this, there are other potential blockers?
+[4:43:48 PM IST] <Polaris000>	https://github.com/chaoss/wg-evolution/tree/master/implementations/code_df
+[4:44:14 PM IST] <Polaris000>	None as of now, thanks valcos
+[4:44:29 PM IST] <valcos>	good news then :)
+[4:44:39 PM IST] <Polaris000>	:)
+[4:44:51 PM IST] <valcos>	what about the travis integration Jesus was suggesting?
+[4:44:57 PM IST] <Polaris000>	Yes,
+[4:45:21 PM IST] <Polaris000>	I don't think the integration is difficult and the .yml file setup should be very simple
+[4:45:32 PM IST] <Polaris000>	But the relative imports means that tests won't run
+[4:45:43 PM IST] <Polaris000>	without converting absolute to relative imports
+[4:46:03 PM IST] <Polaris000>	The travis.yml file can be something similar to grimoirelab-perceval
+[4:46:19 PM IST] <Polaris000>	Maybe to start off, we could leave out the coveralls
+[4:46:38 PM IST] <Polaris000>	What do you think?
+[4:47:07 PM IST] <valcos>	sounds good! I have to check the code, but I like the idea
+[4:47:16 PM IST] <Polaris000>	Great thanks!
+[4:47:18 PM IST] <valcos>	should we open an issue in wg-evolution to discuss about it?
+[4:47:22 PM IST] <valcos>	you're welcome
+[4:47:33 PM IST] <Polaris000>	https://github.com/chaoss/grimoirelab-perceval/blob/master/.travis.yml -> I was talking about this
+[4:47:44 PM IST] <Polaris000>	SUre I'll open an issue
+[4:47:52 PM IST] <valcos>	yes! thanks for the pointer
+[4:47:57 PM IST] <Polaris000>	Do you have write access to the repo?
+[4:48:10 PM IST] <Polaris000>	wg-evolution
+[4:48:34 PM IST] <valcos>	I don't
+[4:49:09 PM IST] <valcos>	I'll ask @germonprez to add me
+[4:49:11 PM IST] <Polaris000>	I think only those with write access can setup the build..?
+[4:49:46 PM IST] <Polaris000>	Great!
+[4:50:30 PM IST] <valcos>	I'll have a look at the code and ping you
+[4:50:54 PM IST] <valcos>	if you are on googlehangouts I can write you there (this won't replace the weekly meeting)
+[4:51:08 PM IST] <valcos>	otherwise I can be connected to IRC
+[4:51:57 PM IST] <valcos>	with Nishchith (the other GSoC student) we use googlehangouts for quick questions or feedback
+[4:52:01 PM IST] <valcos>	to reduce blockers
+[4:52:18 PM IST] <Polaris000>	Oh, I didn't know that. GOod idea!
+[4:52:19 PM IST] <Polaris000>	Thanks
+[4:52:44 PM IST] <valcos>	cool! I've just sent Matt an email
+[4:53:00 PM IST] <Polaris000>	https://github.com/chaoss/wg-evolution/issues/225
+[4:53:08 PM IST] <Polaris000>	Issue for discussion (if required)
+[4:53:09 PM IST] <valcos>	(about granting write permission on wg-evolution)
+[4:53:23 PM IST] <Polaris000>	Great, thanks valcos
+[4:54:09 PM IST] <valcos>	thank you Polaris000 and aswanipranjal for your time
+[4:54:23 PM IST] <valcos>	if you don't have any questions/remarks we could end the meeting
+[4:54:26 PM IST] <aswanipranjal>	thanks valcos, Polaris000!
+[4:54:26 PM IST] <Polaris000>	Just a sec please
+[4:54:31 PM IST] <valcos>	yes!
+[4:54:40 PM IST] <aswanipranjal>	go ahead Polaris000
+[4:55:23 PM IST] <Polaris000>	https://github.com/chaoss/wg-evolution/pull/203#discussion_r303256380
+[4:55:57 PM IST] <Polaris000>	Do you know of a good way to replicate the function of time series in pandas? jgbarah said its not necessary, but I think it would be cool to still do it
+[4:56:22 PM IST] <Polaris000>	I tried a few things as mentioned in my comment and even asked on stackoverflow
+[4:56:29 PM IST] <Polaris000>	But no one answered yet
+[4:57:34 PM IST] <Polaris000>	Basically, I want to implement the resample method without using pandas
+[4:58:24 PM IST] <valcos>	at the moment I don't know a good way to replicate that function in pandas
+[4:58:28 PM IST] <valcos>	I can have a look
+[4:58:35 PM IST] <valcos>	@aswanipranjal, any idea?
+[4:58:50 PM IST] <aswanipranjal>	None as of now valcos, I am looking into it though
+[4:59:33 PM IST] <Polaris000>	Thanks for the help! Please, do it only if convenient
+[4:59:48 PM IST] <Polaris000>	This is not an absolute necessity for the project
+[5:00:22 PM IST] <valcos>	ok, perfect
+[5:00:45 PM IST] <aswanipranjal>	will do Polaris000
+[5:00:48 PM IST] <Polaris000>	That is all from my side!
+[5:01:04 PM IST] <valcos>	thank you Polaris000 and aswanipranjal for your time
+[5:01:11 PM IST] <Polaris000>	Thanks valcos and aswanipranjal
+[5:01:12 PM IST] <aswanipranjal>	thanks valcos Polaris000!
+[5:01:17 PM IST] <Polaris000>	Bye all!
+[5:01:24 PM IST] <valcos>	talk you on Friday for the weekly meeting, right?
+[5:01:28 PM IST] <Polaris000>	yes
+[5:01:50 PM IST] <Polaris000>	at 14:00 CEST
+[5:02:08 PM IST] <valcos>	don't forget that you can already submit the 2nd evaluation
+[5:02:12 PM IST] <valcos>	great, thanks!
+[5:02:24 PM IST] <Polaris000>	yes, thanks valcos
+[5:02:44 PM IST] <Polaris000>	Bye!
+[5:02:48 PM IST] <valcos>	bye!
+[5:02:53 PM IST] Part	You (~Polaris00@124.123.75.129) have left channel #grimoirelab ("Konversation terminated!").
