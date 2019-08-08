@@ -1,0 +1,145 @@
+Date: Tuesday 6 August 2019
+Participants: inishchith, jgbarah, Polaris000, aswanipranjal
+Start_Time: 3:28:16 PM IST
+End_Time: 4:10:32 PM IST
+------------------------------------------------------------------------------
+
+[3:28:16 PM IST] Join	You (~Polaris00@136.233.33.82) have joined the channel #grimoirelab.
+[3:28:16 PM IST] Mode	Channel modes: no colors allowed, no messages from outside, topic protection
+[3:28:16 PM IST] Created	This channel was created on 28/08/17 10:32 PM.
+[3:28:32 PM IST] <Polaris000>	Hi jgbarah ,inishchith and aswanipranjal
+[3:28:43 PM IST] <inishchith>	Hi Polaris000 :)
+[3:28:52 PM IST] <Polaris000>	How are you doing inishchith?
+[3:29:04 PM IST] <jgbarah>	Hi, Polaris000. we're finishing the meeting with inishchith.
+[3:29:11 PM IST] <Polaris000>	Oh.. sorry. please carry on
+[3:29:47 PM IST] <inishchith>	Polaris000 It's going great. and you?
+[3:29:59 PM IST] <jgbarah>	inishchith: no, I don't think so. Yes, comments per LOC is better.
+[3:30:19 PM IST] <inishchith>	Okay. Thanks!
+[3:30:22 PM IST] <jgbarah>	inishchith: I propose that you do as it seems better to you, if nobody said anything against
+[3:30:56 PM IST] <jgbarah>	inishchith: I m just thinking that maybe in some vases you want both ratios, but well, we can check that as you progress
+[3:31:04 PM IST] <jgbarah>	inishchith: Anything else?
+[3:31:23 PM IST] <inishchith>	Sure. jgbarah. Nothing else from my side.
+[3:31:56 PM IST] <jgbarah>	aswanipranjal: anthing else for inishchith?
+[3:32:39 PM IST] <aswanipranjal>	sorry, there was a network latency. Nothing else from my side. inishchith, I'll comment on the thread, thanks!
+[3:33:07 PM IST] <inishchith>	Thanks! aswanipranjal I have a different(weird) IRC client(today) which doesn't let me me export logs. Can you mail me the logs after the meeting?
+[3:33:18 PM IST] <aswanipranjal>	sure!
+[3:34:03 PM IST] <inishchith>	Thanks a lot!. jgbarah aswanipranjal So can we end the meeting? Please feel free to comment on the issue thread
+[3:34:39 PM IST] <jgbarah>	inishchith: Thanks! Yes. Plese, send the usual log and everythng. And I suggest you contact valcos in a couple of days, to sync with him
+[3:34:46 PM IST] <jgbarah>	(I will talk to him too, anyway)
+[3:34:51 PM IST] <jgbarah>	By, inishchith!
+[3:35:00 PM IST] <jgbarah>	(Bye, I meant ;-) )
+[3:35:06 PM IST] <Polaris000>	Bye inishchith
+[3:35:12 PM IST] <jgbarah>	Polaris000: can we start?
+[3:35:16 PM IST] <Polaris000>	sure!
+[3:35:18 PM IST] <inishchith>	Yes. Sure. jgbarah.  Bye everyone:)
+[3:35:20 PM IST] <jgbarah>	Great!
+[3:35:34 PM IST] <aswanipranjal>	by inishchith. Hello Polaris000!
+[3:35:39 PM IST] <Polaris000>	HI aswanipranjal
+[3:35:40 PM IST] <jgbarah>	You saw I just went through all the pending prs
+[3:35:46 PM IST] Quit	inishchith (ab32eaa2@171.50.234.162) has left this server (Remote host closed the connection).
+[3:35:48 PM IST] <Polaris000>	Yes, thanks!
+[3:36:00 PM IST] <jgbarah>	Sorry for not going through them earlier, I had a slow start this week...
+[3:36:06 PM IST] <Polaris000>	thats alright
+[3:36:38 PM IST] <jgbarah>	Can you please quickly summarize the current status, and the blockers you may have?
+[3:36:48 PM IST] <Polaris000>	Yes sure
+[3:37:28 PM IST] <jgbarah>	(I already saw your weekly summary, so no need to enter details, just a brief overview)
+[3:37:36 PM IST] <Polaris000>	Over the past week, I just carried on adding implementations and tests, and worked on the analysis script,
+[3:38:02 PM IST] <Polaris000>	th eonly thing that is left are the issue metrics, which are on hold since I am not sure how to do those
+[3:38:13 PM IST] <Polaris000>	My blockers are mentioned below the summary
+[3:38:26 PM IST] <Polaris000>	to be discussed...
+[3:38:47 PM IST] <jgbarah>	For the issue metrics, I think active issues is the only with a blocker, am I wrong?
+[3:38:59 PM IST] <Polaris000>	The others too
+[3:39:11 PM IST] <Polaris000>	Since, they have a reopen as new parameter
+[3:39:31 PM IST] <jgbarah>	Ah, ok. I forgot about that.
+[3:39:39 PM IST] <Polaris000>	https://github.com/chaoss/grimoirelab-perceval/issues/563\
+[3:39:44 PM IST] <Polaris000>	link to the issue
+[3:40:07 PM IST] <jgbarah>	Look, for now, we can just go naive: "reopen as new" can be "Ignored", which means "we don't consider reopen issues as new issues".
+[3:40:28 PM IST] <jgbarah>	This would mean that for now, you only consider "true new" issues.
+[3:41:00 PM IST] <jgbarah>	If we have time, we can try to implement something better, but fro that we need to track reopen events, which I think Perceval is not doing for now
+[3:41:04 PM IST] <jgbarah>	Is that ok?
+[3:41:08 PM IST] <Polaris000>	yes
+[3:41:46 PM IST] <Polaris000>	Regarding the analysis script,
+[3:42:03 PM IST] <Polaris000>	what do you think? I saw that you approved but still
+[3:42:15 PM IST] <jgbarah>	I think it still needs some polishment...
+[3:42:47 PM IST] <jgbarah>	Accepting arguments, producing at least two outputs (JSON and human-readable, for instance, Markdown)
+[3:43:08 PM IST] <jgbarah>	What do you think about that?
+[3:43:32 PM IST] <Polaris000>	It already supports command line args
+[3:43:36 PM IST] <Polaris000>	Regarding the outputs,
+[3:43:39 PM IST] <jgbarah>	(btw, producing charts would also be nice, but I would first implement the other stuff)
+[3:43:48 PM IST] <Polaris000>	it currently outputs a pdf
+[3:43:56 PM IST] <Polaris000>	report with charts
+[3:44:46 PM IST] <Polaris000>	Is a json output required? since there won't be any images/
+[3:47:09 PM IST] <Polaris000>	Of course, it would not be difficult to have a json output, since I am using dictionaries a lot anyways..
+[3:49:43 PM IST] <jgbarah>	Maybe you and me are having different ideas of what the script should do ;-)
+[3:49:53 PM IST] <jgbarah>	(or I was too quick reviewing it)
+[3:50:15 PM IST] <jgbarah>	It seems like you are intending for a kind of a nice-looking report on a project, right?
+[3:50:29 PM IST] <Polaris000>	yeah...
+[3:50:30 PM IST] <jgbarah>	I was thinking more as a way of producing numbers for a project
+[3:50:48 PM IST] <jgbarah>	...that could be incorporated in a more complete report,
+[3:51:09 PM IST] <jgbarah>	or that could be just added to a repository (as a kind of a METRICS.md file for example)
+[3:51:43 PM IST] <jgbarah>	Maybe we could follow both ideas, having arguments to select if we're to produce MD, PDF, JSON, just charts, or all of that, for example
+[3:52:03 PM IST] <jgbarah>	But I don't want to make it too complex, because we're already short of time to the end of GSoC.
+[3:52:22 PM IST] <aswanipranjal>	I think producing a PDF and a JSON should work
+[3:52:36 PM IST] <aswanipranjal>	since the JSON can probably be used (if we only want numbers) elsewhere
+[3:53:04 PM IST] <aswanipranjal>	and the PDF can have charts, for an overall nice looking report
+[3:53:34 PM IST] <aswanipranjal>	later, if Polaris000 has time, he can look into incorporating other formats, WDYT?
+[3:54:57 PM IST] <Polaris000>	Ok jgbarah and aswanipranjal. since the pdf is already there and so are the charts and json isn't that hard, i think I can finish the markdown as well.
+[3:55:11 PM IST] <aswanipranjal>	cool
+[3:55:37 PM IST] <Polaris000>	Also, what do you think about every metric having a __str__ and a plot method?
+[3:55:49 PM IST] <jgbarah>	Polaris000: ok, let's include that for this week, and then we discuss if we need to polish it, right?
+[3:56:00 PM IST] <jgbarah>	Polaris000: do you mean for each metric?
+[3:56:09 PM IST] <Polaris000>	yeah
+[3:56:12 PM IST] <Polaris000>	in the class
+[3:56:22 PM IST] <jgbarah>	__str__ would be great for sure
+[3:56:30 PM IST] <Polaris000>	the plot method will create a plot for the df output by timeseries
+[3:56:34 PM IST] <jgbarah>	plot should be for the timeseries, right?
+[3:56:37 PM IST] <Polaris000>	yeah
+[3:56:43 PM IST] <jgbarah>	ok
+[3:56:57 PM IST] <Polaris000>	great!
+[3:57:09 PM IST] <jgbarah>	I think you can try to do both for this week, at least for some of the metrics.
+[3:57:17 PM IST] <Polaris000>	sure!
+[3:57:24 PM IST] <jgbarah>	But very likely the code can be general enough to be high in the class hierarchy
+[3:57:35 PM IST] <jgbarah>	(so that it can be reused by most of the metrics)
+[3:57:45 PM IST] <Polaris000>	yes will definitely try and move it up if possible
+[3:57:58 PM IST] <Polaris000>	the only thing that is different is the df and the axes to plot and the title
+[3:58:31 PM IST] <Polaris000>	what about a separate plot class that takes these parameters?
+[3:59:20 PM IST] <jgbarah>	You can start by having a plot method that has that as arguments
+[3:59:39 PM IST] <jgbarah>	the df will be the same one (self.df, the one in the class)
+[3:59:53 PM IST] <jgbarah>	Since you already have timeseries, which produces, well, a timeseries,
+[4:00:11 PM IST] <jgbarah>	you can have plot_timeries, which produces a plot for the timeseries,
+[4:01:27 PM IST] <jgbarah>	and plot_timeseries can get the parameters it may need (maybe axes, title..)
+[4:02:38 PM IST] <Polaris000>	ok. jgbarah,will do.
+[4:03:49 PM IST] <jgbarah>	Good!
+[4:04:09 PM IST] <jgbarah>	WRT to the tests, with the changes by valcos, are things more clear now?
+[4:04:43 PM IST] <Polaris000>	he suggested having a single 'tests' folder, instead of two separate tests and tests_df
+[4:05:17 PM IST] <Polaris000>	What do you think?
+[4:06:10 PM IST] <jgbarah>	That's fine with me, but still we should have two dirs in it, I think. But the driver could be just one script
+[4:06:25 PM IST] <jgbarah>	Are you ok with that?
+[4:06:51 PM IST] <Polaris000>	so a tests/tests and a tests/tests_df and a tests/run_tests.py?
+[4:07:01 PM IST] <Polaris000>	Yeah thats fine
+[4:07:22 PM IST] <jgbarah>	Yes
+[4:07:30 PM IST] <jgbarah>	OK then ;-)
+[4:07:31 PM IST] <Polaris000>	I think that's all from my side.
+[4:07:35 PM IST] <jgbarah>	Anything else?
+[4:07:41 PM IST] <Polaris000>	jgbarah aswanipranjal anything else?
+[4:07:43 PM IST] <Polaris000>	no jgbarah
+[4:07:48 PM IST] <jgbarah>	aswanipranjal: anything from your side?
+[4:07:51 PM IST] <aswanipranjal>	Nothing else from my side
+[4:08:01 PM IST] <jgbarah>	Good!
+[4:08:14 PM IST] <Polaris000>	what about the next meet?
+[4:08:22 PM IST] <Polaris000>	time?
+[4:08:25 PM IST] <jgbarah>	Polaris000: produce the usual outputs, and send the link to the CHAOSS mailing list, as usual
+[4:08:34 PM IST] <Polaris000>	sure jgbarah will do
+[4:08:38 PM IST] <jgbarah>	Oh, let me check...
+[4:09:02 PM IST] <jgbarah>	What about next tuesday, same time?
+[4:09:21 PM IST] <jgbarah>	Is that find to you, Polaris000 aswanipranjal
+[4:09:23 PM IST] <jgbarah>	?
+[4:09:28 PM IST] <Polaris000>	sure, thats ok with me
+[4:09:31 PM IST] <aswanipranjal>	Works for me jgbarah
+[4:09:37 PM IST] <jgbarah>	Good!
+[4:09:44 PM IST] <jgbarah>	Thanks both of you!
+[4:09:48 PM IST] <Polaris000>	Great, see you all next Tuesday!
+[4:09:53 PM IST] <Polaris000>	Bye all!
+[4:10:14 PM IST] <aswanipranjal>	thanks for your time jgbarah, Polaris000 !
+[4:10:15 PM IST] <aswanipranjal>	bye!
+[4:10:32 PM IST] Part	You (~Polaris00@136.233.33.82) have left channel #grimoirelab ("Konversation terminated!").
