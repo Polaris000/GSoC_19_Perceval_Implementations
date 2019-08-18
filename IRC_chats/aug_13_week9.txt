@@ -1,0 +1,154 @@
+Date: Tuesday 13 August 2019
+Participants: Polaris000, aswanipranjal, valcos
+Start_Time: 3:27:22 PM IST
+End_Time: 4:12:04 PM IST
+------------------------------------------------------------------------------
+
+[3:27:22 PM IST] Join	You (~Polaris00@136.233.33.82) have joined the channel #grimoirelab.
+[3:27:22 PM IST] Mode	Channel modes: no colors allowed, no messages from outside, topic protection
+[3:27:22 PM IST] Created	This channel was created on 28/08/17 10:32 PM.
+[3:27:29 PM IST] <Polaris000>	Hi valcos!
+[3:28:31 PM IST] <valcos>	Hi Polaris000
+[3:28:34 PM IST] <valcos>	how are you doing?
+[3:28:50 PM IST] <Polaris000>	I'm fine. I heard you had gone on vacation
+[3:28:55 PM IST] <Polaris000>	How was it?
+[3:29:18 PM IST] <valcos>	it was nice but too short :)
+[3:29:24 PM IST] <Polaris000>	:)
+[3:30:06 PM IST] <valcos>	Do you know if Pranjal will attend the meeting?
+[3:30:19 PM IST] <Polaris000>	I had assumed he would be coming. I just sent him a reminder
+[3:30:32 PM IST] <valcos>	ok thanks
+[3:30:56 PM IST] <valcos>	if you agree we can wait 5 minutes more
+[3:31:18 PM IST] <Polaris000>	sure
+[3:36:28 PM IST] <valcos>	shall we start?
+[3:36:44 PM IST] <Polaris000>	sure
+[3:36:56 PM IST] <Polaris000>	no response from Pranjal
+[3:36:59 PM IST] <Polaris000>	yet
+[3:37:20 PM IST] <valcos>	ok
+[3:37:27 PM IST] <Polaris000>	Did you have a look at my draft post?
+[3:37:46 PM IST] <valcos>	yes (this one right: https://polaris000.github.io/blog/week_9) ?
+[3:37:51 PM IST] <Polaris000>	yeah
+[3:38:27 PM IST] <Polaris000>	does perceval have support for events?
+[3:38:33 PM IST] <Polaris000>	That is one of my blockers
+[3:38:47 PM IST] <valcos>	I saw your issue in Perceval
+[3:39:11 PM IST] <valcos>	it seems a good a idea, the main risk is that the fetch operation will be slowed down
+[3:39:21 PM IST] <valcos>	since an issue may have many events
+[3:39:31 PM IST] <valcos>	why this is one of your blockers?
+[3:39:34 PM IST] <Polaris000>	yes, definitely
+[3:40:01 PM IST] <Polaris000>	do you have another way to fetch the reopening date of issues?
+[3:40:16 PM IST] <Polaris000>	then we wouldn't have to fetch events
+[3:40:33 PM IST] <valcos>	let me check
+[3:40:34 PM IST] <Polaris000>	oh, didn;t see your question
+[3:40:48 PM IST] <Polaris000>	it is a blocker since Issues metrics require events
+[3:41:13 PM IST] <Polaris000>	They have a parameter called reopen_as_new where any reopening of an issue is considered to be a new issue
+[3:41:37 PM IST] <Polaris000>	Issues Active requires the number of issues updated in an interval of time
+[3:41:45 PM IST] <Polaris000>	which would require events
+[3:43:19 PM IST] Join	aswanipranjal (uid293292@gateway/web/irccloud.com/x-rmwfsipyztnjnhwh) has joined this channel.
+[3:43:22 PM IST] <valcos>	for the second case, why we cannot use the updated_at attribute of issues?
+[3:43:32 PM IST] <Polaris000>	hi aswanipranjal
+[3:43:33 PM IST] <valcos>	Hi @aswanipranjal
+[3:43:38 PM IST] <Polaris000>	valcos:
+[3:43:44 PM IST] <aswanipranjal>	Hi all, I am extremely sorry for being late
+[3:43:55 PM IST] <Polaris000>	doesn't that give the last_updated_date?
+[3:44:20 PM IST] <valcos>	no worries Pranjal :)
+[3:44:37 PM IST] <valcos>	yes, the last_updated_date
+[3:44:59 PM IST] <Polaris000>	The metric definition requires the number of issues updated in a given period, and an issue may be updated over several periods
+[3:45:20 PM IST] <Polaris000>	for example, an issue is updated once in the concerned period and once after the period
+[3:45:34 PM IST] <valcos>	ok I see
+[3:45:35 PM IST] <Polaris000>	THis issue should be counted, but that can't be done with updated_at
+[3:45:54 PM IST] <Polaris000>	no problem aswanipranjal
+[3:46:12 PM IST] <valcos>	are you using the source code of perceval or installing perceval via pip?
+[3:46:39 PM IST] <Polaris000>	a little of both really
+[3:46:43 PM IST] <Polaris000>	but mostly pip
+[3:47:01 PM IST] <valcos>	I'm asking this because I can submit a PR
+[3:47:14 PM IST] <valcos>	and you can use that branch to work on these metrics
+[3:47:30 PM IST] <Polaris000>	yes, that can be an option
+[3:47:32 PM IST] <Polaris000>	good idea
+[3:47:32 PM IST] <valcos>	but in this case you should use the source of perceval
+[3:47:41 PM IST] <Polaris000>	yes
+[3:47:43 PM IST] <aswanipranjal>	@Polaris000, you can install perceval locally to use the PR
+[3:47:57 PM IST] <Polaris000>	will do aswanipranjal
+[3:48:05 PM IST] <valcos>	ok, I'll do it later and ping you on the perceval issue
+[3:48:16 PM IST] <valcos>	any other blockers?
+[3:48:28 PM IST] <Polaris000>	sure, do it whenever convenient, I will still contribute after GSOC
+[3:48:31 PM IST] <Polaris000>	Yes valcos
+[3:48:56 PM IST] <valcos>	cool, good to know, thanks
+[3:48:56 PM IST] <Polaris000>	I was looking for a good way to create a markdown report
+[3:49:14 PM IST] <Polaris000>	from the analysis script I was working on
+[3:49:36 PM IST] <Polaris000>	https://github.com/chaoss/wg-evolution/pull/207
+[3:49:52 PM IST] <Polaris000>	it currently supports json, images and pdf output
+[3:50:29 PM IST] <Polaris000>	It is not a major blocker, I will find something eventually but it may speed up the process if you know of anything
+[3:50:54 PM IST] Join	Bhaskar (b752031b@183.82.3.27) has joined this channel.
+[3:51:20 PM IST] <aswanipranjal>	Polaris000: what have you considered using till now?
+[3:51:21 PM IST] <valcos>	I don't know any tool to create a markdown report, but I'll check
+[3:51:45 PM IST] <valcos>	maybe aswanipranjal, do you know any?
+[3:51:57 PM IST] <Polaris000>	aswanipranjal: one way would be to use html directly via strings
+[3:52:03 PM IST] <Polaris000>	and then convert it to markdown
+[3:52:13 PM IST] <aswanipranjal>	https://github.com/PolBaladas/torsimany
+[3:52:13 PM IST] <Polaris000>	using the markdown library
+[3:52:14 PM IST] <aswanipranjal>	this seems like an option
+[3:52:26 PM IST] <aswanipranjal>	converts JSON to markdown
+[3:53:09 PM IST] <Polaris000>	yes, this is also a possibility
+[3:53:42 PM IST] <Polaris000>	but my json structure does not have images/dataframes for the markdown report
+[3:54:06 PM IST] <Polaris000>	Maybe if there was a standalone way to do that would be nice
+[3:54:16 PM IST] <Polaris000>	Otherwise, I'll do some conversion like you suggest
+[3:55:03 PM IST] <aswanipranjal>	For a standalone structure, we could use a template in which we can insert the results
+[3:56:08 PM IST] <aswanipranjal>	So for each of the metrics, we could have 1 markdown file with a template of the results to be shown and according to the time period, we could calculate and insert the data
+[3:56:49 PM IST] <Polaris000>	something like jinja?
+[3:56:55 PM IST] <Polaris000>	for the templating
+[3:57:11 PM IST] <aswanipranjal>	That could be an option, yeah
+[3:57:14 PM IST] <aswanipranjal>	but it seems like some work and we might be short on time
+[3:57:50 PM IST] <Polaris000>	ok. we'll go with your method for now
+[3:57:55 PM IST] <aswanipranjal>	> one way would be to use html directly via strings
+[3:57:55 PM IST] <aswanipranjal>	are you also generating HTML?
+[3:58:10 PM IST] <Polaris000>	no, but I thought of using html strings
+[3:58:46 PM IST] <Polaris000>	what do you think templating or html?
+[3:59:30 PM IST] <aswanipranjal>	If you follow the HTML->Markdown path, you'll be adding 2 different types of outputs rather then when you go with the templating path
+[3:59:34 PM IST] <aswanipranjal>	@valcos thoughts?
+[4:00:18 PM IST] <valcos>	I agree with your suggestions @aswanipranjal
+[4:00:47 PM IST] <valcos>	(use of a template)
+[4:01:02 PM IST] <aswanipranjal>	okay, thanks valcos!
+[4:01:23 PM IST] <aswanipranjal>	Polaris000: if you have time then you can start with the templating part for markdown as well
+[4:01:29 PM IST] <valcos>	in the meanwhile we can look for a library/tool that does something similar
+[4:01:42 PM IST] <aswanipranjal>	yeah
+[4:01:45 PM IST] <Polaris000>	for the template, how would you have python variables embedded in a markdown document?
+[4:01:59 PM IST] <Polaris000>	something like nb_extensions work?
+[4:02:41 PM IST] <Polaris000>	sure aswanipranjal, valcos. Will do
+[4:03:13 PM IST] <valcos>	other blockers? do you need some PRs to be reviewed?
+[4:04:59 PM IST] <Polaris000>	how would you use python variables in markdown? (thats the only blocker for now). Regarding prs for reviews, #237, #239 and #240
+[4:05:17 PM IST] <Polaris000>	link: https://github.com/chaoss/wg-evolution/pulls
+[4:05:21 PM IST] <aswanipranjal>	> for the template, how would you have python variables embedded in a markdown document?
+[4:05:22 PM IST] <aswanipranjal>	you can look into: https://github.com/lepture/mistune
+[4:06:08 PM IST] <Polaris000>	sure, thanks will use that
+[4:06:33 PM IST] <valcos>	thanks Polaris000
+[4:06:43 PM IST] <aswanipranjal>	I'll keep looking into finding something better. Please let us know in case you face any issues
+[4:06:45 PM IST] <valcos>	it seems a nice tool @aswanipranjal, thanks
+[4:06:50 PM IST] <Polaris000>	valcos, you could also have a look at the analysis script
+[4:06:55 PM IST] <aswanipranjal>	sure valcos
+[4:07:04 PM IST] <Polaris000>	https://github.com/chaoss/wg-evolution/pull/207
+[4:07:11 PM IST] <Polaris000>	if convenient for you
+[4:07:16 PM IST] <Polaris000>	Thanks aswanipranjal
+[4:07:22 PM IST] <valcos>	sure Polaris000
+[4:07:36 PM IST] <valcos>	I prepare the perceval PR
+[4:07:45 PM IST] <Polaris000>	Regarding the submission of my work,
+[4:08:02 PM IST] <Polaris000>	is having a single blog post with all my pull requests ok?
+[4:08:05 PM IST] <valcos>	then move to review the PRs on wg-evolution in this order 237 239 240 207, ok?
+[4:08:24 PM IST] <valcos>	> is having a single ...
+[4:08:37 PM IST] <Polaris000>	yes valcos
+[4:09:02 PM IST] <valcos>	yes, you can try to summarize the work done grouping the PRs in conceptual blocks maybe
+[4:09:17 PM IST] <aswanipranjal>	> is having a single blog post with all my pull requests ok?
+[4:09:17 PM IST] <aswanipranjal>	Polaris000, you can divide the post into different parts and club the pull requests accordingly so that readers can understand better
+[4:09:24 PM IST] <valcos>	a list of PRs maybe difficult to follow
+[4:09:36 PM IST] <valcos>	yes, I agree with @aswanipranjal
+[4:09:50 PM IST] <Polaris000>	Sure, thanks aswanipranjal valcos
+[4:10:10 PM IST] <valcos>	ok, great!
+[4:10:25 PM IST] <aswanipranjal>	anything else Polaris000?
+[4:10:38 PM IST] <Polaris000>	I think that's all aswanipranjal
+[4:10:41 PM IST] <valcos>	as @aswanipranjal wrote before, don't hesitate to drop an email if you have any blockers or if we can help somehow
+[4:10:42 PM IST] <Polaris000>	from my side
+[4:10:50 PM IST] <Polaris000>	sure valcos, thanks
+[4:11:11 PM IST] <valcos>	thank you for your time aswanipranjal and Polaris000
+[4:11:28 PM IST] <aswanipranjal>	thanks valcos, Polaris000!!
+[4:11:40 PM IST] <Polaris000>	Thanks! Bye all.
+[4:11:45 PM IST] <aswanipranjal>	bye!
+[4:11:50 PM IST] <valcos>	bye! :)
+[4:12:04 PM IST] Part	You (~Polaris00@136.233.33.82) have left channel #grimoirelab ("Konversation terminated!").
